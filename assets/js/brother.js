@@ -1,1 +1,0 @@
-var _bluecore_no_op={};

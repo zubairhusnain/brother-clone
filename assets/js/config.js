@@ -1,1 +1,0 @@
-PriceSpider.onload("config", {"id":1697,"version":"2.32.1","checkWidgetVisibility":false,"loadSellerExistenceMap":true,"versions":{"widget":"2.32.1","recipe":"2.32.1","wtb4":"2.32.1"},"widgetLoaderCheck":"existence"})
