@@ -246,6 +246,13 @@ async function main() {
         '$1src="./assets/images/google-play-badge.png"'
     );
 
+    try {
+        const { replaceMegaMenuSection } = require('./simplify-mega-menu.js');
+        html = replaceMegaMenuSection(html);
+    } catch (e) {
+        console.warn('Mega menu simplify skipped:', e.message);
+    }
+
     fs.writeFileSync(indexPath, html);
     console.log('patched index.html');
 }

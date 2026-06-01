@@ -226,13 +226,26 @@ body.brother-home-page .janus-cart-count {
     }
 }
 
-/* Mega menu */
+/* Simple main nav (mega menus removed) */
+body.brother-home-page .brother-simple-nav .sub-menu,
+body.brother-home-page .brand-nav .sub-menu,
+body.brother-home-page .brand-nav .normal-menu-block,
+body.brother-home-page .brand-nav .special-submenu {
+    display: none !important;
+}
+
+body.brother-home-page .brand-nav .menu-block-item.has-dropdown > a::after,
+body.brother-home-page .brother-simple-nav .menu-block-item > a::after {
+    display: none !important;
+}
+
 @media (min-width: 992px) {
     body.brother-home-page .header.mega-nav.brand-nav .menu-wrap {
         display: block !important;
     }
 
-    body.brother-home-page .header.mega-nav.brand-nav .menu-block {
+    body.brother-home-page .header.mega-nav.brand-nav .menu-block,
+    body.brother-home-page .header.mega-nav.brand-nav .brother-simple-nav {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
@@ -248,6 +261,25 @@ body.brother-home-page .janus-cart-count {
         font-size: 16px;
         padding: 15px 18px;
         white-space: nowrap;
+        text-decoration: none;
+    }
+
+    body.brother-home-page .header.mega-nav.brand-nav .menu-block-item > a:hover,
+    body.brother-home-page .header.mega-nav.brand-nav .menu-block-item > a:focus {
+        color: #1965e1;
+    }
+}
+
+@media (max-width: 991px) {
+    body.brother-home-page .mobile-menu .brother-simple-nav > li > a {
+        color: #020920;
+        display: block;
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    body.brother-home-page .mobile-menu .brother-simple-nav ul {
+        display: none !important;
     }
 }
 
