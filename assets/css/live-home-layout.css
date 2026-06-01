@@ -1,0 +1,488 @@
+/**
+ * Align offline home page (index.html) with https://www.brother-usa.com/home
+ */
+
+/* ── Promo bar (replaces broken Slick carousel offline) ── */
+.brother-promo-bar {
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1002;
+}
+
+.brother-promo-bar a {
+    color: #fff;
+    display: block;
+    height: 40px;
+    left: 0;
+    line-height: 40px;
+    opacity: 0;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    width: 100%;
+}
+
+.brother-promo-bar a:hover,
+.brother-promo-bar a:focus {
+    text-decoration: underline;
+}
+
+.brother-promo-bar a:nth-child(1) {
+    animation: brother-promo-fade 20s infinite;
+    animation-delay: 0s;
+}
+
+.brother-promo-bar a:nth-child(2) {
+    animation: brother-promo-fade 20s infinite;
+    animation-delay: 5s;
+}
+
+.brother-promo-bar a:nth-child(3) {
+    animation: brother-promo-fade 20s infinite;
+    animation-delay: 10s;
+}
+
+.brother-promo-bar a:nth-child(4) {
+    animation: brother-promo-fade 20s infinite;
+    animation-delay: 15s;
+}
+
+@keyframes brother-promo-fade {
+    0%,
+    18% {
+        opacity: 1;
+        z-index: 2;
+    }
+    22%,
+    100% {
+        opacity: 0;
+        z-index: 1;
+    }
+}
+
+/* ── Header stack (static document flow — prevents hero overlap) ── */
+body.brother-home-page .header-placeholder.header-eq-height {
+    display: none;
+}
+
+body.brother-home-page .main-header-section,
+body.brother-home-page .header-container,
+body.brother-home-page .header-container.fixed,
+body.brother-home-page .header-container.header-eq-height,
+body.brother-home-page .header.mega-nav.brand-nav,
+body.brother-home-page .brand-nav.mega-nav,
+body.brother-home-page .brand-nav.mega-nav.fixed {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: 100%;
+}
+
+body.brother-home-page .header.mega-nav.brand-nav,
+body.brother-home-page .brand-nav.mega-nav {
+    background: #fff;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.15);
+    display: block !important;
+    z-index: auto !important;
+}
+
+body.brother-home-page #siteBodySec,
+body.brother-home-page .global-main .main-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Utility bar (blue) — matches live */
+body.brother-home-page .header.utility-nav.home {
+    background-color: #0d2ea0;
+    min-height: 80px;
+}
+
+body.brother-home-page .header.utility-nav.home .container {
+    max-width: 1200px;
+}
+
+body.brother-home-page .header.utility-nav.home .logo img {
+    max-height: 48px;
+    width: auto;
+}
+
+/* For Home / For Business audience switcher — removed from offline home header */
+body.brother-home-page .utility-nav.home .home-business-title,
+body.brother-home-page .utility-nav.home .site-select {
+    display: none !important;
+}
+
+body.brother-home-page .utility-nav.home .user-login-ul > li,
+body.brother-home-page .utility-nav.home .auth-user-name {
+    color: #fff;
+}
+
+body.brother-home-page .janus-cart-count {
+    background: #ffc72c;
+    border-radius: 50%;
+    color: #020920;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 18px;
+    min-width: 18px;
+    padding: 0 4px;
+    position: absolute;
+    right: -6px;
+    text-align: center;
+    top: -4px;
+}
+
+/* ── Offline search (visible when Coveo Atomic fails offline) ── */
+.brother-offline-search {
+    align-items: stretch;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    max-width: 320px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.brother-offline-search input[type="search"] {
+    border: 0;
+    flex: 1;
+    font-size: 14px;
+    min-width: 0;
+    padding: 10px 12px;
+}
+
+.brother-offline-search button {
+    background: #fff;
+    border: 0;
+    border-left: 1px solid #e0e0e0;
+    color: #0d2ea0;
+    cursor: pointer;
+    padding: 0 14px;
+}
+
+.omnibox .brother-offline-search {
+    margin-left: auto;
+}
+
+/* Prefer Coveo when it hydrates */
+.omnibox atomic-search-box.hydrated ~ .brother-offline-search,
+.omnibox atomic-external:has(atomic-search-box.hydrated) ~ .brother-offline-search {
+    display: none;
+}
+
+.omnibox:not(:has(atomic-search-box.hydrated)) atomic-external {
+    display: none;
+}
+
+.search-input .brother-offline-search {
+    margin: 8px 15px;
+    max-width: none;
+}
+
+.search-input:not(:has(atomic-search-box.hydrated)) atomic-external {
+    display: none;
+}
+
+/* Desktop utility row */
+@media (min-width: 768px) {
+    body.brother-home-page .utility-nav.home .container > .row.md-flex {
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    body.brother-home-page .utility-nav.home .row.md-flex > .logo {
+        flex: 0 0 auto;
+    }
+
+    body.brother-home-page .utility-nav.home .row.md-flex > .omnibox {
+        flex: 1 1 auto;
+        margin-left: auto;
+        margin-right: 12px;
+        max-width: 340px;
+        min-width: 200px;
+    }
+
+    body.brother-home-page .utility-nav.home .row.md-flex > ul.user-login-ul {
+        flex: 0 0 auto;
+        float: none;
+        height: 80px;
+    }
+
+    body.brother-home-page .utility-nav.home .row.md-flex > div.user-login-ul.mobile-user {
+        display: none !important;
+    }
+}
+
+/* Mega menu */
+@media (min-width: 992px) {
+    body.brother-home-page .header.mega-nav.brand-nav .menu-wrap {
+        display: block !important;
+    }
+
+    body.brother-home-page .header.mega-nav.brand-nav .menu-block {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    body.brother-home-page .header.mega-nav.brand-nav .menu-block-item > a {
+        color: #020920;
+        display: block;
+        font-size: 16px;
+        padding: 15px 18px;
+        white-space: nowrap;
+    }
+}
+
+/* ── Hero billboard (match live /home — 1440×400 banner) ── */
+body.brother-home-page .billboard-text-overlay-hero {
+    aspect-ratio: 1440 / 400;
+    height: auto !important;
+    margin: 0 auto;
+    max-height: 520px;
+    max-width: 1920px;
+    min-height: 0 !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+/* main.js scroll sticky is disabled via .no-scroll; block if it still runs */
+body.brother-home-page .header-container.no-scroll.fixed,
+body.brother-home-page .brand-nav.mega-nav.fixed {
+    position: static !important;
+}
+
+body.brother-home-page .billboard-text-overlay-hero > img.img-responsive {
+    display: block;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    object-position: right center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* White content card */
+body.brother-home-page .billboard-text-overlay-hero .text-overlay-content,
+body.brother-home-page .billboard-text-overlay-hero .jan-price-table-wrapper.text-overlay-content {
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-sizing: border-box;
+}
+
+body.brother-home-page .billboard-text-overlay-hero .text-overlay-content h1,
+body.brother-home-page .billboard-text-overlay-hero .jan-price-left h1 {
+    color: #071956 !important;
+    display: block !important;
+    font-family: Catamaran, "Open Sans", Georgia, serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0 0 12px;
+    visibility: visible !important;
+}
+
+body.brother-home-page .billboard-text-overlay-hero .text-overlay-content p,
+body.brother-home-page .billboard-text-overlay-hero .jan-price-left p {
+    color: #071956;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 18px;
+}
+
+@media (min-width: 768px) {
+    body.brother-home-page .billboard-text-overlay-hero .container {
+        height: 100%;
+        left: 0;
+        margin: 0 auto;
+        max-width: 1200px;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0 !important;
+        width: 100%;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .container > .row {
+        height: 100%;
+        margin: 0;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .text-overlay-container {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        min-height: 100%;
+        position: relative;
+        width: 100%;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .text-overlay-content.content-left,
+    body.brother-home-page .billboard-text-overlay-hero .jan-price-table-wrapper.jan-price-small.content-left {
+        flex: 0 1 auto;
+        left: 0 !important;
+        margin: 0 0 0 15px;
+        max-width: 500px;
+        pointer-events: auto;
+        position: relative !important;
+        text-align: left;
+        top: auto !important;
+        transform: none !important;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .text-overlay-content,
+    body.brother-home-page .billboard-text-overlay-hero .jan-price-table-wrapper.text-overlay-content {
+        position: relative !important;
+        top: auto !important;
+        transform: none !important;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .left-billboard {
+        text-align: left !important;
+    }
+
+    /* .row wraps .btn-container — flex must be on .btn-container (matches live inline CTAs) */
+    body.brother-home-page .billboard-text-overlay-hero .left-billboard > .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .btn-container {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .btn-container .col-md-6 {
+        display: block;
+        flex: 0 0 auto;
+        float: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+        max-width: none;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .text-overlay-content .btn-container .col-md-6 + .col-md-6,
+    body.brother-home-page .billboard-text-overlay-hero .btn-container .col-md-6 + .col-md-6 {
+        margin-top: 0 !important;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .btn-container .btn {
+        display: inline-block !important;
+        width: auto !important;
+        max-width: none;
+        white-space: nowrap;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .btn-primary {
+        background-color: #1965e1;
+        border-color: #1965e1;
+        min-width: 150px;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .btn-secondary {
+        background: #fff;
+        border: 2px solid #1965e1;
+        color: #1965e1;
+        min-width: 150px;
+    }
+}
+
+@media (min-width: 1600px) {
+    body.brother-home-page .billboard-text-overlay-hero .text-overlay-content.content-left {
+        margin-left: 30px;
+        position: relative !important;
+        transform: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    body.brother-home-page .billboard-text-overlay-hero {
+        aspect-ratio: auto;
+        height: auto;
+        max-height: none;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero > img.img-responsive {
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .container {
+        position: relative;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .text-overlay-content {
+        margin: 0;
+        text-align: center;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .jan-price-left {
+        padding: 24px 20px;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .left-billboard {
+        text-align: center !important;
+    }
+
+    body.brother-home-page .billboard-text-overlay-hero .btn-container {
+        flex-direction: column !important;
+        align-items: center;
+    }
+}
+
+/* Explore + category row */
+body.brother-home-page h2.explore-products {
+    font-family: Catamaran, "Open Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 24px 0 8px;
+}
+
+body.brother-home-page .category-nav {
+    max-width: 1200px;
+}
+
+/* Mobile menu offset (promo + utility + mega) */
+@media (max-width: 991px) {
+    body.brother-home-page .mobile-menu {
+        height: calc(100% - 120px) !important;
+        top: 120px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    body.brother-home-page .mobile-menu {
+        top: 160px !important;
+    }
+}
+
+/* Hide broken legacy promo if it reappears after rescrape */
+body.brother-home-page .global-alert-promo.slick-slider {
+    display: none !important;
+}

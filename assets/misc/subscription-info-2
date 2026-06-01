@@ -1,0 +1,7 @@
+
+document.addEventListener('DOMContentLoaded', function() {
+     setTimeout(function() {
+    $('._000-allwrap-wrapper').show();
+    $('.custom-tab-container').show();
+}, 1200);
+   });

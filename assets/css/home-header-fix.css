@@ -1,0 +1,17 @@
+/**
+ * Legacy header fixes — kept minimal; see live-home-layout.css for layout parity.
+ */
+
+.janus-shop-cart .br-cart,
+.janus-shope-cart-dropdown .top-text a {
+    background-image: url(../images/user-icon.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px 22px;
+}
+
+/* Broken Slick promo from scrape (replaced by .brother-promo-bar) */
+.global-alert-promo.slick-slider,
+.sitewide-alert-container {
+    display: none !important;
+}
