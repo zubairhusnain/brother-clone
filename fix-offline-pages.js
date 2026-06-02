@@ -164,11 +164,30 @@ function fixHtml(html, pageRel) {
         html = html.replace(
             /<\/head>/i,
             `<style id="offline-layout-fix">
-#onetrust-banner-sdk,#onetrust-consent-sdk,#mcp-toast-parent-container,.embedded-messaging{display:none!important}
+#onetrust-banner-sdk,#onetrust-consent-sdk,.embedded-messaging{display:none!important}
 .global-header,.header-container,.mega-menu-container{visibility:visible!important}
 </style>\n</head>`
         );
     }
+
+    if (!html.includes('offline-hide-banners.css')) {
+        html = html.replace(
+            /<\/head>/i,
+            `    <link rel="stylesheet" href="${prefix}assets/css/offline-hide-banners.css">\n</head>`
+        );
+    }
+
+    // Remove Evergage/MCP "Exclusive Offers" widget markup entirely.
+    html = html.replace(
+        /<style[^>]*>[\s\S]*?#mcp-toast-parent-container[\s\S]*?<\/style>/gi,
+        ''
+    );
+    html = html.replace(
+        /<div[^>]*id=["']mcp-toast-parent-container["'][^>]*>[\s\S]*?(?=<div[^>]*id=["']__EAAPS_PORTAL["']|<script[^>]+src=["'][^"']*main\.js["']|<\/body>)/gi,
+        ''
+    );
+    html = html.replace(/<div[^>]*id=["']mcp-utm["'][^>]*>\s*<\/div>/gi, '');
+    html = html.replace(/<div[^>]*id=["']mcp-toast1["'][^>]*>\s*<\/div>/gi, '');
 
     if (!html.includes('offline-stubs.js')) {
         html = html.replace(

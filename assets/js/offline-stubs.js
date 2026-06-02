@@ -86,46 +86,7 @@
   window.piHostname = window.piHostname || 'go.pardot.com';
   window._sf_async_config = window._sf_async_config || {};
 
-  function hideExclusiveOffers() {
-    var selectors = [
-      '#mcp-toast-parent-container',
-      '#mcp-toast-c',
-      '#mcp-toast1',
-      '#mcp-utm',
-      '.mcp-toast-container',
-      '.mcp-card',
-      '[id^=\"mcp-toast\"]',
-      '[class*=\"mcp-toast\"]'
-    ];
-    selectors.forEach(function (sel) {
-      document.querySelectorAll(sel).forEach(function (el) {
-        el.style.setProperty('display', 'none', 'important');
-        el.style.setProperty('visibility', 'hidden', 'important');
-        el.setAttribute('aria-hidden', 'true');
-      });
-    });
-  }
-
-  function injectHideStyles() {
-    if (document.getElementById('offline-hide-exclusive-offers')) return;
-    var style = document.createElement('style');
-    style.id = 'offline-hide-exclusive-offers';
-    style.textContent = [
-      '#mcp-toast-parent-container, #mcp-toast-c, #mcp-toast1, #mcp-utm,',
-      '.mcp-toast-container, .mcp-card, [id^=\"mcp-toast\"], [class*=\"mcp-toast\"] {',
-      '  display: none !important;',
-      '  visibility: hidden !important;',
-      '  opacity: 0 !important;',
-      '  pointer-events: none !important;',
-      '}'
-    ].join('\n');
-    document.head.appendChild(style);
-  }
-
   document.addEventListener('DOMContentLoaded', function () {
-    injectHideStyles();
-    hideExclusiveOffers();
-
     document.querySelectorAll('.brother-offline-search').forEach(function (form) {
       form.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -137,11 +98,6 @@
         }
       });
     });
-
-    var observer = new MutationObserver(function () {
-      hideExclusiveOffers();
-    });
-    observer.observe(document.documentElement, { childList: true, subtree: true });
 
     // Some pages call slick() on missing nodes and throw, which aborts
     // later ready handlers (including product section setup). Guard that.
