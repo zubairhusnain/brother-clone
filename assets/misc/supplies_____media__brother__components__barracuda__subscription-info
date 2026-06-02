@@ -1,0 +1,398 @@
+    
+    window.monoLaserModel = "MFCL2717DW";
+    window.inkJetModel = "MFCJ1010DW";
+    window.colorLaserModel = "MFCL3720CDW";
+    
+    let plansDataMonoLaser, plansDataInkJet, plansDataColorLaser;
+    let homePlanOptions = [], businessPlanOptions = [];
+    
+    $('.home-plan-options').empty();
+    $('.business-plan-options').empty();
+    function monoLaserSearchComponent(skuData) {
+        console.log("skuData", skuData);
+        let updatedSkuData = skuData.slice(0, 3) + '-' + skuData.slice(3);
+        var settings = {
+            'url': '/api/sitecore/SCMS/GetAllPlansForModel',
+            'method': 'POST',
+            data: {
+                modelSku: updatedSkuData
+            },
+            'dataType': 'json'
+        };
+        $.ajax(settings).done(function (response) {
+            plansDataMonoLaser = '';
+            plansDataMonoLaser = response;
+            populatePlansData(plansDataMonoLaser);
+        }).fail(function (xhr, status, error) {
+        });
+    }
+
+    function injectSearchComponent(skuData) {
+        let updatedSkuData = skuData.slice(0, 3) + '-' + skuData.slice(3);
+        var settings = {
+            'url': '/api/sitecore/SCMS/GetAllPlansForModel',
+            'method': 'POST',
+            data: {
+                modelSku: updatedSkuData
+            },
+            'dataType': 'json'
+        };
+        $.ajax(settings).done(function (response) {
+            plansDataInkJet = '';
+            plansDataInkJet = response;                           
+            //console.log("plansDataInkJet", plansDataInkJet);
+        }).fail(function (xhr, status, error) {
+        });
+    }
+
+    function colorLaserSearchComponent(skuData) {
+        let updatedSkuData = skuData.slice(0, 3) + '-' + skuData.slice(3);
+        var settings = {
+            'url': '/api/sitecore/SCMS/GetAllPlansForModel',
+            'method': 'POST',
+            data: {
+                modelSku: updatedSkuData
+            },
+            'dataType': 'json'
+        };
+        $.ajax(settings).done(function (response) {
+            plansDataColorLaser = '';            
+            plansDataColorLaser = response;
+        }).fail(function (xhr, status, error) {           
+        });
+    } 
+    
+    monoLaserSearchComponent(window.monoLaserModel);
+    setTimeout(injectSearchComponent(window.inkJetModel), 300);
+    setTimeout(colorLaserSearchComponent(window.colorLaserModel), 500);
+    
+    function populatePlansData(plansDataMonoLaser) {
+            $('.home-plan-options').empty();
+            $('.business-plan-options').empty();
+            let plansData = plansDataMonoLaser;
+            const homePlanNames = ['Basic', 'Occasional', 'Occcasional', 'Moderate', 'Frequent'];
+            const businessPlanNames = ['Power', 'High'];
+            let productName = plansData && plansData.products[0] ? plansData.products[0].name.split('_')[2] : '';
+
+
+            if (plansData && plansData.products[0] && plansData.products[0].plans.length > 0) {
+              const planOptionsData = plansData.products[0].plans.filter(item => item.hiddenPlan === false && item.optionFields)
+                    .map((item) => {
+                        return {
+                            optionFields: typeof item.optionFields === 'string'
+                                ? JSON.parse(item.optionFields)
+                                : item.optionFields,
+                            planId: item.planId
+                        };
+                    });
+
+                const planNameOrderList = {
+                    'Basic': 1,
+                    'Occasional': 1,
+                    'Occcasional': 1,
+                    'Moderate': 2,
+                    'Frequent': 3,                    
+                    'High': 4,
+                    'Power': 5
+                };
+
+                const planOptionsDataByOrder = planOptionsData.filter(item => item.optionFields && planNameOrderList[item.optionFields.name] !== undefined)
+                    .map((item) => {
+                        return {
+                            optionFields: item.optionFields,
+                            planId: item.planId,
+                            order: planNameOrderList[item.optionFields.name]
+                        };
+                    });
+
+                 //Sort by order
+                const sortedPlansData = planOptionsDataByOrder.sort((a, b) => a.order - b.order);
+                homePlanOptions = sortedPlansData.filter(item => homePlanNames.includes(item.optionFields.name));
+                businessPlanOptions = sortedPlansData.filter(item => businessPlanNames.includes(item.optionFields.name));
+
+          
+            }
+
+              console.log('homePlan', homePlanOptions);
+              console.log('businessPlan', businessPlanOptions);
+             let isMultiplePlanForBusiness = true;
+             if(businessPlanOptions && businessPlanOptions.length == 1){
+                 isMultiplePlanForBusiness = false;
+             }        
+             else{
+                isMultiplePlanForBusiness = true;
+             }
+            let isPlanDiscountExistForHome = false;
+            homePlanOptions.map((plan) => {
+                if(plan.optionFields.xDollerAmount && plan.optionFields.xDollerAmount.length>0){
+                    isPlanDiscountExistForHome = true;
+                }
+            });
+            $.each(homePlanOptions, function (index, plan) {
+               
+                
+                let homePlansHtml = `<div class="_0100-pricing-card ${productName.toLowerCase()}">
+                          <div class="tophead-home">                          
+                             ${plan.optionFields.top}
+                          </div>                        
+                          <div class="_0150-top-section">
+                          <div class="_0200-pricing-header ${isPlanDiscountExistForHome ? 'extraheight' : ''} ${plan.optionFields.name.toLowerCase()}">
+                                    <div class="_0300-plan-name">${plan.optionFields.name}</div>
+                                    <div class="pricing">
+                                        <div class="_0300-plan-price ${plan.optionFields.xDollerAmount ? 'discounted' : ''}">${plan.optionFields.mo}</div>
+                                        <div class="_0300-plan-price ${plan.optionFields.xDollerAmount ? 'newprice' : ''}">${plan.optionFields.xDollerAmount ? plan.optionFields.xDollerAmount : ''}</div> 
+                                        <div class="_0300-plan-description">
+                                             ${plan.optionFields.xDollerEnd ? plan.optionFields.xDollerEnd.substr(0, plan.optionFields.xDollerEnd.length - 8) : ''}<strong>${plan.optionFields.xDollerEnd ? plan.optionFields.xDollerEnd.slice(-8) : ''}</strong>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="_0300-plan-description">
+                                  	    <strong>${plan.optionFields.pages.substr(0, plan.optionFields.pages.length - 9)}</strong> per Month
+                                    </div>
+                                    <div class="_030-dollar-promo ${plan.optionFields.cr ? '' : 'no-credit'}">
+                                 	    <div class="_0300-plan-description white" style="color: white; margin-top: 0px;">${plan.optionFields.cr ? plan.optionFields.cr[0]: ''}</div>
+                                    </div>
+                                </div>
+                                
+                            <div class="_0200-dropdown">
+                                <div onclick="myFunction('${plan.optionFields.name}')" class="w3-button">
+                                            <div class="_0400-pricing-header">
+                                                <div class="_0500-p-header">${plan.optionFields.dSec}</div>
+                                            </div>
+                                            <div class="_0500-embeded-icon w-embed"> 
+                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                                                        <path d="M5.40023 5.98048C5.20504 5.98048 5.02742 5.90241 4.86737 5.74626L0.411249 1.18474C0.344885 1.12228 0.294137 1.05201 0.259003 0.973935C0.227773 0.891956 0.212158 0.804122 0.212158 0.710432C0.212158 0.581609 0.241436 0.464497 0.299992 0.359096C0.362452 0.253695 0.444431 0.171716 0.545928 0.11316C0.647425 0.0507001 0.762586 0.0194702 0.891409 0.0194702C1.07879 0.0194702 1.24275 0.0897375 1.38328 0.230272L5.68715 4.63955H5.11916L9.41718 0.230272C9.55771 0.0897375 9.72167 0.0194702 9.90905 0.0194702C10.0379 0.0194702 10.153 0.0507001 10.2545 0.11316C10.356 0.171716 10.4361 0.253695 10.4946 0.359096C10.5571 0.464497 10.5883 0.581609 10.5883 0.710432C10.5883 0.893908 10.5219 1.05201 10.3892 1.18474L5.93309 5.74626C5.85892 5.82433 5.77694 5.88289 5.68715 5.92193C5.59737 5.96096 5.50173 5.98048 5.40023 5.98048Z" fill="#8C8C8C"></path>\n\t\t\t\t 
+                                                </svg>
+                                            </div> 
+                                        </div>
+                                        <div id="${plan.optionFields.name}" class="w3-hide w3-show">`;
+
+
+                                        // Iterate over dItem array
+                                        $.each(plan.optionFields.dItem, function (i, item) {
+                                            homePlansHtml += `<div class="_0400-list-item">
+                                                                                        <div class="_0500-embeded-icon w-embed">
+                                                                                          <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                           <path d="M4.03963 10.8525C3.75838 10.8525 3.51814 10.7275 3.31892 10.4775L0.283767 6.6806C0.209548 6.59076 0.154861 6.50287 0.119705 6.41693C0.0884547 6.33099 0.0728297 6.2431 0.0728297 6.15326C0.0728297 5.95013 0.139236 5.78217 0.272048 5.64935C0.408767 5.51654 0.580642 5.45013 0.787673 5.45013C1.02595 5.45013 1.22713 5.55756 1.39119 5.7724L4.01619 9.14154L9.10213 1.06146C9.19197 0.924744 9.28377 0.829041 9.37752 0.774353C9.47127 0.715759 9.59236 0.686462 9.7408 0.686462C9.94392 0.686462 10.1099 0.750916 10.2388 0.879822C10.3678 1.00482 10.4322 1.16888 10.4322 1.37201C10.4322 1.45404 10.4185 1.53802 10.3912 1.62396C10.3638 1.70599 10.3209 1.79388 10.2623 1.88763L4.75447 10.4716C4.5826 10.7255 4.34431 10.8525 4.03963 10.8525Z" fill="black"></path>
+                                                                                         </svg>
+                                                                                      </div>
+                                                                                      <div class="_0500-includes-text">                           
+                                                                                           ${item}
+                                                                                      </div></div>`;
+                                        });
+
+                                        homePlansHtml += `</div>
+                                                            </div>
+                                                        </div>
+                                                    <div class="btn-container">
+                                                        <input type="button" class="btn btn-success scms-button scmsmodal modalwindow getstrt" value="Get Started">
+                                                    </div>
+                                                </div>`;
+                                        // Append to container
+                                        $('.home-plan-options').append(homePlansHtml);
+            });
+
+            $.each(businessPlanOptions, function (index, plan) {
+                let businessPlansHtml = `<div class="_0100-pricing-card ${ isMultiplePlanForBusiness ? '' : 'extrawidth'} ${productName.toLowerCase()}">
+                          <div class="tophead-business">
+                          <div class="_0500-embeded-icon w-embed show-icon">
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+	                                <path d="M2.42383 6.75684C2.10221 6.75684 1.80811 6.67855 1.5415 6.52197C1.27913 6.3654 1.06966 6.15592 0.913086 5.89355C0.75651 5.62695 0.678223 5.33285 0.678223 5.01123C0.678223 4.69385 0.75651 4.40397 0.913086 4.1416C1.06966 3.875 1.27913 3.66341 1.5415 3.50684C1.80811 3.35026 2.10221 3.27197 2.42383 3.27197C2.74121 3.27197 3.03109 3.35238 3.29346 3.51318C3.56006 3.66976 3.76953 3.87923 3.92188 4.1416C4.07845 4.40397 4.15674 4.69385 4.15674 5.01123C4.15674 5.33285 4.07845 5.62695 3.92188 5.89355C3.76953 6.15592 3.56006 6.3654 3.29346 6.52197C3.03109 6.67855 2.74121 6.75684 2.42383 6.75684ZM2.42383 5.65234C2.59733 5.65234 2.74544 5.59098 2.86816 5.46826C2.99089 5.34131 3.05225 5.18896 3.05225 5.01123C3.05225 4.84196 2.98877 4.69596 2.86182 4.57324C2.7391 4.44629 2.5931 4.38281 2.42383 4.38281C2.25033 4.38281 2.1001 4.44417 1.97314 4.56689C1.85042 4.68962 1.78906 4.83773 1.78906 5.01123C1.78906 5.18896 1.85042 5.34131 1.97314 5.46826C2.1001 5.59098 2.25033 5.65234 2.42383 5.65234ZM9 4.08447C8.67839 4.08447 8.38639 4.00618 8.12402 3.84961C7.86165 3.69303 7.65007 3.48356 7.48926 3.22119C7.33268 2.95882 7.25439 2.66683 7.25439 2.34521C7.25439 2.0236 7.33268 1.73161 7.48926 1.46924C7.64583 1.20687 7.85531 0.997396 8.11768 0.84082C8.38428 0.684245 8.67839 0.605957 9 0.605957C9.31738 0.605957 9.60726 0.684245 9.86963 0.84082C10.132 0.997396 10.3415 1.20687 10.498 1.46924C10.6589 1.73161 10.7393 2.0236 10.7393 2.34521C10.7393 2.66683 10.6589 2.95882 10.498 3.22119C10.3415 3.48356 10.132 3.69303 9.86963 3.84961C9.60726 4.00618 9.31738 4.08447 9 4.08447ZM9 2.97998C9.17773 2.97998 9.32585 2.91862 9.44434 2.7959C9.56706 2.66895 9.62842 2.51872 9.62842 2.34521C9.62842 2.17594 9.56494 2.02995 9.43799 1.90723C9.31527 1.78027 9.16927 1.7168 9 1.7168C8.8265 1.7168 8.67627 1.77816 8.54932 1.90088C8.4266 2.01937 8.36523 2.16748 8.36523 2.34521C8.36523 2.51872 8.4266 2.66895 8.54932 2.7959C8.67627 2.91862 8.8265 2.97998 9 2.97998ZM15.5698 6.75684C15.2524 6.75684 14.9604 6.67855 14.6938 6.52197C14.4315 6.3654 14.222 6.15592 14.0654 5.89355C13.9131 5.62695 13.8369 5.33285 13.8369 5.01123C13.8369 4.69385 13.9131 4.40397 14.0654 4.1416C14.222 3.87923 14.4315 3.66976 14.6938 3.51318C14.9604 3.35238 15.2524 3.27197 15.5698 3.27197C15.8914 3.27197 16.1834 3.35026 16.4458 3.50684C16.7124 3.66341 16.924 3.875 17.0806 4.1416C17.2371 4.40397 17.3154 4.69385 17.3154 5.01123C17.3154 5.33285 17.2371 5.62695 17.0806 5.89355C16.924 6.15592 16.7124 6.3654 16.4458 6.52197C16.1834 6.67855 15.8914 6.75684 15.5698 6.75684ZM15.5698 5.65234C15.7433 5.65234 15.8914 5.59098 16.0142 5.46826C16.1411 5.34131 16.2046 5.18896 16.2046 5.01123C16.2046 4.83773 16.1411 4.68962 16.0142 4.56689C15.8914 4.44417 15.7433 4.38281 15.5698 4.38281C15.3963 4.38281 15.2482 4.44629 15.1255 4.57324C15.0028 4.69596 14.9414 4.84196 14.9414 5.01123C14.9414 5.18896 15.0028 5.34131 15.1255 5.46826C15.2482 5.59098 15.3963 5.65234 15.5698 5.65234ZM3.12842 6.3252L3.74414 5.34766L5.61035 6.49658C5.70345 6.55583 5.77962 6.5791 5.83887 6.56641C5.90234 6.55371 5.95947 6.51139 6.01025 6.43945L8.20654 3.48779L9.29834 3.95117L6.84814 7.25195C6.62386 7.54818 6.35303 7.71533 6.03564 7.75342C5.72249 7.78727 5.44108 7.72803 5.19141 7.57568L3.12842 6.3252ZM14.8716 6.33154L12.7769 7.60742C12.5441 7.74707 12.2712 7.79997 11.958 7.76611C11.6491 7.72803 11.3867 7.56299 11.1709 7.271L8.70801 3.96387L9.79346 3.48779L11.9771 6.43311C12.0321 6.50928 12.0913 6.55583 12.1548 6.57275C12.2225 6.58545 12.3071 6.56006 12.4087 6.49658L14.2622 5.354L14.8716 6.33154ZM3.95361 11.0225V9.86719H14.0464V11.0225H3.95361ZM2.33496 6.48389L3.40771 5.99512L4.78516 11.6572C4.88249 12.0465 5.13639 12.2412 5.54688 12.2412H12.4468C12.8573 12.2412 13.1133 12.0465 13.2148 11.6572L14.5859 5.99512L15.665 6.48389L14.3511 11.8223C14.2241 12.347 14.0083 12.7406 13.7036 13.0029C13.4032 13.2653 12.9821 13.3965 12.4404 13.3965H5.55957C5.01367 13.3965 4.59049 13.2653 4.29004 13.0029C3.98958 12.7406 3.77588 12.347 3.64893 11.8223L2.33496 6.48389Z" fill="CurrentColor"></path>
+	                            </svg> 
+					       </div>
+                           ${plan.optionFields.top}
+                          </div>                        
+                          <div class="_0150-top-section">
+                          <div class="_0200-pricing-header ${plan.optionFields.name.toLowerCase()}">
+                                    <div class="_0300-plan-name">${plan.optionFields.name}</div>
+                                    <div class="pricing">
+                                        <div class="_0300-plan-price ${plan.optionFields.xDollerAmount ? 'discounted' : ''}">${plan.optionFields.mo}</div>
+                                        <div class="_0300-plan-price ${plan.optionFields.xDollerAmount ? 'newprice' : ''}">${plan.optionFields.xDollerAmount ? plan.optionFields.xDollerAmount : ''}</div> 
+                                        <div class="_0300-plan-description">
+                                             ${plan.optionFields.xDollerEnd ? plan.optionFields.xDollerEnd.substr(0, plan.optionFields.xDollerEnd.length - 8) : ''}<strong>${plan.optionFields.xDollerEnd ? plan.optionFields.xDollerEnd.slice(-8) : ''}</strong>
+                                        </div>
+                                    </div>                                    
+                                    <div class="_0300-plan-description">
+                                  	    <strong>${plan.optionFields.pages.substr(0, plan.optionFields.pages.length - 9)}</strong> per Month
+                                    </div>
+                                    <div class="_030-dollar-promo ${plan.optionFields.cr ? '' : 'no-credit'}">
+                                 	    <div class="_0300-plan-description white" style="color: white; margin-top: 0px;">${plan.optionFields.cr ? plan.optionFields.cr[0] : ''}</div>
+                                    </div>
+                                </div>
+                                
+                            <div class="_0200-dropdown">
+                                <div onclick="myFunction('${plan.optionFields.name}')" class="w3-button">
+                                            <div class="_0400-pricing-header">
+                                                <div class="_0500-p-header">${plan.optionFields.dSec}</div>
+                                            </div>
+                                            <div class="_0500-embeded-icon w-embed"> 
+                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                                                        <path d="M5.40023 5.98048C5.20504 5.98048 5.02742 5.90241 4.86737 5.74626L0.411249 1.18474C0.344885 1.12228 0.294137 1.05201 0.259003 0.973935C0.227773 0.891956 0.212158 0.804122 0.212158 0.710432C0.212158 0.581609 0.241436 0.464497 0.299992 0.359096C0.362452 0.253695 0.444431 0.171716 0.545928 0.11316C0.647425 0.0507001 0.762586 0.0194702 0.891409 0.0194702C1.07879 0.0194702 1.24275 0.0897375 1.38328 0.230272L5.68715 4.63955H5.11916L9.41718 0.230272C9.55771 0.0897375 9.72167 0.0194702 9.90905 0.0194702C10.0379 0.0194702 10.153 0.0507001 10.2545 0.11316C10.356 0.171716 10.4361 0.253695 10.4946 0.359096C10.5571 0.464497 10.5883 0.581609 10.5883 0.710432C10.5883 0.893908 10.5219 1.05201 10.3892 1.18474L5.93309 5.74626C5.85892 5.82433 5.77694 5.88289 5.68715 5.92193C5.59737 5.96096 5.50173 5.98048 5.40023 5.98048Z" fill="#8C8C8C"></path>\n\t\t\t\t 
+                                                </svg>
+                                            </div> 
+                                </div>
+                                <div id="${plan.optionFields.name}" class="w3-hide w3-show">`;
+
+                                // Iterate over dItem array
+                                $.each(plan.optionFields.dItem, function (i, item) {
+                                    businessPlansHtml += `<div class="_0400-list-item">
+                                                             <div class="_0500-embeded-icon w-embed">
+                                                               <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                 <path d="M4.03963 10.8525C3.75838 10.8525 3.51814 10.7275 3.31892 10.4775L0.283767 6.6806C0.209548 6.59076 0.154861 6.50287 0.119705 6.41693C0.0884547 6.33099 0.0728297 6.2431 0.0728297 6.15326C0.0728297 5.95013 0.139236 5.78217 0.272048 5.64935C0.408767 5.51654 0.580642 5.45013 0.787673 5.45013C1.02595 5.45013 1.22713 5.55756 1.39119 5.7724L4.01619 9.14154L9.10213 1.06146C9.19197 0.924744 9.28377 0.829041 9.37752 0.774353C9.47127 0.715759 9.59236 0.686462 9.7408 0.686462C9.94392 0.686462 10.1099 0.750916 10.2388 0.879822C10.3678 1.00482 10.4322 1.16888 10.4322 1.37201C10.4322 1.45404 10.4185 1.53802 10.3912 1.62396C10.3638 1.70599 10.3209 1.79388 10.2623 1.88763L4.75447 10.4716C4.5826 10.7255 4.34431 10.8525 4.03963 10.8525Z" fill="black"></path>
+                                                               </svg>
+                                                             </div>
+                                                            <div class="_0500-includes-text">                           
+                                                              ${item}
+                                                            </div>
+                                                          </div>`;
+                                });
+                        businessPlansHtml += `</div>
+                                            </div>                                               
+                                            
+                                            <div id="business-${plan.order}" class="_0200-list-w-icons">
+                                                <div class="_0300-promotitle _0300-promo">
+                                                    <div class="_0400-pricing-header ${plan.optionFields.eSec ? 'promo' : ''}">
+                                                      <div class="_0500-p-header ${plan.optionFields.eSec ? 'promo' : ''}">
+                                                            ${plan.optionFields.eSec ? plan.optionFields.eSec : ''}
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_0300-promo-details">`;
+
+                                                    // Iterate over dItem array
+                                                    if (plan.optionFields.eItem && plan.optionFields.eItem.length > 0) {
+                                                        $.each(plan.optionFields.eItem, function (i, item) {
+                                                            businessPlansHtml += `<div class="_0400-list-item">
+                                                                                                                <div class="_0500-embeded-icon w-embed">
+                                                                                                                ${item.includes('Bonus') ? ` <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.73 4.058a.27.27 0 0 0-.266.231l-.306 2.154a.27.27 0 0 0 .266.307h11.197a.27.27 0 0 0 .266-.312l-.35-2.154a.27.27 0 0 0-.266-.226zm-.173 2.307.273-1.923h10.343l.313 1.923zm2.797 4.117a.423.423 0 0 1 .267-.751h4.822c.405 0 .579.513.257.759l-1.03.788a.42.42 0 0 1-.258.087h-2.82a.42.42 0 0 1-.267-.094zm.23-.318a.04.04 0 0 0 .013.02l.97.788a.04.04 0 0 0 .025.009h2.82a.04.04 0 0 0 .024-.008l1.03-.789q.014-.011.015-.019a.04.04 0 0 0-.001-.023.04.04 0 0 0-.014-.02q-.004-.006-.023-.007H5.621a.04.04 0 0 0-.023.007.04.04 0 0 0-.013.019.04.04 0 0 0-.002.023" fill="#000"></path>
+                                                                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.4 4.123A1.31 1.31 0 0 1 2.695 3h10.61c.651 0 1.203.479 1.295 1.123l.668 4.68-.59 1.846a1.31 1.31 0 0 1-1.246.909h-1.958a.54.54 0 0 0-.356.134l-1.111.98c-.24.212-.547.328-.866.328H6.875a1.3 1.3 0 0 1-.895-.354l-1.006-.943a.54.54 0 0 0-.368-.145H2.568a1.31 1.31 0 0 1-1.245-.91L.732 8.803zm1.295-.354a.54.54 0 0 0-.533.463l-.594 4.153h12.864l-.594-4.153a.54.54 0 0 0-.533-.463zm11.653 5.385H1.652l.403 1.26a.54.54 0 0 0 .513.375h2.038c.332 0 .652.126.895.353l1.005.943c.1.094.232.146.369.146H9.14a.54.54 0 0 0 .357-.135l1.11-.98a1.3 1.3 0 0 1 .866-.327h1.958a.54.54 0 0 0 .513-.375z" fill="#000"></path>
+                                                                                                                    </svg>`
+                                                                    :
+                                                                    `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                    <path d="M5.587 3.218a5.438 5.438 0 1 1-.66 9.144l-.336.45a6 6 0 1 0-2.2-3.214l-.546.308a.037.037 0 0 0 0 .065l1.393.784a.037.037 0 0 0 .056-.031l.05-1.598a.037.037 0 0 0-.056-.034l-.39.22a5.44 5.44 0 0 1 2.689-6.094" fill="#000"></path>
+                                                                                                                    <path d="M6.326 4.523a3.94 3.94 0 0 1 2.683-.371l.12-.55a4.5 4.5 0 1 0 2.663 1.722l.445-.378a.037.037 0 0 0-.012-.064l-1.517-.506a.037.037 0 0 0-.049.042l.254 1.578a.037.037 0 0 0 .061.023l.388-.33a3.937 3.937 0 1 1-5.036-1.166" fill="#000"></path>
+                                                                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.987 10.717V11h.375v-.293a2.1 2.1 0 0 0 .741-.191q.425-.206.65-.554.227-.35.227-.786a1.2 1.2 0 0 0-.483-.996 2 2 0 0 0-.476-.282 4 4 0 0 0-.522-.184l-.137-.04v-2.12q.383.05.659.256.357.268.402.724h.482a1.34 1.34 0 0 0-.248-.74 1.56 1.56 0 0 0-.62-.514 2 2 0 0 0-.675-.177v-.478h-.375v.473a2.1 2.1 0 0 0-.759.184 1.6 1.6 0 0 0-.639.522q-.234.333-.234.773 0 .524.354.863t.996.53l.282.082v2.209a1.8 1.8 0 0 1-.564-.113 1.2 1.2 0 0 1-.485-.34.95.95 0 0 1-.213-.547h-.511q.03.432.263.76.234.328.645.513.372.167.865.183m.375-.47q.244-.031.451-.12.32-.138.5-.384a.94.94 0 0 0 .184-.575.74.74 0 0 0-.143-.463 1.1 1.1 0 0 0-.403-.317 3.6 3.6 0 0 0-.59-.225zm-.375-2.68V5.545a1.5 1.5 0 0 0-.535.126 1.1 1.1 0 0 0-.453.362.88.88 0 0 0-.162.522q0 .216.093.379a.9.9 0 0 0 .25.28q.16.114.352.196.195.083.391.139z" fill="#000"></path>
+                                                                                                                    </svg> `
+                                                                }
+                                                                                                                
+                                                                                                                </div>
+                                                                                                                <div class="_0500-includes-text">                           
+                                                                                                                ${item}
+                                                                                                                </div>
+                                                                                                            </div>`;
+                                                        });
+                                                    }
+
+                                                    businessPlansHtml += `</div>
+                                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-container">
+                                                        <input type="button" class="btn btn-success scms-button scmsmodal modalwindow getstrt" value="Get Started">
+                                                    </div>`;
+                                                    // Append to container
+                                                    $('.business-plan-options').append(businessPlansHtml);
+                });
+
+                  $(".scms-button.scmsmodal").unbind("click").bind("click", openScmsModalPopup);
+    }
+
+     function updateClassForHomePlanSection(){         
+       if(homePlanOptions.length === 2){
+        if (screen.width === 1024) {
+            $('#homePlansContainer').addClass('col-md-6').removeClass('col-md-12'); 
+            $('#businessPlansContainer').addClass('col-md-6').removeClass('col-md-8'); 
+         }else if(screen.width === 768){
+            $('.home-plan-options').addClass('plans-2');
+         }else{
+            $('#homePlansContainer').removeClass('col-md-6 col-lg-7').addClass('col-md-12 col-lg-5 col-lg-offset-1'); 
+            $('#businessPlansContainer').removeClass('col-md-6').addClass('col-md-8');
+            $('.home-plan-options').addClass('plans-2');
+         }
+       }else{
+            $('#homePlansContainer').removeClass('col-lg-5 col-lg-offset-1 col-md-6').addClass('col-md-12 col-lg-7'); 
+            $('#businessPlansContainer').removeClass('col-sm-offset-2 col-md-6').addClass('col-md-8');
+            $('.home-plan-options').removeClass('plans-2');
+       }
+    }
+
+    function openCustomTab(event, tabId) {        
+       let currentActiveTab = 'MonoLaser';
+          // Remove active class from all tabs
+        var tabs = document.querySelectorAll(".custom-tabs .custom-tab");
+        tabs.forEach(function (tab) {
+          tab.classList.remove("active");
+        });
+
+        // Hide all tab contents
+        var contents = document.querySelectorAll(".custom-tab-content");
+        contents.forEach(function (content) {
+          content.classList.remove("active");
+        });
+
+        // Add active class to the clicked tab
+        event.currentTarget.classList.add("active");
+
+        // Show the corresponding tab content
+        if(document.getElementById(tabId)){
+             document.getElementById(tabId).classList.add("active");
+        }
+
+        // Disable click event on active tab
+        tabs.forEach(element => {
+          if(element.classList.contains('active') || element.classList.contains('disabled')){
+            element.style.pointerEvents = 'none';
+              element.parentElement.style.cursor = 'text';
+          }else{
+              element.style.pointerEvents = 'auto';
+              element.parentElement.style.cursor = 'pointer';
+          }            
+        });
+          
+        if(tabId == 'MonoLaser'){
+           populatePlansData(plansDataMonoLaser);
+        }else if(tabId == 'InkJet'){
+           populatePlansData(plansDataInkJet);
+        }else if(tabId == 'ColorLaser'){
+           populatePlansData(plansDataColorLaser);
+        }
+         updateClassForHomePlanSection();
+    }
+
+    function openScmsModalPopup(e){
+        e.preventDefault();
+        e.stopPropagation();
+        var t = $(this);
+            if (t.hasClass("scms-button"))
+            {
+                $(".scms-modal").addClass("modal-window");
+                $("body").addClass("modal-open");
+                $(window).scrollTop(0);            
+                $(".serial-check-container").show();
+                window.BIC.formatString = [],
+                $.ajax({
+                    url: "/api/sitecore/SCMS/GetAllModels",
+                    method: "POST",
+                    dataType: "json"
+                }).done((function(e) {
+                    var t = e.models;
+                    window.BIC.unFormattedScmsSku = JSON.parse(JSON.stringify(t));
+                    for (var n = t, i = 0; i < n.length; i++)
+                        n[i] = n[i].replaceAll("-", "");
+                    window.BIC = window.BIC || {},
+                    window.BIC.formatString = n
+                }
+                ))
+            }
+    }         
+    setTimeout(updateClassForHomePlanSection, 3000);
+
+   function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+    }

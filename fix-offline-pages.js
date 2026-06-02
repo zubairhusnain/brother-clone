@@ -116,9 +116,26 @@ function fixHtml(html, pageRel) {
     // Protocol-relative fonts
     html = html.replace(/href="\/\/fonts\.googleapis\.com/g, 'href="https://fonts.googleapis.com');
     html = html.replace(/href='\/\/fonts\.googleapis\.com/g, "href='https://fonts.googleapis.com");
+    html = html.replace(/src="\/\/([^"]+)"/g, 'src="https://$1"');
+    html = html.replace(/src='\/\/([^']+)'/g, "src='https://$1'");
 
     // Broken misc/css links
     html = html.replace(/<link[^>]+href=["'][^"']*assets\/misc\/css["'][^>]*>/gi, '');
+
+    // Remove remote third-party scripts that can break offline rendering
+    html = html.replace(
+        /<script[^>]+src=["']https?:\/\/[^"']+["'][^>]*><\/script>/gi,
+        (tag) => {
+            // Keep only localizable/static brother video API includes if any
+            if (/youtube\.com\/iframe_api/i.test(tag)) return '';
+            return '';
+        }
+    );
+    html = html.replace(/<script[^>]+src=["']\/\/[^"']+["'][^>]*><\/script>/gi, '');
+
+    // Remove preconnect/preload hints to remote origins (no effect offline)
+    html = html.replace(/<link[^>]+rel=["']preconnect["'][^>]*>/gi, '');
+    html = html.replace(/<link[^>]+rel=["']preload["'][^>]+href=["']https?:\/\/[^"']+["'][^>]*>/gi, '');
 
     // Always load Atomic directly from CDN (prevents missing local *.entry.js chunks)
     html = html.replace(
@@ -173,6 +190,26 @@ function fixHtml(html, pageRel) {
         html = html.replace(
             /<\/head>/i,
             `    <link rel="stylesheet" href="${prefix}assets/css/bootstrap.min.css">\n    <link rel="stylesheet" href="${prefix}assets/css/main.css">\n    <link rel="stylesheet" href="${prefix}assets/css/optimized-min.css">\n</head>`
+        );
+    }
+
+    // Ensure key local scripts exist once
+    if (!/src=["'][^"']*assets\/js\/main\.js["']/i.test(html)) {
+        html = html.replace(
+            /<\/body>/i,
+            `    <script src="${prefix}assets/js/main.js" defer></script>\n</body>`
+        );
+    }
+    if (!/src=["'][^"']*assets\/js\/custom\.js["']/i.test(html)) {
+        html = html.replace(
+            /<\/body>/i,
+            `    <script src="${prefix}assets/js/custom.js"></script>\n</body>`
+        );
+    }
+    if (!/src=["'][^"']*assets\/js\/optimized-min\.js["']/i.test(html)) {
+        html = html.replace(
+            /<\/body>/i,
+            `    <script src="${prefix}assets/js/optimized-min.js"></script>\n</body>`
         );
     }
 

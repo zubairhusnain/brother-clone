@@ -1,0 +1,2166 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <!-- Preconnect to critical third-party origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://js.hs-analytics.net">
+    <link rel="dns-prefetch" href="https://js.hubspot.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    
+<link href="https://www.brother.com.au/-/media/feature/experience-accelerator/bootstrap-5/bootstrap-5/styles/optimized-min.css?rev=b5a256186369454785e0207abf07a34f&t=20241220T075130Z&hash=04D7B6AEEFD73D9497DAE290AC2A2A41" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://www.brother.com.au/-/media/feature/experience-accelerator/bootstrap-5/bootstrap-5/styles/optimized-min.css?rev=b5a256186369454785e0207abf07a34f&t=20241220T075130Z&hash=04D7B6AEEFD73D9497DAE290AC2A2A41" rel="stylesheet"></noscript><link href="https://www.brother.com.au/-/media/base-themes/main-theme/styles/optimized-min.css?rev=c627a2d436d3418e986c75ed0d91abe4&t=20250605T040946Z&hash=B0B4E6337412CDF2F870FD7A26B7F18E" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://www.brother.com.au/-/media/base-themes/main-theme/styles/optimized-min.css?rev=c627a2d436d3418e986c75ed0d91abe4&t=20250605T040946Z&hash=B0B4E6337412CDF2F870FD7A26B7F18E" rel="stylesheet"></noscript><link href="https://www.brother.com.au/-/media/themes/apweb/global/header-footer-theme/styles/optimized-min.css?rev=8a381a9406684bc1a77dc402fce49919&t=20260519T091931Z&hash=2144AC5168DD0337B158BE9746097895" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://www.brother.com.au/-/media/themes/apweb/global/header-footer-theme/styles/optimized-min.css?rev=8a381a9406684bc1a77dc402fce49919&t=20260519T091931Z&hash=2144AC5168DD0337B158BE9746097895" rel="stylesheet"></noscript><link href="https://www.brother.com.au/-/media/themes/apweb/global/global-lite/styles/optimized-min.css?rev=ba11017718ac4d84b22fc54df7f8b26e&t=20260602T095532Z&hash=8ED12988060DADAD2586F6F2DD5344BC" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://www.brother.com.au/-/media/themes/apweb/global/global-lite/styles/optimized-min.css?rev=ba11017718ac4d84b22fc54df7f8b26e&t=20260602T095532Z&hash=8ED12988060DADAD2586F6F2DD5344BC" rel="stylesheet"></noscript>
+    <link rel="preload" href="/AP2/v2/Resources/fonts/glacialindifference-regular-webfont.woff2"
+          as="font" crossOrigin="anonymous" type="font/woff2" />
+
+    
+    
+
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.brother.com.au/en/"},{"@type":"ListItem","position":2,"name":"Support & Downloads","item":"https://www.brother.com.au/en/support"},{"@type":"ListItem","position":3,"name":"Contact Us","item":"https://www.brother.com.au/en/support/contact"}]}
+    </script>
+    <script type="application/ld+json">
+		{
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "name": "Brother Australia",
+  "alternateName": "Brother Industries",
+  "url": "https://www.brother.com.au/en",
+  "logo": "https://www.brother.com.au/-/media/ap2/global/menu/logo.svg?rev=74b6da90ccc34b339b35490b0046e6fc",
+  "sameAs": [
+    "https://www.facebook.com/brotheraustralia",
+    "https://www.instagram.com/brotheraustralia/",
+    "https://www.linkedin.com/company/24790864/",
+    "https://www.youtube.com/user/BrotherAU/videos"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+61 2 9887 4344",
+      "contactType": "customer service",
+      "areaServed": "AU",
+      "availableLanguage": "English"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Unit 2 / 51 Eastern Creek Drive",
+    "addressLocality": "Eastern Creek",
+    "addressRegion": "NSW",
+    "postalCode": "2766",
+    "addressCountry": "AU"
+  },
+  "foundingDate": "1908",
+  "founders": [
+    {
+      "@type": "Person",
+      "name": "Kanekichi Yasui"
+    }
+  ],
+  "department": {
+    "@type": "Organization",
+    "name": "Brother Australia Service Department",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+61 2 9887 4344",
+      "contactType": "technical support",
+      "availableLanguage": "English"
+    }
+  }
+}
+    </script>
+
+    <script type="application/ld+json">
+		{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Contact Us | Brother Australia",
+  "url": "https://www.brother.com.au/en/support/contact",
+  "description": "If you have a question, require assistance with your Brother product or would like to give feedback, you can get in touch with us by email and live chat.",
+  "mainEntityOfPage": "https://www.brother.com.au/en/support/contact"
+}
+    </script>
+
+
+    <script type="application/ld+json">
+		{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Brother Australia",
+  "url": "https://www.brother.com.au/en",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.brother.com.au/en/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCPGVH');</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PJBND4R');</script>
+
+    <title>Contact Us | Brother Australia</title>
+            <link rel="canonical" href="https://www.brother.com.au/en/support/contact" />
+
+
+
+
+
+
+    <link href="/-/media/ap2/global/site/brother-favicon.png?rev=b60668a025924a36b9f2b1fa3430cc12" rel="shortcut icon" />
+
+
+
+
+<meta property="og:description"  content="If you have a question, require assistance with your Brother product or would like to give feedback, you can get in touch with us by email and live chat."><meta property="og:type"  content="article"><meta property="og:image"  content="https://www.brother.com.au/-/media/ap2/common/icons/common/sns_brotherlogoicon.png?rev=a5fd2136c1f7466db0f8c58ac01dd639"><meta property="og:title"  content="Contact Us | Brother Australia"><meta property="og:url"  content="https://www.brother.com.au/en/support/contact">
+
+
+
+<meta  name="description" content="If you have a question, require assistance with your Brother product or would like to give feedback, you can get in touch with us by email and live chat."><meta  name="keywords" content="contact us, brother australia support">
+
+
+
+<meta property="twitter:image"  content="https://www.brother.com.au/-/media/ap2/common/icons/common/sns_brotherlogoicon.png?rev=a5fd2136c1f7466db0f8c58ac01dd639"><meta property="twitter:description"  content="If you have a question, require assistance with your Brother product or would like to give feedback, you can get in touch with us by email and live chat."><meta property="twitter:title"  content="Contact Us | Brother Australia"><meta property="twitter:card"  content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+    
+<link rel="alternate" href="https://www.brother-usa.com/contact-us" hreflang="en-US" />
+<link rel="alternate" href="https://www.brother.ca/en/contact-us" hreflang="en-CA" />
+<link rel="alternate" href="https://www.brother.co.uk/support/contact-us" hreflang="en-GB" />
+<link rel="alternate" href="https://www.brother.ie/contact-us" hreflang="en-IE" />
+<link rel="alternate" href="https://www.brother.ee/contact-us" hreflang="en-EE" />
+<link rel="alternate" href="https://www.brother.is/contact-us" hreflang="en-IS" />
+<link rel="alternate" href="https://www.brother.com.au/en/support/contact" hreflang="en-AU" />
+<link rel="alternate" href="https://www.brother.co.nz/customer-help/contact-us" hreflang="en-NZ" />
+<link rel="alternate" href="https://www.brother.com.fj/helpdesk" hreflang="en-FJ" />
+<link rel="alternate" href="https://www.brother.com.hk/en/contact_us" hreflang="en-HK" />
+<link rel="alternate" href="https://www.brother.com.hk/en/contact_us" hreflang="en-MO" />
+<link rel="alternate" href="https://www.brother.com.kh/en/support/contact" hreflang="en-KH" />
+<link rel="alternate" href="https://www.brother.in/en/contents/contactus" hreflang="en-IN" />
+<link rel="alternate" href="https://www.brother.com.mm/en/contents/contactus" hreflang="en-MM" />
+<link rel="alternate" href="https://www.brother.com.my/en/contents/contactus" hreflang="en-MY" />
+<link rel="alternate" href="https://www.brother.com.ph/en/contents/contactus" hreflang="en-PH" />
+<link rel="alternate" href="https://www.brother.com.sg/en/support/contact" hreflang="en-SG" />
+<link rel="alternate" href="https://www.brother.com.lk/en/support/contact" hreflang="en-LK" />
+<link rel="alternate" href="https://www.brother.co.th/en/contents/contactus" hreflang="en-TH" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-ZA" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-ZW" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-BW" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-NA" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-SZ" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-MZ" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-MW" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-ZM" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-MG" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-AE" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-BH" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-EG" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-ET" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-IR" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-IQ" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-JO" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-KE" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-KW" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-LB" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-LY" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-MU" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-NG" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-OM" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-QA" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-SA" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-SY" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-TZ" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-UG" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-BD" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-NP" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-PK" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-YE" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-SO" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-AF" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-CD" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-SC" />
+</head>
+<body class="contact-us-page default-device bodyclass" >
+    
+    
+<!-- #wrapper -->
+<div id="wrapper">
+    <!-- #header -->
+    <header>
+        <div id="header" class="">
+            <div class="row">
+
+    <div class="component sxa-menu-header-bar-component">
+        <div class="component-content">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"><div class="header-bar">
+  <a class="header-bar_logo" id="home-page-link-logo">
+    <img src="https://www.brother.com.au/-/media/ap2/global/menu/logo.svg?rev=74b6da90ccc34b339b35490b0046e6fc" class="img-fluid" alt="Brother at your side" />
+  </a>
+  <div class="top-search-right-bar">
+    <div class="row">
+    
+        <link rel="stylesheet"
+              href="/Content/Feature/Commerce/account/account-menu-commerce.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="header-auth">
+            <input type="hidden" id="extra_warranty_plan_text" value="Extra Warranty Plan (Available for HK only)" />
+            <input type="hidden" id="order_clound_userID" value="" />
+    
+                <input hidden id="menu-header-commerce" value="Sign in / Sign up" />
+                <button type="button" class="header-auth_buttons header-bar_icon-link js-open-account" data-is-login="">
+                    <img src="/-/media/ap2/Global/Menu/user.svg" alt="">
+                    <span class="account-header-name">Sign in / Sign up</span>
+                </button>
+        </div>
+        <div class="cart-content">
+            <a class="cart-list cart-list-desktop" id="mini-cart-btn">
+                <img src="/-/media/ap2/HongKong/icons/Cart" class="img-fluid cart-count-img" alt="Cart">
+                <span class="cart-count"></span>
+            </a>
+        </div>
+            <div class="modal fade right modalMiniCart cxa-mini-cart-right" id="modalMiniCart" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+    
+                        <div class="modal-header">
+                            <div class="title-modal-mini-cart">
+                                <span class="title">Your Cart</span><span class="total-quantity"></span>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M15.8843 14.0007L20.5933 9.2903C20.7206 9.16741 20.822 9.02042 20.8919 8.8579C20.9617 8.69537 20.9984 8.52057 21 8.34369C21.0015 8.16682 20.9678 7.9914 20.9008 7.82769C20.8338 7.66398 20.7349 7.51524 20.6098 7.39017C20.4848 7.26509 20.336 7.16618 20.1723 7.0992C20.0086 7.03222 19.8332 6.99851 19.6563 7.00005C19.4794 7.00159 19.3046 7.03834 19.1421 7.10815C18.9796 7.17797 18.8326 7.27945 18.7097 7.40668L13.9993 12.1157L9.2903 7.40668C9.16741 7.27945 9.02042 7.17797 8.8579 7.10815C8.69537 7.03834 8.52057 7.00159 8.34369 7.00005C8.16682 6.99851 7.9914 7.03222 7.82769 7.0992C7.66398 7.16618 7.51524 7.26509 7.39017 7.39017C7.26509 7.51524 7.16618 7.66398 7.0992 7.82769C7.03222 7.9914 6.99851 8.16682 7.00005 8.34369C7.00159 8.52057 7.03834 8.69537 7.10815 8.8579C7.17797 9.02042 7.27945 9.16741 7.40668 9.2903L12.1157 13.9993L7.40668 18.7097C7.27945 18.8326 7.17797 18.9796 7.10815 19.1421C7.03834 19.3046 7.00159 19.4794 7.00005 19.6563C6.99851 19.8332 7.03222 20.0086 7.0992 20.1723C7.16618 20.336 7.26509 20.4848 7.39017 20.6098C7.51524 20.7349 7.66398 20.8338 7.82769 20.9008C7.9914 20.9678 8.16682 21.0015 8.34369 21C8.52057 20.9984 8.69537 20.9617 8.8579 20.8919C9.02042 20.822 9.16741 20.7206 9.2903 20.5933L13.9993 15.8843L18.7097 20.5933C18.8326 20.7206 18.9796 20.822 19.1421 20.8919C19.3046 20.9617 19.4794 20.9984 19.6563 21C19.8332 21.0015 20.0086 20.9678 20.1723 20.9008C20.336 20.8338 20.4848 20.7349 20.6098 20.6098C20.7349 20.4848 20.8338 20.336 20.9008 20.1723C20.9678 20.0086 21.0015 19.8332 21 19.6563C20.9984 19.4794 20.9617 19.3046 20.8919 19.1421C20.822 18.9796 20.7206 18.8326 20.5933 18.7097L15.8843 13.9993V14.0007Z"
+                                          fill="#545454"></path>
+                                </svg>
+                            </button>
+                        </div>
+    
+                        <div class="modal-body">
+                            <!-- Progress bar -->
+                            <div class="row">
+    
+    
+    <div class="component cxa-commerce-cart__freeshipping-progressing-bar-component">
+    
+    	<div class="cxa-br-announcement-component d-none">
+    		<div class="br-announcement br-announcement--type-progress on-mini-cart">
+    			<div class="br-announcement_content">
+    				<div class="br-announcement_description">
+    					<p class="eligible-free-shipping-description d-none">You are eligible for <strong>free standard delivery to Metro and Regional areas.</strong></p>
+    					<p class="remaining-amount-for-free-shipping-description ">You are <strong>$<span class="remaining-amount"></span></strong> away from AU free standard delivery.
+    </p>
+    				</div>
+    				<div class="progress">
+    					<div class="progress-bar" role="progressbar" style="width: 0%"></div>
+    				</div>
+    				<div class="br-announcement_more">
+    					<p>Learn more about our <a href="/en/contents/shipping">Shipping Policy</a></p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    <script>
+        var freeShippingAmount = 100;
+        var InitialRemainingAmount = 100;
+        var InitialTotal = 0;
+    
+        document.addEventListener("DOMContentLoaded", () => {
+            if (!($(".remaining-amount-for-free-shipping-description").hasClass("d-none"))) {
+                FreeShippingProgressingBar_ReplaceRemainingAmount(InitialRemainingAmount);
+            }
+        });
+    
+        function FreeShippingProgressingBar_AddProduct(price) {
+            InitialTotal = InitialTotal + price;
+            FreeShippingProgressingBar_SetProgressBarValue(InitialTotal);
+        }
+    
+        function FreeShippingProgressingBar_RemoveProduct(price) {
+            InitialTotal = InitialTotal - price;
+            FreeShippingProgressingBar_SetProgressBarValue(InitialTotal);
+        }
+    
+        function FreeShippingProgressingBar_SetProgressBarValue(totalCost) {
+            console.log("FreeShippingProgressingBar_SetProgressBarValue");
+            $.ajax({
+                url: '/brotherapi/cart/GetFreeShippingProgressingStatus',
+                type: 'GET',
+                data: [],
+                dataType: 'json',
+                success: function (data) {
+                    if (data == true) {
+                        var progressBarValue = 0;
+                        if (totalCost >= freeShippingAmount) {
+                            progressBarValue = 100;
+                            $(".eligible-free-shipping-description").removeClass("d-none");
+                            $(".remaining-amount-for-free-shipping-description").addClass("d-none");
+                        } else {
+                            var percent = (totalCost / freeShippingAmount) * 100;
+                            progressBarValue = parseFloat(percent.toFixed(2));
+                            FreeShippingProgressingBar_ReplaceRemainingAmount(freeShippingAmount - totalCost);
+                            $(".eligible-free-shipping-description").addClass("d-none");
+                            $(".remaining-amount-for-free-shipping-description").removeClass("d-none");
+                        }
+    
+                        $(".progress-bar").css("width", progressBarValue + "%");
+    
+                        if (progressBarValue == 0) {
+                            $(".cxa-commerce-cart__freeshipping-progressing-bar-component").find(".cxa-br-announcement-component").addClass("d-none");
+                        } else {
+                            $(".cxa-commerce-cart__freeshipping-progressing-bar-component").find(".cxa-br-announcement-component").removeClass("d-none");
+                        }
+                    } else {
+                        $(".cxa-commerce-cart__freeshipping-progressing-bar-component").find(".cxa-br-announcement-component").addClass("d-none");
+                    }
+                }
+            });
+    
+        }
+    
+        function FreeShippingProgressingBar_ReplaceRemainingAmount(remainingValue) {
+            $(".remaining-amount-for-free-shipping-description").find(".remaining-amount").text(remainingValue);
+        }
+    </script></div>
+    
+                            <div class="cart-item">
+    
+                                <div class="content-empty">
+                                    <div class="title-empty">
+                                        Your Cart is Empty
+                                    </div>
+                                    <div class="desc-empty">
+                                        You can get started by browsing through our product categories in the navigation menu or continue shopping below
+                                    </div>
+                                    <button class="btn btn-secondary js-shop-now" type="button" data-bs-dismiss="modal" aria-label="Close">
+                                        Shop Now
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="footer-mini-cart">
+                                <div class="estimate-total">
+                                    <div class="text-estimate">
+                                        Estimated Total
+                                    </div>
+                                    <div class="price-estimate">
+                                    </div>
+                                </div>
+                                <div class="content-button">
+    
+                                    <a href="/cart" class="btn btn-secondary view-cart-btn" type="button">
+                                        View My Cart
+                                    </a>
+    
+                                    <a href="/checkout" class="btn btn-primary check-out-btn" type="button">
+                                        Checkout
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="modal fade br-modal" id="commonModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="h5 modal-title" id="commonModalTitle"></div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="commonModalBody"></div>
+                <div class="modal-footer" id="commonModalFooter"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showCommonModal({ title, body, footer, allowHtml = {} }) {
+            const titleEl = document.getElementById("commonModalTitle");
+            const bodyEl = document.getElementById("commonModalBody");
+            const footerEl = document.getElementById("commonModalFooter");
+            if (allowHtml.title) {
+                titleEl.innerHTML = title || "";
+            } else {
+                titleEl.textContent = title || "";
+            }
+            if (allowHtml.body) {
+                bodyEl.innerHTML = body || "";
+            } else {
+                bodyEl.textContent = body || "";
+            }
+    
+            if (allowHtml.footer) {
+                footerEl.innerHTML = footer || "";
+            } else {
+                footerEl.textContent = footer || "";
+            }
+    
+            new bootstrap.Modal(document.getElementById("commonModal")).show();
+        }
+    </script>
+    <div class="modal fade br-modal" id="modal-remove-cart">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="h5 modal-title">Remove this item?</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to remove this item from your cart?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-remove">
+                        <span class="spinner-border spinner-border-sm"
+                              name="remove-cart-btn-loading"
+                              style="display: none;"
+                              role="status"
+                              aria-hidden="true"></span>                
+                    Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade br-modal" id="confirmAddToCartModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="display: block; text-align: center;">
+                    <div class="h5 modal-title">Add this item to cart?</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <p>This item is already in your cart as part of a bundle. Add it again?</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnConfirmAddToCart" type="button" class="btn btn-primary">
+                        <span class="spinner-border spinner-border-sm" name="remove-cart-btn-loading" style="display: none;" role="status" aria-hidden="true"></span>
+                        Yes, add it
+                    </button>
+                    <button data-bs-dismiss="modal" type="button" class="btn btn-secondary">No, skip it</button>
+                </div>
+            </div>
+        </div>
+    </div>        <script src="/Scripts/Feature/Commerce/Base/http.client.js?v=639094335300000000"></script>
+            <script src="/Scripts/Feature/Commerce/Base/request.guard.js?v=639094335300000000"></script>
+            <script src="/Scripts/Feature/Commerce/Base/base.service.js?v=639094335300000000"></script>
+            <script src="/Scripts/Feature/Commerce/account/xhr.base.js?v=639094335300000000"></script>
+            <script src="/Scripts/Feature/Commerce/account/cart.listener.js?v=639142867440000000"></script>
+            <script src="/Scripts/Feature/Commerce/account/account-menu-commerce.js?v=639148861740000000"></script>
+                <script src="/Scripts/Feature/Commerce/account/australia/au-account-menu-commerce-override.js?v=638845683240000000"></script>
+        <input type="hidden" id="cart_title_empty" value="Your Cart is Empty" />
+        <input type="hidden" id="cart_des_empty" value="You can get started by browsing through our product categories in the navigation menu or continue shopping below." />
+        <input type="hidden" id="cart_btn_shopnow" value="Shop Now" />
+        <input type="hidden" id="cart_hide-items" value="Hide Items" />
+        <input type="hidden" id="cart_show-items" value="Show Items" />
+        <input type="hidden" id="site_name" value="AUSTRALIA" />
+    </div>
+    
+    
+    <button type="button" class="global-search_btn_v2">
+      <img src="/-/media/ap2/Global/Menu/search.svg" alt="search icon">
+      Search
+    </button>
+    
+    <div class="global-search-section d-none">
+      <div class="container">
+        <div class="row">
+        
+        <div class="component search-box full-text-search" data-properties='{"endpoint":"/en//sxa/search/results/","suggestionEndpoint":"/en//sxa/search/suggestions/","suggestionsMode":"ShowSearchResults","resultPage":"/en/global-search","targetSignature":"","v":"{173C8EE6-2099-4662-8EE5-93B7362F29F7}","s":"{1E9BC3C9-6342-4A59-9E17-934179850427}","p":5,"l":"","languageSource":"SearchResultsLanguage","searchResultsSignature":"","itemid":"{510EC4C3-562B-4E63-B6E4-BD87CE649F57}","minSuggestionsTriggerCharacterCount":2}'>
+            <div class="component-content">
+                
+                            <label for="textBoxSearch">
+                                Search textbox label
+                            </label>
+                        <input type="text" class="search-box-input" autocomplete="off" name="textBoxSearch" maxlength="100" placeholder="Search here..." />
+                            <button class="search-box-button-with-redirect" type="submit">
+                                Search
+                            </button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-hamburger js-hamburger">
+      <img src="/-/media/ap2/Global/Menu/hamburger.svg" alt="hamburger icon">
+    </div>
+  </div>
+</div>        </div>
+    </div>
+
+
+
+
+
+<div class="component br-nav cxa-menu-header">
+        <input hidden id="is-commerce" value="1" />
+            <div class="br-nav_header">
+                <button type="button" disabled class="br-nav_header_back js-menu-back" disabled>
+                    <img src="/-/media/ap2/Global/Menu/left-white-arrow.sgv" alt="">
+                </button>
+                <span class="br-nav_header_text js-menu-text" data-text="Menu">Menu</span>
+                <button type="button" class="br-nav_header_close js-menu-close">
+                    <img src="/-/media/ap2/Global/Menu/white-close.svg" alt="">
+                </button>
+            </div>
+            <div class="br-nav_content">
+                <nav class="global-nav">
+                    <ul class="primary-menu list-non-decoration nav">
+                                <li class="primary-menu_item primary-menu_item--has-child">
+                                    <span class="menu-title"><span class="menu-link">Products</span></span>
+                                    <div class="mega-menu">
+                                        <button type="button" class="mega-menu_close js-mega-menu-close">
+                                            <img src="/-/media/ap2/Global/Menu/close.svg" alt="">
+                                        </button>
+
+                                        <div class="secondary-menu-with-promotion">
+                                                <div class="secondary-menu-container">
+                                                        <ul class="secondary-menu secondary-menu--4-col list-non-decoration nav">
+                                                                    <li class="secondary-menu_item secondary-menu_item--has-child">
+                                                                        
+                                                                            <span class="menu-title">
+                                                                                    <a href="/en/printers" class="menu-link menu-link--has-image menu-link--is-strong">
+                                                                                        <img src="https://www.brother.com.au/-/media/ap2/australia/menu/home-page_product-category-tiles-01.webp?rev=894c35b59532440e9a6ebf49b135a0eb" alt="Printers">
+                                                                                        Printers &amp; Multi-functions
+                                                                                    </a>
+
+                                                                            </span>
+                                                                        <ul class="tertiary-menu list-non-decoration nav">
+                                                                                <li class="tertiary-menu_item link-all">
+                                                                                    <a href="/en/printers"
+                                                                                       class="menu-link">Printers &amp; Multi-functions</a>
+                                                                                </li>
+
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=inkjet"
+                                                                                       class="menu-link">
+                                                                                        Inkjet Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=laser-printers"
+                                                                                       class="menu-link">
+                                                                                        Laser Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=colour-laser"
+                                                                                       class="menu-link">
+                                                                                        Colour Laser Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=mono-laser"
+                                                                                       class="menu-link">
+                                                                                        Mono Laser Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=a3-printers"
+                                                                                       class="menu-link">
+                                                                                        A3 Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=refurbished-printers"
+                                                                                       class="menu-link">
+                                                                                        Refurbished Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item secondary-menu_item--has-child">
+                                                                        
+                                                                            <span class="menu-title">
+                                                                                    <a href="/en/scanners" class="menu-link menu-link--has-image menu-link--is-strong">
+                                                                                        <img src="https://www.brother.com.au/-/media/ap2/australia/menu/home-page_product-category-tiles-04.webp?rev=dd569c08f9ca4672afd4dfb391cc47c4" alt="scanners">
+                                                                                        Scanners
+                                                                                    </a>
+
+                                                                            </span>
+                                                                        <ul class="tertiary-menu list-non-decoration nav">
+                                                                                <li class="tertiary-menu_item link-all">
+                                                                                    <a href="/en/scanners"
+                                                                                       class="menu-link">Scanners</a>
+                                                                                </li>
+
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/scanners/all-scanners?fr=portable"
+                                                                                       class="menu-link">
+                                                                                        Portable Scanners
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/scanners/all-scanners?fr=desktop"
+                                                                                       class="menu-link">
+                                                                                        Desktop Scanners
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item">
+                                                                        <span class="menu-title">
+                                                                                <a href="/en/mobile-printers" class="menu-link menu-link--has-image"
+                                                                                   >
+                                                                                    <img src="https://www.brother.com.au/-/media/ap2/australia/menu/home-page_product-category-tiles-03.webp?rev=956f0d3a42694e14b513de29705a359e" alt="portable printers">
+                                                                                    Portable Printers
+                                                                                </a>
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item secondary-menu_item--has-child">
+                                                                        
+                                                                            <span class="menu-title">
+                                                                                    <a href="/en/labellers" class="menu-link menu-link--has-image menu-link--is-strong">
+                                                                                        <img src="https://www.brother.com.au/-/media/ap2/australia/menu/home-page_product-category-tiles-02.webp?rev=a38c3f22460e414ea436fdee4e7d2a8e" alt="label makers &amp; printers">
+                                                                                        Label Makers &amp; Printers
+                                                                                    </a>
+
+                                                                            </span>
+                                                                        <ul class="tertiary-menu list-non-decoration nav">
+                                                                                <li class="tertiary-menu_item link-all">
+                                                                                    <a href="/en/labellers"
+                                                                                       class="menu-link">Label Printers</a>
+                                                                                </li>
+
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/labellers/all-labellers?fr=handheld_portable"
+                                                                                       class="menu-link">
+                                                                                        Handheld &amp; Portable Label Makers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/labellers/all-labellers?fr=desktop"
+                                                                                       class="menu-link">
+                                                                                        Desktop Label Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/labellers/all-labellers?fr=thermal-printers"
+                                                                                       class="menu-link">
+                                                                                        Thermal Label Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/labellers/all-labellers?fr=industrial-label-printers"
+                                                                                       class="menu-link">
+                                                                                        Industrial Label Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/labellers/all-labellers?fr=wristband-printers"
+                                                                                       class="menu-link">
+                                                                                        Wristband &amp; Label Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item secondary-menu_item--has-child">
+                                                                        
+                                                                            <span class="menu-title">
+                                                                                    <a href="/en/sewing-machines" class="menu-link menu-link--has-image menu-link--is-strong">
+                                                                                        <img src="https://www.brother.com.au/-/media/ap2/australia/menu/home-page_product-category-tiles-06.webp?rev=268af9ae59944a14bc0169e313e78710" alt="sewing machine">
+                                                                                        Sewing, Quilting &amp; Embroidery Machines
+                                                                                    </a>
+
+                                                                            </span>
+                                                                        <ul class="tertiary-menu list-non-decoration nav">
+                                                                                <li class="tertiary-menu_item link-all">
+                                                                                    <a href="/en/sewing-machines"
+                                                                                       class="menu-link">Sewing Machines</a>
+                                                                                </li>
+
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/sewing-machines/all-sewing-machines?fr=sewing"
+                                                                                       class="menu-link">
+                                                                                        Sewing
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/sewing-machines/all-sewing-machines?fr=quilting"
+                                                                                       class="menu-link">
+                                                                                        Quilting
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/sewing-machines/all-sewing-machines?fr=embroidery"
+                                                                                       class="menu-link">
+                                                                                        Embroidery
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/sewing-machines/all-sewing-machines?fr=sqe"
+                                                                                       class="menu-link">
+                                                                                        Sewing, Quilting &amp; Embroidery
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/sewing-machines/all-sewing-machines?fr=overlock-coverstitch"
+                                                                                       class="menu-link">
+                                                                                        Overlocker
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item secondary-menu_item--has-child">
+                                                                        
+                                                                            <span class="menu-title">
+                                                                                    <a href="/en/scanncuts/all-scanncuts" class="menu-link menu-link--has-image menu-link--is-strong">
+                                                                                        <img src="https://www.brother.com.au/-/media/ap2/australia/menu/home-page_product-category-tiles-07.webp?rev=b43b65cac03c4eadbeb4ac9d22ff0220" alt="scanncut cutting machines">
+                                                                                        Cutting &amp; Crafting Machines
+                                                                                    </a>
+
+                                                                            </span>
+                                                                        <ul class="tertiary-menu list-non-decoration nav">
+                                                                                <li class="tertiary-menu_item link-all">
+                                                                                    <a href="/en/scanncuts/all-scanncuts"
+                                                                                       class="menu-link">Cutting Machines</a>
+                                                                                </li>
+
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/scanncuts/all-scanncuts/sp-1"
+                                                                                       class="menu-link">
+                                                                                        Sublimation Printer
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item">
+                                                                        <span class="menu-title">
+                                                                                <a href="/en/fax-machines/all-fax-machines" class="menu-link menu-link--has-image"
+                                                                                   >
+                                                                                    <img src="https://www.brother.com.au/-/media/ap2/australia/menu/home-page_product-category-tiles-05.webp?rev=49b7180e3ee9435b8af118b8b37cb13e" alt="fax machines">
+                                                                                    Fax Machines
+                                                                                </a>
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item">
+                                                                        <span class="menu-title">
+                                                                                <a href="/en/garment-printers" class="menu-link menu-link--has-image"
+                                                                                   >
+                                                                                    <img src="https://www.brother.com.au/-/media/ap2/australia/menu/home-page_product-category-tiles-08.webp?rev=d1d56e03330449fd864ca70214d88e62" alt="dtg printer">
+                                                                                    Garment Printers
+                                                                                </a>
+                                                                        </span>
+                                                                    </li>
+                                                        </ul></div>
+                                                <div class="promotion-menu-container">
+                                                    <ul class="promotion-menu list-non-decoration nav">
+                                                            <li class="promotion-menu_item">
+                                                                <div class="promotion-news">
+                                                                    <div class="promotion-news_image">
+                                                                        <img src="https://www.brother.com.au/-/media/ap2/global/menu/printers-listing-page-banners-refurb-printers-mobile.jpg?rev=68df84e587254d55b7210b29ad81a190" alt="">
+                                                                    </div>
+                                                                    <div class="promotion-news_content">
+                                                                        <div class="promotion-news_title">
+                                                                            Brother Certified Refurbished Printers
+                                                                        </div>
+                                                                        <a href="/en/printers/all-printers?fr=refurbished-printers"
+                                                                           class="promotion-news_link">Shop Now</a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="promotion-menu_item">
+                                                                <a href="/en/promotions"
+                                                                   class="link-with-icon">
+                                                                    <div class="link-with-icon_icon">
+                                                                        <img src="https://www.brother.com.au/-/media/ap2/global/menu/latest-promo.png?rev=092f0626e84a486cb0a35bb1294ddd2b"
+                                                                             alt="latest-promo">
+                                                                    </div>
+                                                                    <span class="link-with-icon_text">Latest Promotions</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="promotion-menu_item">
+                                                                <a href="/en/account/my-product"
+                                                                   class="link-with-icon">
+                                                                    <div class="link-with-icon_icon">
+                                                                        <img src="https://www.brother.com.au/-/media/ap2/global/menu/download-icon.png?rev=0b7c5f67da12480faf1a36abcfd8de0a" alt="download-icon">
+                                                                    </div>
+                                                                    <span class="link-with-icon_text">Product Registration</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+
+                                        </div>
+
+                                            <div class="external-menu-container">
+                                                <ul class="external-menu list-non-decoration nav">
+                                                        <li class="external-menu_item">
+                                                            <span class="menu-title">
+                                                                <a href="https://machinetool.global.brother/en-ap/index.aspx" class="menu-link external-link" target="_blank">
+                                                                    Machine Tools
+                                                                </a>
+                                                            </span>
+                                                        </li>
+                                                        <li class="external-menu_item">
+                                                            <span class="menu-title">
+                                                                <a href="https://industrialsewingmachine.global.brother/en-ap/index.aspx" class="menu-link external-link" target="_blank">
+                                                                    Industrial Sewing Machines
+                                                                </a>
+                                                            </span>
+                                                        </li>
+                                                </ul>
+                                            </div>
+
+                                    </div>
+                                </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/supplies" class="menu-link">Supplies &amp; Accessories</a>
+                                    </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/support" class="menu-link">Support &amp; Downloads</a>
+                                    </li>
+                                <li class="primary-menu_item primary-menu_item--has-child">
+                                    <span class="menu-title"><span class="menu-link">Business Solutions</span></span>
+                                    <div class="mega-menu">
+                                        <button type="button" class="mega-menu_close js-mega-menu-close">
+                                            <img src="/-/media/ap2/Global/Menu/close.svg" alt="">
+                                        </button>
+
+                                        <div class="secondary-menu-with-promotion">
+                                                <div class="secondary-menu-container">
+                                                            <ul class="secondary-menu list-non-decoration nav">
+                                                                    <li class="secondary-menu_item secondary-menu_item--has-child">
+                                                                        
+                                                                            <span class="menu-title">
+                                                                                    <a href="https://corpsolutions.brother.com.au/?_ga=2.76337362.637710239.1700546743-314713425.1690184425&amp;_gl=1*1klz37p*_ga*mze0nzezndi1lje2otaxodq0mju.*_ga_612zt8n1s0*mtcwmdyxotk2os40mi4xlje3mda2mja0nzaumtgumc4w" class="menu-link menu-link--has-image">
+                                                                                        Business Solutions
+                                                                                    </a>
+
+                                                                            </span>
+                                                                        <ul class="tertiary-menu list-non-decoration nav">
+                                                                                <li class="tertiary-menu_item link-all">
+                                                                                    <a href="https://corpsolutions.brother.com.au/?_ga=2.76337362.637710239.1700546743-314713425.1690184425&amp;_gl=1*1klz37p*_ga*mze0nzezndi1lje2otaxodq0mju.*_ga_612zt8n1s0*mtcwmdyxotk2os40mi4xlje3mda2mja0nzaumtgumc4w"
+                                                                                       class="menu-link">Business Solutions</a>
+                                                                                </li>
+
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="https://corpsolutions.brother.com.au/solutions/managed-print-services-australia?_ga=2.8207477.637710239.1700546743-314713425.1690184425&amp;_gl=1*1pg0jll*_ga*mze0nzezndi1lje2otaxodq0mju.*_ga_612zt8n1s0*mtcwmdyxotk2os40mi4xlje3mda2mje0mzyunjaumc4w"
+                                                                                       class="menu-link">
+                                                                                        Managed Print Services
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="https://corpsolutions.brother.com.au/solutions/visitor-management-systems-australia?_ga=2.18020222.637710239.1700546743-314713425.1690184425&amp;_gl=1*1gemgpc*_ga*mze0nzezndi1lje2otaxodq0mju.*_ga_612zt8n1s0*mtcwmdyxotk2os40mi4xlje3mda2mja0nzaumtgumc4w"
+                                                                                       class="menu-link">
+                                                                                        Visitor Management
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="https://corpsolutions.brother.com.au/solutions/document-management-solutions-australia?_ga=2.114634816.637710239.1700546743-314713425.1690184425&amp;_gl=1*jk1yn9*_ga*mze0nzezndi1lje2otaxodq0mju.*_ga_612zt8n1s0*mtcwmdyxotk2os40mi4xlje3mda2mja0nzaumtgumc4w"
+                                                                                       class="menu-link">
+                                                                                        Document Management
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="https://corpsolutions.brother.com.au/solutions/identification-asset-management-australia?_ga=2.38002532.637710239.1700546743-314713425.1690184425&amp;_gl=1*9icw3j*_ga*mze0nzezndi1lje2otaxodq0mju.*_ga_612zt8n1s0*mtcwmdyxotk2os40mi4xlje3mda2mja0nzaumtgumc4w"
+                                                                                       class="menu-link">
+                                                                                        Identification &amp; Asset Management
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                    </li>
+                                                        </ul></div>
+
+
+                                        </div>
+
+
+                                    </div>
+                                </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/support/retailer-locations" class="menu-link">Where to buy</a>
+                                    </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/product-registration-benefits" class="menu-link">Product Registration</a>
+                                    </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/blog" class="menu-link">Blog</a>
+                                    </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/about/about-brother" class="menu-link">About</a>
+                                    </li>
+                    </ul>
+                </nav>
+            </div>
+</div>
+
+
+
+<div class="component breadcrumb brother-breadcrumb col-12">
+    <div class="component-content">
+        <nav>
+            <ol>
+                    <li class="breadcrumb-item home">
+<div class="navigation-title field-navigationtitle">
+<a title="Home" href="/en/">Home</a>
+</div>                            <span class="separator"></span>
+                    </li>
+                    <li class="breadcrumb-item ">
+<div class="navigation-title field-navigationtitle">
+<a title="support" href="/en/support">Support &amp; Downloads</a>
+</div>                            <span class="separator"></span>
+                    </li>
+                    <li class="breadcrumb-item last">
+<div class="navigation-title field-navigationtitle">
+<a title="contact" href="/en/support/contact">Contact Us </a>
+</div>                            <span class="separator"></span>
+                    </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCPGVH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJBND4R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="component sxa-custom-site-information-component col-12">
+        <div class="component-content">
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="component sxa-custom-other-site-guidance-component col-12">
+        <div class="component-content">
+
+
+
+
+
+        </div>
+    </div>
+</div>
+        </div>
+    </header>
+    <!-- /#header -->
+    <!-- #content -->
+    <main>
+        <div id="content" class="">
+            <div class="row">
+
+
+<div class="component sxa-add-wish-list-mopdal">
+    <div class="component-content">
+<div id="wishlist-not-signin-template" class="d-none">
+    <div class="title">
+               Sign In / Sign Up To Add Wishlist
+
+    </div>
+    <div class="desc">
+            Wishlist is available for members only. Please sign in or sign up to add your wishlist.
+
+    </div>
+    <div class="content-button">
+      
+
+        <a id="wishlist-login-button" href="#" class="btn btn-secondary">
+               Sign In
+        </a>
+        <a href="/en/account/login?target=br-signup" class="btn btn-primary">
+             Sign Up
+        </a>
+    </div>
+</div>
+
+<div class="modal ask-login fade" id="modalMessage" tabindex="-1" role="dialog"
+     aria-labelledby="modalMessageLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", (event) => {
+    var redirectUrl = "/en/account/login?redirect_url=" + window.location.pathname + window.location.search;
+console.log(redirectUrl );
+    document.getElementById("wishlist-login-button").href = redirectUrl; 
+})
+</script>    </div>
+</div>
+
+
+
+<link rel="stylesheet" type="text/css"
+      href="/AP2/Resources/assets/css/intlTelInput-1708.css" />
+<div class="sxa-basic-form-component cxa-submit-notify-popup-component d-none ">
+    <div class="component-content">
+        <div class="d-none section-back-button-wrapper mb-3">
+            <a class="back-to-button">
+                <i class="back-to-button-icon"></i>
+                <span></span>
+            </a>
+        </div>
+
+        <input type="hidden" name="form_message_invalid_otp" value="Invalid OTP" />
+        <input type="hidden" name="form_text_verified_button" value="Verified" />
+
+        <div class="col-sm-12 basic-form-heading">
+
+        </div>
+        <div class="error-with-d365">
+            <p class="error-with-d365-text d-none">
+                <i class="error-with-d365-icon"></i>
+            </p>
+        </div>
+
+        <form name="Notify_Me_Form" action="" data-id="67b0d6d1-ad87-415b-8a2b-602f5d3ae256" data-language="en" data-issubmitbyajax="False" method="POST"
+              enctype="multipart/form-data" class="needs-validation" data-form-class="cxa-submit-notify-popup-component d-none" novalidate>
+
+            <input name="__RequestVerificationToken" type="hidden" value="cxDSqBNW3n2m5OUhbzpV2gyH5omaBrM3JMEL2nZhAdItVpXA-fqYoqIbH0a5yYH1CMShygAoiLauPFUeG_wneBxtacdl2MyhF6wT431yVYk1" />
+
+            <input type="hidden" name="IsSentToCustomer" value="" />
+            <input type="hidden" name="IsSentToStaff" value="" />
+
+                        <div class="section-container mb-1">                        <div class="row">
+
+<div class="brother-form-field small mb-2 fz-14">
+    <div class="section-title h2">Alert Me When It's Ready</div>
+<span class="section-description">You'll be the first to hear from us when we get it!</span>
+</div>                        </div>
+                        <div class="row mt-2">
+
+
+<div class="brother-form-field ">
+    <input type="email"
+           class="form-control form-control-lg shadow-none"
+           placeholder="Email"
+           data-id="bbd31a8d-d034-409f-a100-c47bb651721f"
+           name="Email"  required           oninvalid="setEmailValidity(event)"
+           data-isotpvalidation="False"
+           data-isverified="false"
+           oninput="setEmailValidity(event)">
+
+
+
+    <div class="invalid-feedback">
+        Mandatory field!
+    </div>
+    <div class="email-empty" hidden>
+        Mandatory field!
+    </div>
+    <div class="missing-at-sign" hidden>
+        Please include an &#39;@&#39; in the email address.
+    </div>
+    <div class="a-part-following-at-sign" hidden>
+        Please enter a part following &#39;@&#39;.
+    </div>
+    <div class="dot-from-part-following-at-sign" hidden>
+        Please enter a correct email domain.
+    </div>
+    <div class="no-plus-in-email-allowed" hidden>
+        Email addresses containing a plus symbol (&#39;+&#39;) are not allowed. Please use a different email address.
+    </div>
+    <div class="OTPMessageErrorVerify" hidden>
+        Please verify email before submit data
+    </div>
+    <div class="MismatchErrorMessageConfirmEmail" hidden>
+        Emails do not match.
+    </div>
+</div>
+
+<div class="modal fade" id="barcodeModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+                <p class="modal-title barcode-header" id="otpModalLabel">Barcode Scanner</p>
+            </div>
+            <div class="modal-body">
+                <div style="width: 100%; padding: 0px" id="scanner-container"></div>
+            </div>
+            <div class="modal-footer">
+                <input class="btn btn-primary" style="padding: 0px 50px 0px 50px" type="button" id="btn-start-scanner" value="Start the scanner" />
+                <input type="text" id="result" style="width: 100%; margin: 20px 0px 0px 0px;" class="form-control" />
+                <textarea rows="10" style="width: 100%; display: none" id="debug" class="form-control"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    p.otp-header, p.barcode-header {
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>                        </div>
+</div><div class="section-container last ">                        <div class="row ">
+
+
+<div class="brother-form-field mb-3 d-flex justify-content-center">
+            <button class="btn btn-primary btn-form-submit js-btn-submit"
+                    type="submit"
+                    style="color: #fff; background-color: #1965e1;"
+                    data-id="42825d9b-33b8-42d8-8c21-68ccbe228cd5"
+                    disabled>
+                Submit
+            </button>
+
+</div>                        </div>
+</div>
+            <input name="4455B061511CCA0B5FE37405E505EB37" type="text" id="4455B061511CCA0B5FE37405E505EB37" class="important-field" />
+            <input name="8466238168A0BA2A09006122E7324147" type="text" id="8466238168A0BA2A09006122E7324147" class="important-field" />
+            <input name="74A8C81CDB2285C08BEFBB7B2AB5F115" type="text" id="74A8C81CDB2285C08BEFBB7B2AB5F115" class="important-field" />
+
+            <input type='text' class='important-field' name='address4' value='' />
+            <input type='text' class='important-field' name='address5' value='' />
+            <input type='text' class='important-field' name='address6' value='' />
+
+
+        </form>
+    </div>
+    <div class="form-overlay"></div>
+</div>
+<script  src="/ap2/Resources/assets/js/brother-form-common.js" defer></script><script src="/AP2/Resources/assets/js/intlTelInput-min-1708.js" defer></script>
+<script src="/AP2/Resources/assets/js/serialize-formdata.js" defer></script>
+<script src="/AP2/Resources/assets/js/brother-form-send-email.js"></script>
+
+
+    <div class="component rich-text col-12 mw-13">
+        <div class="component-content">
+<h1>Contact Us</h1>        </div>
+    </div>
+
+
+
+<div class="component container col-12 mw-13">
+    <div class="component-content" >
+<div class="row">    <div class="component brother-promo col-12">
+        <div class="component-content">
+                <div class="img-align-right" style="background-color: ; color: ">
+
+
+
+  
+  
+
+
+<div class="cxa-contact-us-promo-component">
+    <div class="contact-us">
+        <div class="contact-us__thumb">
+                <source srcset="https://www.brother.com.au/-/media/ap2/australia/about/contact-us/343-x-182px---contact-us_mobile-01.webp?rev=fe94ed04be0a4c94989e8c661ab5c6d2" media="(max-width: 639px)">
+                <img loading="lazy" src="https://www.brother.com.au/-/media/ap2/australia/about/contact-us/contact-us-desktop.png?h=382&amp;iar=0&amp;w=525&amp;rev=3474d7e941c84f388ba313a6d46e8b7a" class="lazy img-fluid w-100" alt="worker in front of the laptop" width="525" height="382" />
+         
+        </div>
+        <div class="contact-us__content">
+            <div class="">
+              <h3 class="contact-us__content--title">
+              
+                      		    Product / Technical Support
+                    	    
+              </h3>
+            </div>
+            <div class="contact-us__content--desc">
+            If you need help with your Brother product, visit our Support &amp; Downloads page for driver downloads, FAQs, live chat and email options.
+            If you are looking for Brother Support in a different country or region (other than Australia), <a href="https://global.brother/en/gateway">please visit our Global Network page</a>.
+            </div>
+            <div class="btn-submit">
+                
+                                
+                                
+								<a href="/en/support" target="" class="btn btn-primary promo-btn text-wrap mb-2 inline-flex flex-row gap-1"
+										tabindex="-1" role="button" aria-disabled="true" style="background-color: #FFFFFF;color: #1965E1">Visit Support & Downloads Page</a>
+							
+                                
+                                
+                                 
+                                
+                
+                                
+            </div>
+        </div>
+    </div>
+</div>                </div>
+        </div>
+    </div>
+
+
+
+<div class="component container col-12 mw-13">
+    <div class="component-content" >
+<div class="row">    <div class="component brother-promo promo-brother-action-block mw-13 mb-4 col-12">
+        <div class="component-content">
+                <div class="img-align-right" style="background-color: #777777; color: ">
+
+
+
+  
+  
+
+
+<div class="row align-middle" style="background-color: ;">
+  <div class="col-12 d-flex align-items-center promo-content-inner">
+    <div class="promo-content text_block">
+      
+            <div class="">
+              <h2 class="field-promotitle">
+               
+                 		At Brother International Australia we believe everyone deserves a safe and valued workplace and that is why we have put together our Respectful Communications Statement. 
+               	
+              </h2>
+            </div>
+            
+      
+            <p class="field-promodesc">
+              
+            </p>
+            
+    </div>
+    <div class="field-promolink" id="">
+      
+      		
+					
+					<a
+						href="/en/about/respectful-communications-statement"
+						target=""
+						class="btn btn-primary promo-btn inline-flex flex-row gap-1"
+						tabindex="-1"
+						role="button"
+						aria-disabled="true"
+						style="background-color: #0D2EA0;color: ">View Here</a>
+				
+            
+    </div>
+  </div>
+</div>
+                </div>
+        </div>
+    </div>
+</div>    </div>
+</div></div>    </div>
+</div>
+
+
+<div class="component container col-12">
+    <div class="component-content" >
+<div class="row">
+
+
+<div class="component container col-12 mw-13">
+    <div class="component-content" >
+<div class="row">    <div class="component brother-promo col-12">
+        <div class="component-content">
+                <div class="img-align-right" style="background-color: ; color: ">
+
+
+
+  
+  
+
+
+<div class="cxa-contact-us-promo-component">
+    <div class="contact-us contact-us--flex-row-reverse">
+        <div class="contact-us__thumb">
+            <picture>
+                <source srcset="" media="(max-width: 639px)">
+                <img loading="lazy" src="https://www.brother.com.au/-/media/ap2/australia/about/contact-us/440-x-234px---contact-us_desktop-02.webp?h=234&amp;iar=0&amp;w=440&amp;rev=d86e59a82abf469d988939c090d7a8e9" class="lazy img-fluid w-100" alt="promo-2" width="440" height="234" />
+            </picture>
+        </div>
+        <div class="contact-us__content">
+            <div class="">
+              <h3 class="contact-us__content--title">
+              
+                      		    Enquiry
+                    	    
+              </h3>
+            </div>
+            <div class="contact-us__content--desc">
+                <style>
+                .icon-tel-black {
+                font-family: 'Open Sans';
+                font-size: 20px;
+                line-height: 1.2;
+                background-image: url(/AP2/Resources/assets/img/icons/icon-tel-black.png);
+                }
+                .icon-left {
+                padding-top: 2px;
+                padding-bottom: 5px;
+                padding-left: 30px;
+                background-position: top left;
+                background-repeat: no-repeat;
+                }
+                
+                </style>
+                <p>If you just have a general non-product related question and/or some feedback.</p>
+            </div>
+            <div class="btn-submit">
+                <div class="btn-submit">
+                    
+                                        
+                                        
+                                        <a href="/en/support/contact/submit-enquiry" target="" class="btn btn-primary promo-btn inline-flex flex-row gap-1"
+                                            tabindex="-1" role="button" aria-disabled="true" style="background-color: #FFFFFF;color: #1965E1">Submit Enquiry</a>
+                                        
+                                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                </div>
+        </div>
+    </div>
+</div>    </div>
+</div></div>    </div>
+</div></div>
+        </div>
+    </main>
+    <!-- /#content -->
+    <!-- #footer -->
+    <footer>
+        <div id="footer" class="">
+            <div class="row">
+
+
+
+<div class="component row-splitter">
+        <div class=" blue-mint-background container-fluid">
+            <div >
+                <div class="row">
+
+
+<div class="component container col-12 mw-13">
+    <div class="component-content" >
+<div class="row"></div>    </div>
+</div></div>
+            </div>
+        </div>
+</div>    <div class="component sxa-brother-employee-speak footer">
+        <div class="component-content">
+
+
+<div class="footer">
+    <section class="footer-bottom-container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="footer-menu-container">
+                    <div class="footer-title"> About </div>
+                    <nav class="footer-menu-nav">
+                        <ul class="list-non-decoration nav footer-menu">
+                            
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/about-brother" target="">
+                                                                Company Profile
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/domestic-history" target="">
+                                                                History &amp; legacy
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/awards" target="">
+                                                                Awards &amp; Recognition
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/csr" target="">
+                                                                Corporate Social Responsibility
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/news" target="">
+                                                                News &amp; Media
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/sustainability" target="">
+                                                                Sustainability
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/support/contact" target="">
+                                                                Contact Us
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/promotions" target="">
+                                                                Promotions &amp; Events
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/careers" target="">
+                                                                Careers at Brother
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/whistleblower-policy" target="">
+                                                                Whistleblower Policy
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <div class="footer-menu-container">
+                    <div class="footer-title"> Support</div>
+                    <nav class="footer-menu-nav">
+                        <ul class="list-non-decoration nav footer-menu">
+                            
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/support" target="">
+                                                                Support &amp; Downloads
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/account/account-information" target="">
+                                                                Manage your Account
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/track-an-order" target="|Custom">
+                                                                Track an Order
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/product-registration-benefits" target="">
+                                                                Register your Product
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/contents/shipping" target="">
+                                                                Shipping &amp; Delivery
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/contents/returns" target="">
+                                                                Return an Order
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/contents/standardwarrantyterms" target="">
+                                                                Product Warranty
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/support/retailer-locations" target="">
+                                                                Retailer Locations
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/blog" target="">
+                                                                Blog
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li class="external-link">
+                                                            
+                                                            <a href="https://corpsolutions.brother.com.au" target="_blank">
+                                                                Business Solutions
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li class="external-link">
+                                                            
+                                                            <a href="https://www.creativecenter.brother/?utm_source=brother.com.au&utm_medium=referral" target="_blank">
+                                                                Creative Center
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/contents/remotesupport" target="">
+                                                                Remote Support
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/contents/recycling" target="">
+                                                                Recycling
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/support/product-security" target="">
+                                                                Security Support Information
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12">
+                <div class="footer-title">Connect</div>
+                <ul class="list-non-decoration nav social-connect ">
+                    
+                                        <li>
+                                            
+                                            <a href="/en/social-media-hub" target="">
+                                                <img loading="lazy" src="https://www.brother.com.au/-/media/themes/apweb/global/global-lite/images/facebook.svg?iar=0&amp;rev=68a9d369e4304f7884e97590bafba35f" alt="brother_facebook_icon" class="lazy" />
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            <a href="/en/social-media-hub" target="">
+                                                <img loading="lazy" src="https://www.brother.com.au/-/media/themes/apweb/global/global-lite/images/icons/instagram.svg?h=14&amp;iar=0&amp;w=14&amp;rev=5b2648b2849c4f1a9a0999afad1ec743" alt="instagram" width="14" height="14" class="lazy" />
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            <a href="https://www.linkedin.com/company/24790864/" target="">
+                                                <img loading="lazy" src="https://www.brother.com.au/-/media/themes/apweb/global/global-lite/images/icons/linkedin.svg?iar=0&amp;rev=b43bc9549e6d44b0b40068415ef297e9" alt="linkedin" class="lazy" />
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            <a href="http://www.youtube.com/user/BrotherAU/videos" target="">
+                                                <img loading="lazy" src="https://www.brother.com.au/-/media/themes/apweb/global/global-lite/images/icons/youtube.svg?iar=0&amp;rev=87f2f2f637c14b80823f550b138ab231" alt="youtube" class="lazy" />
+                                            </a>
+                                        </li>
+                                        
+                </ul>
+            </div>
+
+        </div>
+
+        
+        
+        <div class="footer-bottom-section">
+            <hr class="footer-hr">
+            <div class="row align-items-start">
+                <div class="col-md-4 col-xs-12">
+                    <ul class="list-non-decoration nav global-net">
+                        <li class="global-net_item">
+                            <a style="text-decoration: none;" onMouseOver="this.style.cursor='auto'">
+                                <img loading="lazy" src="https://www.brother.com.au/-/media/themes/apweb/global/header-footer-theme/images/flags/bia.png?h=24&amp;iar=0&amp;w=24&amp;rev=6ba2815854894e259215cfbee93c1aab" alt="BIA" width="24" height="24" class="lazy" />
+                                Australia
+                            </a>
+
+                        </li>
+                        <li class="global-net_item external-link">
+                            
+                            <a href="https://global.brother/en/gateway" target="_blank">
+                                Global Network 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                <div class="col-md-8 col-xs-12">
+                    <ul class="list-non-decoration nav footer-links">
+                        
+                                                
+                        
+                                                
+                                                <li class="footer-links_item ">
+                                                    
+                                                        <a href="/en/contents/privacypolicy" target="">
+                                                           <div class="footer-item-with-icon-direct">
+                            									Privacy Policy
+                            								</div>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                
+                                                
+                        
+                                                
+                                                <li class="footer-links_item ">
+                                                    
+                                                        <a href="/en/about/tnc" target="">
+                                                           <div class="footer-item-with-icon-direct">
+                            									Terms of Use
+                            								</div>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                
+                                                
+                        
+                                                
+                                                <li class="footer-links_item ">
+                                                    
+                                                        <a href="/contents/terms-of-sale" target="">
+                                                           <div class="footer-item-with-icon-direct">
+                            									Terms of Sale
+                            								</div>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                
+                                                
+                        
+                                                
+                                                <li class="footer-links_item ">
+                                                    
+                                                        <a href="/en/sitemap" target="">
+                                                           <div class="footer-item-with-icon-direct">
+                            									Sitemap
+                            								</div>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+                <div class="row">
+                    
+                        <div class="col-md-12 col-sm-12 col-xs-12 copyright">©
+                            <span id="copyright">
+                                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))                       </script>
+                            </span> BROTHER INTERNATIONAL (AUST.) PTY. LTD. All Rights Reserved
+                        </div>
+                    </div>
+                    
+                
+    </section>
+
+    <a class="back-to-top js-cd-top" href="#0">
+        <span></span>
+        <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+        </svg>
+    </a>
+</div>        </div>
+    </div>
+
+
+<div class="modal fade br-modal" id="modal-message">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 700px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title h5">Maximum quantity reached</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Sorry, the maximum quantity for this product has been reached.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="component plain-html col-12">
+        <div class="component-content">
+<script>
+function testWebP(callback) {
+  var webP = new Image();
+  webP.onload = webP.onerror = function () {
+      callback(webP.height == 2);
+  };
+  webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+};
+
+function loadExtScript(src, test, callback) {
+  var s = document.createElement('script');
+  s.src = src;
+  document.body.appendChild(s);
+
+  var callbackTimer = setInterval(function() {
+    var call = false;
+    try {
+      call = test.call();
+    } catch (e) {}
+
+    if (call) {
+      clearInterval(callbackTimer);
+      callback.call();
+    }
+  }, 100);
+}
+
+function runWebpHero() {
+  var webpMachine = new webpHero.WebpMachine();
+  webpMachine.polyfillDocument();
+}
+
+testWebP(function(support) {
+
+  if(!support) {
+    loadExtScript('/AP2/Resources/assets/js/webp-herobundle.js', function() {
+      return webpHero;
+    }, runWebpHero);
+  }
+});
+</script>        </div>
+    </div>
+
+
+
+
+
+<script async src='https://apps.bazaarvoice.com/deployments/brother-au/main_site/production/en_AU/bv.js'></script>
+
+<input name="__RequestVerificationToken" type="hidden" value="zI6oMWSticHpdmiYgm3S7HxQhbB0SgIu4YKTOodEqgJFFNEjPT5_EjzLVng1r7b9eemswQSUCZY9jtE4hxRhwOZg4UewyJRN-7kYaEK4Z3g1" /><input name="__RequestVerificationToken" type="hidden" value="lOE5LU8tNgG3I219vsdNd0Qwpc1E6tWKboMBXFkuuEbyFNtkcujfnSHMIuV0fMO25Xiy9yHVkQzf-cs4WsSxiYva1wp59BVMdFON7gyrRC01" />
+
+    <div class="component sxa-custom-customer-consent-component col-12">
+        <div class="component-content">
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="component plain-html col-12">
+        <div class="component-content">
+<link rel="stylesheet" type="text/css"
+  href="https://brother-au--ibmqa--c.sandbox.vf.force.com/resource/NF_BotResources/css/bot.css">
+<style type='text/css'>
+  .embeddedServiceHelpButton .helpButton .uiButton {
+    background-color: #0d2ea0;
+    font-family: "HelveticaNeue", sans-serif;
+  }
+
+  .embeddedServiceHelpButton .helpButton .uiButton:focus {
+    outline: 1px solid #0d2ea0;
+  }
+</style>
+<!-- Start of Invitations -->
+<div class="embeddedServiceInvitation d-none" id="snapins_invite" inert="true" aria-live="assertive" role="dialog"
+  aria-atomic="true">
+  <div class="embeddedServiceInvitationHeader" aria-labelledby="snapins_titletext" aria-describedby="snapins_bodytext">
+    <img id="embeddedServiceAvatar"></img>
+    <span class="embeddedServiceTitleText" id="snapins_titletext">Need help?</span>
+    <button type="button" id="closeInvite" class="embeddedServiceCloseIcon"
+      aria-label="Exit invitation">&times;</button>
+  </div>
+  <div class="embeddedServiceInvitationBody">
+    <p id="snapins_bodytext">How can we help you?</p>
+  </div>
+  <div class="embeddedServiceInvitationFooter" aria-describedby="snapins_bodytext">
+    <button type="button" class="embeddedServiceActionButton" id="rejectInvite">Close</button>
+    <button type="button" class="embeddedServiceActionButton" id="acceptInvite">Start Chat</button>
+  </div>
+</div>
+<style type='text/css'>
+  #snapins_invite {
+    background-color: #FFFFFF;
+    font-family: "HelveticaNeue", sans-serif;
+    overflow: visible;
+    border-radius: 8px;
+    visibility: hidden;
+  }
+
+  .embeddedServiceInvitation {
+    background-color: transparent;
+    max-width: 290px;
+    max-height: 210px;
+    -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.28);
+  }
+
+  @media only screen and (min-width: 48em) {
+
+    /*mobile*/
+    .embeddedServiceInvitation {
+      max-width: 332px;
+      max-height: 210px;
+    }
+  }
+
+  .embeddedServiceInvitation>.embeddedServiceInvitationHeader {
+    width: inherit;
+    height: 32px;
+    line-height: 32px;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #222222;
+    overflow: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .embeddedServiceInvitationHeader #embeddedServiceAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  .embeddedServiceInvitationHeader .embeddedServiceTitleText {
+    font-size: 18px;
+    color: #FFFFFF;
+    overflow: hidden;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    align-self: stretch;
+    flex-grow: 1;
+    max-width: 100%;
+    margin: 0 12px;
+  }
+
+  .embeddedServiceInvitationHeader .embeddedServiceCloseIcon {
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    bottom: 3%;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    font-size: 23px;
+    color: #FFFFFF;
+  }
+
+  .embeddedServiceInvitationHeader .embeddedServiceCloseIcon:focus {
+    outline: none;
+  }
+
+  .embeddedServiceInvitationHeader .embeddedServiceCloseIcon:focus::before {
+    content: " ";
+    position: absolute;
+    top: 11%;
+    left: 7%;
+    width: 85%;
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    pointer-events: none;
+  }
+
+  .embeddedServiceInvitationHeader .embeddedServiceCloseIcon:active,
+  .embeddedServiceCloseIcon:hover {
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
+  }
+
+  .embeddedServiceInvitation>.embeddedServiceInvitationBody {
+    background-color: #FFFFFF;
+    max-height: 110px;
+    min-width: 260px;
+    margin: 0 8px;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: auto;
+  }
+
+  .embeddedServiceInvitationBody p {
+    color: #333333;
+    padding: 8px;
+    margin: 12px 0;
+  }
+
+  .embeddedServiceInvitation>.embeddedServiceInvitationFooter {
+    width: inherit;
+    color: #FFFFFF;
+    text-align: right;
+    background-color: #FFFFFF;
+    padding: 10px;
+    max-height: 50px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .embeddedServiceInvitationFooter>.embeddedServiceActionButton {
+    font-size: 14px;
+    max-height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .embeddedServiceInvitationFooter>#acceptInvite {
+    background-color: #0d2ea0;
+    color: #FFFFFF;
+  }
+
+  .embeddedServiceInvitationFooter>#rejectInvite {
+    background-color: #FFFFFF;
+    color: #0d2ea0;
+  }
+</style>
+<script type='text/javascript'>
+  (function () {
+    document.getElementById('closeInvite').onclick = function () { embedded_svc.inviteAPI.inviteButton.rejectInvite(); };
+    document.getElementById('rejectInvite').onclick = function () { embedded_svc.inviteAPI.inviteButton.rejectInvite(); }; // use this API call to reject invitations
+    document.getElementById('acceptInvite').onclick = function () { embedded_svc.inviteAPI.inviteButton.acceptInvite(); }; // use this API call to start chat from invitations
+    document.addEventListener('keyup', function (event) { if (event.keyCode == 27) { embedded_svc.inviteAPI.inviteButton.rejectInvite(); } })
+  })();
+</script>
+<!-- End of Invitations -->
+<script type='text/javascript'>
+  function initEmbeddedMessaging() {
+    try {
+      embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
+      let userId = document.getElementById('order_clound_userID')?.value
+      userId = userId === '' || userId === undefined || userId === null || userId === 'sudxZITp5EiBzNjHV8KcWg' ? null : userId;
+      console.log("userId", userId)
+      window.addEventListener("onEmbeddedMessagingReady", () => {
+        embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({ "CustomerId": userId });
+      });
+      // DeploymentID: 00DIn000000Gyfw
+      // DeploymentName: Bob_Support
+      // DeploymentURL: https://brother-au--sb3.sandbox.my.site.com/ESWBobSupport1743903075748
+      // ScriptURL: https://brother-au--sb3.sandbox.my.salesforce-scrt.com
+      embeddedservice_bootstrap.init(
+        '00D90000000JCWM',
+        'Bob_Sitecore_Website',
+        'https://brother-au.my.site.com/ESWBobSitecoreWebsite1746097560418',
+        {
+          scrt2URL: 'https://brother-au.my.salesforce-scrt.com'
+        }
+      );
+    } catch (err) {
+      console.error('Error loading Embedded Messaging: ', err);
+    }
+  };
+</script>
+<script type='text/javascript'
+  src='https://brother-au.my.site.com/ESWBobSitecoreWebsite1746097560418/assets/js/bootstrap.min.js'
+  onload='initEmbeddedMessaging()'></script>        </div>
+    </div>
+
+</div>
+        </div>
+    </footer>
+    <!-- /#footer -->
+</div>
+<!-- /#wrapper -->
+
+    
+
+
+
+<input type="hidden" id="stop-notify-me-message-template" value="You will no longer receive stock alert for {modelName}" />
+<input type="hidden" id="notify-me-message-template" value="Stock Alert set successfully for {modelName}" />
+<input type="hidden" id="product-id-value" />
+<input type="hidden" id="product-name-value" />
+<input type="hidden" id="sc-product-id" />
+<div id="notify-me-not-signin-template" class="d-none">
+	    <div class="notify-me-alert d-none">
+		    <div class="br-alert br-alert--success">
+			    <div class="br-alert_icon br-alert_icon--success">&nbsp;</div>
+			    <p class=" br-alert_text"></p>
+		    </div>
+	    </div>
+	    <div class="notify-me-alert-error d-none">
+		    <div class="br-alert br-alert--danger">
+			    <div class="br-alert_icon br-alert_icon--danger">&nbsp;</div>
+			    <p class="br-alert_text"></p>
+		    </div>
+	    </div>
+        <div class="notify-me-form-au"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                let notifyMeForm = $(".notify-me-form-au").first();
+                $('div.cxa-submit-notify-popup-component').removeClass("d-none").appendTo(notifyMeForm);
+                notifyMeForm.find('.cxa-submit-notify-popup-component form[name="Notify_Me_Form"] button[type=submit]').prop("disabled", false);
+                notifyMeForm.on('submit', '.cxa-submit-notify-popup-component form[name="Notify_Me_Form"]', function (event) {
+                    initNotifyFormSubmitAU(this, event);
+                });
+
+                $('#modalMessage').on('hidden.bs.modal', function () {
+                    clearTimeout(hiddenNotify);
+                    $(".notify-me-alert").addClass("d-none");
+                });
+            });
+
+        </script>
+        <script defer src="/ap2/Resources/assets/js/commerce/australia/notify-me-popup.js?v=639094335320000000"></script>
+</div>
+
+<div class="modal ask-login fade" id="modalMessage" tabindex="-1" role="dialog"
+     aria-labelledby="modalMessageLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <script defer src="https://www.brother.com.au/-/media/base-themes/brother-core-lite/scripts/optimized-min.js?rev=8f59dbeac6a9441a93a3ed29f7c85603&t=20260114T165540Z&hash=71D8B6247DF51D71BDB39DBF2D09C166"></script><script defer src="https://www.brother.com.au/-/media/base-themes/xa-api/scripts/optimized-min.js?rev=82abf36af37b43adb942d97feed8fe21&t=20250605T034247Z&hash=84F2D35DB02C946723DAE5CAE1DFD460"></script><script defer src="https://www.brother.com.au/-/media/base-themes/main-theme/scripts/optimized-min.js?rev=79a4c8e764eb4846b09b83e8f3a40f15&t=20250605T052945Z&hash=644F66192FBB66250FB650182407DB82"></script><script defer src="https://www.brother.com.au/-/media/base-themes/resolve-conflicts/scripts/optimized-min.js?rev=7d6f4404113f4d049e538797db54fbfc&t=20250822T115552Z&hash=41011B0C413ED814849ABBD2640873DA"></script><script defer src="https://www.brother.com.au/-/media/base-themes/searchtheme/scripts/optimized-min.js?rev=0295e8d744dc45b4a4b8fe45e7320668&t=20260602T094356Z&hash=E2F6C5DF2558B3A81671860EEE84727C"></script><script defer src="https://www.brother.com.au/-/media/base-themes/components-theme/scripts/optimized-min.js?rev=eac291fa4f1d44fb912b29a4e1f88efd&t=20250605T014233Z&hash=62200EE7C1C7FF9695B7662A16C4EF30"></script><script defer src="https://www.brother.com.au/-/media/themes/apweb/global/header-footer-theme/scripts/optimized-min.js?rev=6a874f97cf08475d9f2648f136241dd8&t=20260519T091930Z&hash=43B19B6B74CF39E0D6C691CEA1396DD8"></script><script defer src="https://www.brother.com.au/-/media/extension-themes/searchthemeextension/scripts/optimized-min.js?rev=3925381b903647caaf29d8dc30ac1734&t=20250930T084712Z&hash=90F812FAEDD918A1388F5828BB3F2D03"></script><script defer src="https://www.brother.com.au/-/media/themes/apweb/global/global-lite/scripts/optimized-min.js?rev=76fc1c2c5028429b8cd517cceab8523f&t=20260602T095529Z&hash=E6B088F1C4D0EDC1ECD2BAE0D45D4F5D"></script>
+
+
+    <script defer src="/AP2/Scripts/Common/bootstrap-bundle-min-502.js"></script>
+    <script>!function () { var G = GALFSRAM = window.GALFSRAM || {}; G.mfx = G.mfx || {}; G.mfx.router_mode = 'history'; }();</script>
+    <script defer src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=en"></script>
+    <script type="text/javascript" src="/-/media/ap2/SystemFiles/Scripts/Support/mfx.ashx" defer></script>
+
+    <script>
+
+        // View/SxaLayout/XMSxaLayout.cshtml
+		function setCookieServer(cName, cValue, expMins = 30) {
+			fetch('/brotherapi/Cookies/SetCookie', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ Key: cName, Value: cValue, TimeExpired: expMins })
+			});
+        }
+
+    </script>
+    <!-- /#wrapper -->
+</body>
+</html>
