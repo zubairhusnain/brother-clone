@@ -132,6 +132,7 @@ function fixHtml(html, pageRel) {
         }
     );
     html = html.replace(/<script[^>]+src=["']\/\/[^"']+["'][^>]*><\/script>/gi, '');
+    html = html.replace(/<script[^>]+src=["'][^"']*\/cdn-cgi\/[^"']*["'][^>]*><\/script>/gi, '');
 
     // Remove preconnect/preload hints to remote origins (no effect offline)
     html = html.replace(/<link[^>]+rel=["']preconnect["'][^>]*>/gi, '');
@@ -188,6 +189,9 @@ function fixHtml(html, pageRel) {
     );
     html = html.replace(/<div[^>]*id=["']mcp-utm["'][^>]*>\s*<\/div>/gi, '');
     html = html.replace(/<div[^>]*id=["']mcp-toast1["'][^>]*>\s*<\/div>/gi, '');
+    html = html.replace(/<div[^>]*class=["'][^"']*elfsight-app-[^"']*["'][^>]*>\s*<\/div>/gi, '');
+    html = html.replace(/<div[^>]*id=["']__EAAPS_PORTAL["'][\s\S]*?<\/aside>\s*<\/div>/gi, '');
+    html = html.replace(/<aside[^>]*class=["'][^"']*cf_invite_[^"']*["'][\s\S]*?<\/aside>/gi, '');
 
     if (!html.includes('offline-stubs.js')) {
         html = html.replace(

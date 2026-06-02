@@ -21,3 +21,18 @@ html body #mcp-toast-parent-container#mcp-toast-parent-container {
   border: 0 !important;
   overflow: hidden !important;
 }
+
+/* Hide Elfsight/feedback overlays that can explode in offline mode */
+html body #__EAAPS_PORTAL,
+html body [class*="elfsight-app-"],
+html body aside[class*="cf_invite_"],
+html body .es-announcement-bar-closed,
+html body [class*="es-announcement-bar"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+}
