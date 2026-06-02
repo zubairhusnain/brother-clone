@@ -1,0 +1,133 @@
+div.rn_Hide{
+    display:none;
+}
+div.rn_Show{
+    display:block;
+}
+
+div.rn_SearchArea{
+    padding-bottom: 5px;
+}
+
+div.rn_SearchBox,
+div.rn_SearchButton{
+    display:inline;
+}
+
+div.rn_Corrections{
+    padding-bottom: 5px;
+}
+
+div.rn_Documents .rn_List li.rn_Item span.rn_Title,
+div.rn_Documents .rn_List li.rn_Item span.rn_Description,
+div.rn_Corrections .rn_WordCorrection,
+div.rn_Content .rn_List li.rn_Item span.rn_Title,
+div.rn_Content .rn_List li.rn_Item span.rn_Description,
+div.rn_Documents .rn_List li.rn_Item span.rn_Title a,
+div.rn_Content .rn_List li.rn_Item span.rn_Title a{
+    font-size:1em;
+    font-weight:normal;
+}
+
+div.rn_Suggestions,
+div.rn_Documents .rn_List,
+div.rn_Content .rn_List,
+div.rn_Corrections,
+div.rn_Navigation a,
+div.rn_Documents h3{
+    font-size:.75em;
+    font-weight:normal;
+}
+
+div.rn_Documents{
+    margin-top: 2px;
+    width:100%;
+    border:1px solid black;
+    background-color:whitesmoke;
+    padding-bottom: 1px;
+    padding-left: 2px;
+}
+
+div.rn_Documents h3{
+    font-weight:bold;
+}
+
+div.rn_Documents .rn_List li.rn_Item span.rn_Title a,
+div.rn_Content .rn_List li.rn_Item span.rn_Title a{
+    text-decoration:underline;
+}
+
+div.rn_Content{
+    padding-bottom: 5px;
+}
+
+div.rn_Navigation{
+    position: relative;
+}
+
+div.rn_Navigation a{
+    text-decoration:underline;
+}
+
+.rn_screen_reader_only{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+div.rn_AnswerOverlay{
+    position:fixed;
+    top:75px;
+    left:50%;
+    width:70%;
+    margin-left:-35%;
+    height:70%;
+    width:70%;
+    overflow:auto;
+    background-color:#FFF;
+    -moz-box-shadow: 0 0 5px 5px #333;
+    -webkit-box-shadow: 0 0 5px 5px #333;
+    box-shadow: 0 0 5px 5px #333;
+    border: 1px solid black;
+    color:black;
+}
+
+div.rn_AnswerContent{
+    padding:10px;
+}
+
+a.rn_CloseOverlay{
+    position:absolute;
+    top:0;
+    right:0;
+    height:30px;
+    width:30px;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAO5JREFUOE+1lEEKAjEMRQuuBEEQxL0rcTUbL+UFhFl6BxE3CoJ4TfPAlDR0dKa0gcAk+XkNbachlNtMWufimymITsQn8bv42zgxeeoY8L+2EsXZgSzUfqND/xO8FcFtJFDh6OnL2rIAaMH0M/HC0ns34VPi68DU5KnbraA/2eNdBniQ3Fr84mrE5Kl7MJxoR9f4kHj/rVqwAilRR2enhRPNT4PQg8mxwBCQOpxoL7eirm7BKs5NqHo40YbuoeaLtE0mbbKnTU6/yT3lIGr9UfZQQ41/PwFqUP2VUnDJe5qdMJfsJDnm5R8NnCpMXv4PF4OjA8GBa2cAAAAASUVORK5CYII=) no-repeat center center;
+}
+div.rn_AnswerSummary{
+    font-size:2em;
+    line-height:2em;
+}
+div.rn_AnswerInfo{
+    color:#666;
+    margin:6px 0 20px;
+}
+div.rn_AnswerDescription{
+    border-bottom:1px solid #E2E2E0;
+    margin-bottom:5px;
+    padding-bottom:5px;
+}
+div.rn_AnswerAttachments{
+    border-top:1px solid #E2E2E0;
+    padding-top:15px;
+}
+div.rn_AnswerAttachments span{
+    font-weight:bold;
+    font-size:125%;
+}

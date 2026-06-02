@@ -1,0 +1,1738 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+<link href="https://www.brother.in/-/media/feature/experience-accelerator/bootstrap-5/bootstrap-5/styles/optimized-min.css?rev=b5a256186369454785e0207abf07a34f&t=20241220T075130Z&hash=04D7B6AEEFD73D9497DAE290AC2A2A41" rel="stylesheet"><link href="https://www.brother.in/-/media/base-themes/core-libraries/styles/optimized-min.css?rev=5c97584c8ad04dad9440a5e2bd1e6170&t=20250605T053039Z&hash=BBE59338CD4F2D67630A52C2FCC23BC2" rel="stylesheet"><link href="https://www.brother.in/-/media/base-themes/brother-core-libraries/styles/optimized-min.css?rev=65fc9672c2594ea28ac81aa4337b0c2e&t=20250605T053132Z&hash=24005F4281ED388AEAD7129BA4FD7A27" rel="stylesheet"><link href="https://www.brother.in/-/media/base-themes/main-theme/styles/optimized-min.css?rev=c627a2d436d3418e986c75ed0d91abe4&t=20250605T040946Z&hash=B0B4E6337412CDF2F870FD7A26B7F18E" rel="stylesheet">
+
+    <script src="/-/media/Base-Themes/Brother-Core-Libraries/Scripts/jquery-360min.js"></script>
+
+    
+    <link rel="stylesheet" type="text/css" href="/AP2/Resources/assets/css/brother-component-custom-site-info.css" />
+    <link rel="stylesheet" type="text/css" href="/AP2/Resources/assets/css/component-breadcrumb.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" type="text/css" href="/AP2/Scripts/Common/jqueryUI/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/AP2/Resources/assets/css/apweb-style.css" />
+    <link rel="stylesheet" type="text/css" href="/AP2/v2/Resources/css/apweb-style-transplant.css" />
+    <link rel="stylesheet" type="text/css" href="/-/media/Themes/APWEB/Global/Header-Footer-Theme/styles/optimized-min.css" />
+
+    
+    <style>
+#pagecontents_0_lblSupportCenterTitle a { 
+margin-top: 10px;
+font-family: 'Open Sans';
+font-size: 13px !important;
+width: 100%;
+}
+
+.contact-us-map-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: none !important;
+}
+
+
+
+</style>
+
+<link href="//cdn.rawgit.com/noelboss/featherlight/1.6.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+<script src="//code.jquery.com/jquery-latest.js"></script>
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.6.1/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="alternate" href="https://www.brother-usa.com/contact-us" hreflang="en-US" />
+<link rel="alternate" href="https://www.brother.ca/en/contact-us" hreflang="en-CA" />
+<link rel="alternate" href="https://www.brother.co.uk/support/contact-us" hreflang="en-GB" />
+<link rel="alternate" href="https://www.brother.ie/contact-us" hreflang="en-IE" />
+<link rel="alternate" href="https://www.brother.ee/contact-us" hreflang="en-EE" />
+<link rel="alternate" href="https://www.brother.is/contact-us" hreflang="en-IS" />
+<link rel="alternate" href="https://www.brother.com.au/en/support/contact" hreflang="en-AU" />
+<link rel="alternate" href="https://www.brother.co.nz/customer-help/contact-us" hreflang="en-NZ" />
+<link rel="alternate" href="https://www.brother.com.fj/helpdesk" hreflang="en-FJ" />
+<link rel="alternate" href="https://www.brother.com.hk/en/contact_us" hreflang="en-HK" />
+<link rel="alternate" href="https://www.brother.com.hk/en/contact_us" hreflang="en-MO" />
+<link rel="alternate" href="https://www.brother.com.kh/en/support/contact" hreflang="en-KH" />
+<link rel="alternate" href="https://www.brother.in/en/contents/contactus" hreflang="en-IN" />
+<link rel="alternate" href="https://www.brother.com.mm/en/contents/contactus" hreflang="en-MM" />
+<link rel="alternate" href="https://www.brother.com.my/en/contents/contactus" hreflang="en-MY" />
+<link rel="alternate" href="https://www.brother.com.ph/en/contents/contactus" hreflang="en-PH" />
+<link rel="alternate" href="https://www.brother.com.sg/en/support/contact" hreflang="en-SG" />
+<link rel="alternate" href="https://www.brother.com.lk/en/support/contact" hreflang="en-LK" />
+<link rel="alternate" href="https://www.brother.co.th/en/contents/contactus" hreflang="en-TH" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-ZA" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-ZW" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-BW" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-NA" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-SZ" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-MZ" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-MW" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-ZM" />
+<link rel="alternate" href="https://www.brother.co.za/en/support/contact" hreflang="en-MG" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-AE" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-BH" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-EG" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-ET" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-IR" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-IQ" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-JO" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-KE" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-KW" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-LB" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-LY" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-MU" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-NG" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-OM" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-QA" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-SA" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-SY" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-TZ" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-UG" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-BD" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-NP" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-PK" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-YE" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-SO" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-AF" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-CD" />
+<link rel="alternate" href="https://www.brother.ae/en/support/contact" hreflang="en-SC" />
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NHH72KN');</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PRTTJMD');</script>
+
+    <title>Contact Us | Brother India</title>
+            <link rel="canonical" href="https://www.brother.in/en/contents/contactus" />
+
+
+
+
+
+
+    <link href="/-/media/ap2/global/site/brother-favicon.png?rev=b60668a025924a36b9f2b1fa3430cc12" rel="shortcut icon" />
+
+
+
+
+<meta property="og:description"  content="Contact Us, Product Support &amp; Enquires 1-800-222-422 (For MTNL and BSNL users) 1-800-209-8904 (For Others). Mail Us on info@brother.in, customercare@brother.in"><meta property="og:type"  content="article"><meta property="og:image"  content="https://www.brother.in/-/media/ap2/common/icons/common/sns_brotherlogoicon.png?rev=a5fd2136c1f7466db0f8c58ac01dd639"><meta property="og:title"  content="Contact Us | Brother India"><meta property="og:url"  content="https://www.brother.in/en/contents/contactus">
+
+
+
+<meta  name="description" content="Contact Us, Product Support &amp; Enquires 1-800-222-422 (For MTNL and BSNL users) 1-800-209-8904 (For Others). Mail Us on info@brother.in, customercare@brother.in">
+
+
+
+<meta property="twitter:title"  content="Contact Us | Brother India"><meta property="twitter:card"  content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="stylesheet" type="text/css" href="/AP2/Resources/assets/css/brother-style-india.css" />
+</head>
+<body class="migration-page main-content migration-page-india default-device bodyclass" >
+    
+    <div id="wrapper">
+        <!-- #header -->
+        <div class="row">
+
+    <div class="component sxa-menu-header-bar-component">
+        <div class="component-content">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"><div class="header-bar">
+  <a class="header-bar_logo" id="home-page-link-logo">
+    <img src="https://www.brother.in/-/media/ap2/global/menu/logo.svg?rev=74b6da90ccc34b339b35490b0046e6fc" class="img-fluid" alt="Brother at your side" />
+  </a>
+  <div class="top-search-right-bar">
+    <div class="row"></div>
+    
+    
+    <button type="button" class="global-search_btn_v2">
+      <img src="/-/media/ap2/Global/Menu/search.svg" alt="search icon">
+      Search
+    </button>
+    <div class="global-search-section d-none">
+      <div class="container">
+        <div class="row">
+        
+        <div class="component search-box full-text-search" data-properties='{"endpoint":"/en//sxa/search/results/","suggestionEndpoint":"/en//sxa/search/suggestions/","suggestionsMode":"ShowSearchResults","resultPage":"/en/global-search","targetSignature":"","v":"{173C8EE6-2099-4662-8EE5-93B7362F29F7}","s":"{79898469-18AC-4F67-8C26-E39034C2F8AA}","p":5,"l":"en","languageSource":"CurrentLanguage","searchResultsSignature":"","itemid":"{45C8E142-7CA9-4EA9-A5C7-D879BF49F8FF}","minSuggestionsTriggerCharacterCount":2}'>
+            <div class="component-content">
+                
+                            <label for="textBoxSearch">
+                                Search textbox label
+                            </label>
+                        <input type="text" class="search-box-input" autocomplete="off" name="textBoxSearch" maxlength="100" placeholder="Search here..." />
+                            <button class="search-box-button-with-redirect" type="submit">
+                                Search
+                            </button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-hamburger js-hamburger">
+      <img src="/-/media/ap2/Global/Menu/hamburger.svg" alt="hamburger icon">
+    </div>
+  </div>
+</div>        </div>
+    </div>
+
+
+
+
+
+<div class="component br-nav cxa-menu-header">
+        <input hidden id="is-commerce" value="0" />
+            <div class="br-nav_header">
+                <button type="button" disabled class="br-nav_header_back js-menu-back" disabled>
+                    <img src="/-/media/ap2/Global/Menu/left-white-arrow.sgv" alt="">
+                </button>
+                <span class="br-nav_header_text js-menu-text" data-text="Menu">Menu</span>
+                <button type="button" class="br-nav_header_close js-menu-close">
+                    <img src="/-/media/ap2/Global/Menu/white-close.svg" alt="">
+                </button>
+            </div>
+            <div class="br-nav_content">
+                <nav class="global-nav">
+                    <ul class="primary-menu list-non-decoration nav">
+                                <li class="primary-menu_item primary-menu_item--has-child">
+                                    <span class="menu-title"><span class="menu-link">Products</span></span>
+                                    <div class="mega-menu">
+                                        <button type="button" class="mega-menu_close js-mega-menu-close">
+                                            <img src="/-/media/ap2/Global/Menu/close.svg" alt="">
+                                        </button>
+
+                                        <div class="secondary-menu-with-promotion">
+                                                <div class="secondary-menu-container">
+                                                        <ul class="secondary-menu secondary-menu--4-col list-non-decoration nav">
+                                                                    <li class="secondary-menu_item secondary-menu_item--has-child">
+                                                                        
+                                                                            <span class="menu-title">
+                                                                                    <a href="/en/printers" class="menu-link menu-link--has-image menu-link--is-strong">
+                                                                                        <img src="https://www.brother.in/-/media/ap2/india/menu/t920dw.png?rev=8038badce84e4753a04d3fd9a98a684c" alt="Printers &amp; All-In-One">
+                                                                                        Printers &amp; All-In-One
+                                                                                    </a>
+
+                                                                            </span>
+                                                                        <ul class="tertiary-menu list-non-decoration nav">
+                                                                                <li class="tertiary-menu_item link-all">
+                                                                                    <a href="/en/printers"
+                                                                                       class="menu-link">Printers &amp; All-In-One</a>
+                                                                                </li>
+
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=inktank"
+                                                                                       class="menu-link">
+                                                                                        Ink Tank Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=laser"
+                                                                                       class="menu-link">
+                                                                                        Laser Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=mono"
+                                                                                       class="menu-link">
+                                                                                        Mono Laser Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=a3"
+                                                                                       class="menu-link">
+                                                                                        A3 Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/printers/all-printers?fr=color"
+                                                                                       class="menu-link">
+                                                                                        Colour Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item secondary-menu_item--has-child">
+                                                                        
+                                                                            <span class="menu-title">
+                                                                                    <a href="/en/scanners" class="menu-link menu-link--has-image menu-link--is-strong">
+                                                                                        <img src="https://www.brother.in/-/media/ap2/india/menu/ads4300n.png?rev=bbf4c8cb96564a6a9af979ea79ec549b" alt="Scanners">
+                                                                                        Scanners
+                                                                                    </a>
+
+                                                                            </span>
+                                                                        <ul class="tertiary-menu list-non-decoration nav">
+                                                                                <li class="tertiary-menu_item link-all">
+                                                                                    <a href="/en/scanners"
+                                                                                       class="menu-link">Scanners</a>
+                                                                                </li>
+
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/scanners/all-scanners?fr=desktop"
+                                                                                       class="menu-link">
+                                                                                        Desktop Scanners
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item secondary-menu_item--has-child">
+                                                                        
+                                                                            <span class="menu-title">
+                                                                                    <a href="/en/labellers" class="menu-link menu-link--has-image menu-link--is-strong">
+                                                                                        <img src="https://www.brother.in/-/media/ap2/india/menu/ptd610bt.webp?rev=832f2de6896c4662a1eac98e9bce2c56" alt="">
+                                                                                        Labelling Machine
+                                                                                    </a>
+
+                                                                            </span>
+                                                                        <ul class="tertiary-menu list-non-decoration nav">
+                                                                                <li class="tertiary-menu_item link-all">
+                                                                                    <a href="/en/labellers"
+                                                                                       class="menu-link">Labelling Machine</a>
+                                                                                </li>
+
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/labellers/all-labellers?fr=laminated"
+                                                                                       class="menu-link">
+                                                                                        Laminated Label Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/labellers/all-labellers?fr=paper"
+                                                                                       class="menu-link">
+                                                                                        Paper Label Printers
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/labellers/all-labellers?category=home"
+                                                                                       class="menu-link">
+                                                                                        For Home Use
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item secondary-menu_item--has-child">
+                                                                        
+                                                                            <span class="menu-title">
+                                                                                    <a href="/en/sewing-machines" class="menu-link menu-link--has-image menu-link--is-strong">
+                                                                                        <img src="https://www.brother.in/-/media/ap2/india/menu/m370.png?rev=7c67681bd10d42a686810f84c01f2beb" alt="Home Sewing Machines">
+                                                                                        Home Sewing Machines
+                                                                                    </a>
+
+                                                                            </span>
+                                                                        <ul class="tertiary-menu list-non-decoration nav">
+                                                                                <li class="tertiary-menu_item link-all">
+                                                                                    <a href="/en/sewing-machines"
+                                                                                       class="menu-link">Home Sewing Machines</a>
+                                                                                </li>
+
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/sewing-machines/all-sewing-machines?fr=mechanical_sewing_machine"
+                                                                                       class="menu-link">
+                                                                                        Mechanical Sewing Machine
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="tertiary-menu_item ">
+                                                                                    <a href="/en/sewing-machines/all-sewing-machines?fr=computerised-sewing-machine"
+                                                                                       class="menu-link">
+                                                                                        Computerised Sewing Machine
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item">
+                                                                        <span class="menu-title">
+                                                                                <a href="/en/contents/professional-embroidery" class="menu-link menu-link--has-image"
+                                                                                   >
+                                                                                    <img src="https://www.brother.in/-/media/ap2/india/menu/pr1055x.png?rev=8c0fdf35fc284ba6b8e03e72959de138" alt="Professional Embroidery Machines">
+                                                                                    Professional Embroidery Machines
+                                                                                </a>
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item">
+                                                                        <span class="menu-title">
+                                                                                <a href="/en/scanncuts" class="menu-link menu-link--has-image"
+                                                                                   >
+                                                                                    <img src="https://www.brother.in/-/media/ap2/india/menu/sdx1000.png?rev=21e7b8c5a8ec435fb2ea0e3e5d20637d" alt="Cutting Machines">
+                                                                                    Cutting &amp; Crafting Machines
+                                                                                </a>
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="secondary-menu_item">
+                                                                        <span class="menu-title">
+                                                                                <a href="/en/fax-machines/all-fax-machines/fax-2840" class="menu-link menu-link--has-image"
+                                                                                   >
+                                                                                    <img src="https://www.brother.in/-/media/ap2/india/menu/fax-2840.png?rev=bfde753ab47247c5abe4bc842f0dbe3d" alt="Fax Machine">
+                                                                                    Fax Machines
+                                                                                </a>
+                                                                        </span>
+                                                                    </li>
+                                                        </ul></div>
+                                                <div class="promotion-menu-container">
+                                                    <ul class="promotion-menu list-non-decoration nav">
+                                                            <li class="promotion-menu_item">
+                                                                <a href="/en/promotions"
+                                                                   class="link-with-icon">
+                                                                    <div class="link-with-icon_icon">
+                                                                        <img src="https://www.brother.in/-/media/ap2/global/menu/latest-promo.png?rev=092f0626e84a486cb0a35bb1294ddd2b"
+                                                                             alt="latest-promo">
+                                                                    </div>
+                                                                    <span class="link-with-icon_text">Latest Promotions</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="promotion-menu_item">
+                                                                <a href="https://www.brother.co.in/smartserve/coremodule/productregistration.aspx?rediract=pr&amp;module=warrantymodule&amp;value=pro"
+                                                                   class="link-with-icon">
+                                                                    <div class="link-with-icon_icon">
+                                                                        <img src="https://www.brother.in/-/media/ap2/global/menu/download-icon.png?rev=0b7c5f67da12480faf1a36abcfd8de0a" alt="download-icon">
+                                                                    </div>
+                                                                    <span class="link-with-icon_text">Product Registration </span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+
+
+                                        </div>
+
+                                            <div class="external-menu-container">
+                                                <ul class="external-menu list-non-decoration nav">
+                                                        <li class="external-menu_item">
+                                                            <span class="menu-title">
+                                                                <a href="https://garmentprinter.global.brother/en-ap" class="menu-link external-link" target="_blank">
+                                                                    Garment Printers
+                                                                </a>
+                                                            </span>
+                                                        </li>
+                                                        <li class="external-menu_item">
+                                                            <span class="menu-title">
+                                                                <a href="https://industrialsewingmachine.global.brother/en-ap/index.aspx" class="menu-link external-link" target="_blank">
+                                                                    Industrial Sewing Machines
+                                                                </a>
+                                                            </span>
+                                                        </li>
+                                                        <li class="external-menu_item">
+                                                            <span class="menu-title">
+                                                                <a href="https://machinetool.global.brother/en-ap/index.aspx" class="menu-link external-link" target="_blank">
+                                                                    Machine Tools
+                                                                </a>
+                                                            </span>
+                                                        </li>
+                                                </ul>
+                                            </div>
+
+                                    </div>
+                                </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/supplies" class="menu-link">Supplies</a>
+                                    </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/support" class="menu-link">Support &amp; Downloads</a>
+                                    </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/solutions/home" class="menu-link">Business Solutions</a>
+                                    </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/support/retailer-locations" class="menu-link">Where to buy</a>
+                                    </li>
+                                    <li class="primary-menu_item">
+                                        <a href="/en/blog" class="menu-link">Blog</a>
+                                    </li>
+                                <li class="primary-menu_item primary-menu_item--has-child">
+                                    <span class="menu-title"><span class="menu-link">About</span></span>
+                                    <div class="mega-menu">
+                                        <button type="button" class="mega-menu_close js-mega-menu-close">
+                                            <img src="/-/media/ap2/Global/Menu/close.svg" alt="">
+                                        </button>
+
+                                        <div class="secondary-menu-with-promotion">
+                                                <div class="secondary-menu-container">
+                                                    <ul class="secondary-menu secondary-menu--no-sub list-non-decoration nav">
+                                                        <li class="secondary-menu_item">
+                                                            <ul class="tertiary-menu list-non-decoration nav">
+                                                                    <li class="tertiary-menu_item ">
+                                                                        <a href="/en/about/about-brother"
+                                                                           class="menu-link">Company profile</a>
+                                                                    </li>
+                                                                    <li class="tertiary-menu_item ">
+                                                                        <a href="/en/about/domestic-history"
+                                                                           class="menu-link">History &amp; legacy</a>
+                                                                    </li>
+                                                                    <li class="tertiary-menu_item ">
+                                                                        <a href="/en/about/awards"
+                                                                           class="menu-link">Awards &amp; Recognition</a>
+                                                                    </li>
+                                                                    <li class="tertiary-menu_item ">
+                                                                        <a href="/en/contents/sustainability"
+                                                                           class="menu-link">Sustainability</a>
+                                                                    </li>
+                                                                    <li class="tertiary-menu_item ">
+                                                                        <a href="/en/about/csr"
+                                                                           class="menu-link">Corporate Social Responsibility</a>
+                                                                    </li>
+                                                                    <li class="tertiary-menu_item ">
+                                                                        <a href="/en/news"
+                                                                           class="menu-link">News &amp; Media</a>
+                                                                    </li>
+                                                                    <li class="tertiary-menu_item ">
+                                                                        <a href="/en/contents/career"
+                                                                           class="menu-link">Job Openings</a>
+                                                                    </li>
+                                                                    <li class="tertiary-menu_item ">
+                                                                        <a href="/en/support/contact"
+                                                                           class="menu-link">Contact Us</a>
+                                                                    </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                        </div>
+
+
+                                    </div>
+                                </li>
+                    </ul>
+                </nav>
+            </div>
+</div>
+
+
+
+<div class="component breadcrumb brother-breadcrumb col-12">
+    <div class="component-content">
+        <nav>
+            <ol>
+                    <li class="breadcrumb-item home">
+<div class="navigation-title field-navigationtitle">
+<a title="Home" href="/en/">Home</a>
+</div>                            <span class="separator"></span>
+                    </li>
+                    <li class="breadcrumb-item last">
+<div class="navigation-title field-navigationtitle">
+<a title="ContactUs" href="/en/contents/contactus">Contact Us (INDIA)</a>
+</div>                            <span class="separator"></span>
+                    </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="component sxa-custom-other-site-guidance-component col-12">
+        <div class="component-content">
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="component sxa-custom-site-information-component col-12">
+        <div class="component-content">
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHH72KN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRTTJMD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript></div>
+        <!-- /#header -->
+        <!-- #content -->
+        <main>
+            <div class="row">
+
+
+
+    <div class="component rich-text">
+        <div class="component-content">
+<div class="bg-light-gray main-content">
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Contact Us (INDIA)</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3>Product Support &amp; Enquires</h3>
+            </div>
+          </div>
+          <!--
+                                <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_0" class="col-md-4"><div><p class="text-right hidden-xs hidden-sm"><a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_0" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl0$btnShowSubmit','')">Submit a Product enquiry</a><a id="pagecontents_0_lstContactUs_OpenModal_0" class="aspNetDisabled OpenModal" data-toggle="modal" data-target="#enquiry_modal"></a></p></div></div>
+-->
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_0" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_0" class="icon-left icon-tel-black"> 1-800-222-422 <small>(For MTNL and BSNL users)</small>
+                    <br /> 1-800-209-8904 <small>(For Others and all Mobiles) <br />
+                      <span style="font-size: 20px; font-style: normal; font-weight: 400; font-family: 'Open Sans';">Monday To Friday&nbsp;</span>
+                      <small style="font-size: 14px; color: #333333; font-family: 'Open Sans'; font-style: normal; font-weight: 400;">8:30 AM - 6:30 PM</small>
+                      <br style="font-size: 20px;" />
+                      <span style="font-size: 20px; font-style: normal; font-weight: 400; font-family: 'Open Sans';">Saturday&nbsp;</span>
+                      <small style="font-size: 14px; color: #333333; font-family: 'Open Sans'; font-style: normal; font-weight: 400;">9:00 AM - 6:00 PM</small>
+                      <br />
+                    </small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_0" class="icon-left icon-fax"> + 91-22-66708999 </p>
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_0" class="icon-left icon-email"> info@brother.in, customercare@brother.in </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_0" class="col-md-1">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_0" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl0$btnShowSubmitMobile','')">Submit a Product enquiry</a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_0" class="aspNetDisabled OpenModal" data-toggle="modal" data-target="#enquiry_modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3>Head Office</h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_1" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_1" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl1$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_1" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl1$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_1" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_1" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>
+                    <strong> Mumbai</strong>
+                    <br /> Unit No. 801 &amp; 802, 8 <sup>th </sup>Floor,&nbsp; <br /> Alpha Building, Hiranandani Gardens, <br /> Powai, Mumbai &ndash; 400076.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_1" class="icon-left icon-tel-black"> + 91-22-66708900 </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_1" class="icon-left icon-fax"> + 91-22-66708999 </p>
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_1" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_1" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_1" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl1$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_1" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl1$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_1" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="contact-item"><div class="contact-title"><div class="row"><div class="col-md-8"><div><h3>Regional Offices &amp; Showroom</h3></div></div><div id="pagecontents_0_lstContactUs_EnquiryButtonArea_2" class="col-md-4" hidden="hidden"><div><p class="text-right hidden-xs hidden-sm"><a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_2" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl2$btnShowSubmit','')"></a><a id="pagecontents_0_lstContactUs_btnNewShowSubmit_2" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl2$btnNewShowSubmit','')"></a><a id="pagecontents_0_lstContactUs_OpenModal_2" class="aspNetDisabled OpenModal" data-toggle="modal"></a></p></div></div></div></div><div class="contact-info"><div class="row"><div class="col-md-11"><div class="row"><div id="pagecontents_0_lstContactUs_StreetAddressArea_2" class="col-md-4"><div class="contact-info-item"><p><strong>Chennai</strong><br />
+No: 780 (old no:429), Anna Salai, Nandanam, Opp. YMCA, Chennai-600035.
+</p></div></div><div class="col-md-4"><div class="contact-info-item"><p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_2" class="icon-left icon-tel-black"><span style="font-size: 20px; font-style: normal; font-weight: 400; font-family: 'Open Sans';">044-48586309 / 044-48586308</span></p></div></div><div class="col-md-4"><div class="contact-info-item"><p id="pagecontents_0_lstContactUs_FaxNumberTextArea_2" class="icon-left icon-fax" hidden="hidden"></p><p id="pagecontents_0_lstContactUs_EmailTextArea_2" class="icon-left icon-email" hidden="hidden"></p></div></div></div><div class="row"><div class="col-md-12"></div></div></div><div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_2" class="col-md-1" hidden="hidden"><div class="contact-info-item"><p class="visible-xs-block visible-sm-block"><a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_2" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl2$btnShowSubmitMobile','')"></a><a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_2" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl2$btnNewShowSubmitMobile','')"></a><a id="pagecontents_0_lstContactUs_OpenModalMobile_2" class="aspNetDisabled OpenModal" data-toggle="modal"></a></p></div></div></div></div></div> -->
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3>Regional Offices</h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_3" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_3" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl3$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_3" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl3$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_3" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_3" class="col-md-4">
+
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_3" class="icon-left icon-fax" hidden="hidden" />
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_3" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_3" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_3" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl3$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_3" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl3$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_3" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3></h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_4" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_4" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl4$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_4" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl4$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_4" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_4" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>
+                    <strong>Bangalore</strong>
+                    <br /> No. 121, Ground Floor, Lalbagh Main Road, SGN Narayan Layout, Bangalore 560027.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_4" class="icon-left icon-tel-black"> 080-40933323 </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_4" class="icon-left icon-fax" hidden="hidden" />
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_4" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_4" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_4" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl4$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_4" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl4$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_4" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3></h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_5" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_5" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl5$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_5" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl5$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_5" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_5" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>
+                    <strong>Pune</strong>
+                    <br /> Office 401, 7 Business Square Ganeshkhind Road, Model colony, Shivajinagar, Pune, Maharashtra-411016.&nbsp;
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_4" class="icon-left icon-tel-black"> 020-69012351 </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_5" class="icon-left icon-fax" hidden="hidden" />
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_5" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_5" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_5" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl5$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_5" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl5$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_5" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3></h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_7" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_7" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_7" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>
+                    <strong>Lucknow</strong>
+                    <br /> Premises No. 703, Iridium, G-1/1, Shalimar corporate park, Vibhuti khand, Gomti Nagar, Lucknow-226010.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_7" class="icon-left icon-tel-black">
+                    <span>0522-453-2733 /&nbsp;0522-453-2734</span>&nbsp;
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_7" class="icon-left icon-fax" hidden="hidden" />
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_7" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_7" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_7" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Update Delhi -->
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3></h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_7" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_7" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_7" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>
+                    <strong>Delhi</strong>
+                    <br /> Unit No. 504 A & B, Rectangle One, Saket District Centre, Saket, New Delhi – 110017
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <!-- <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_7" class="icon-left icon-tel-black"> -->
+                    <span></span>&nbsp;
+                  <p />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_7" class="icon-left icon-fax" hidden="hidden" />
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_7" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_7" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_7" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Update Kolkata -->
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3></h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_7" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_7" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_7" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>
+                    <strong>Kolkata</strong>
+                    <br /> 10-B, O.C. Ganguly Sarani, Macmet House, P.S. Bhowanipur, Kolkata – 700020, West Bengal
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <!-- <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_7" class="icon-left icon-tel-black"> -->
+                    <span></span>&nbsp;
+                  <p />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_7" class="icon-left icon-fax" hidden="hidden" />
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_7" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_7" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_7" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl7$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_7" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="contact-item"><div class="contact-title"><div class="row"><div class="col-md-8"><div><h3>Service Centres</h3></div></div><div id="pagecontents_0_lstContactUs_EnquiryButtonArea_8" class="col-md-4" hidden="hidden"><div><p class="text-right hidden-xs hidden-sm"><a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_8" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl8$btnShowSubmit','')"></a><a id="pagecontents_0_lstContactUs_btnNewShowSubmit_8" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl8$btnNewShowSubmit','')"></a><a id="pagecontents_0_lstContactUs_OpenModal_8" class="aspNetDisabled OpenModal" data-toggle="modal"></a></p></div></div></div></div><div class="contact-info"><div class="row"><div class="col-md-11"><div class="row"><div id="pagecontents_0_lstContactUs_StreetAddressArea_8" class="col-md-4"><div class="contact-info-item"><p><strong>Chennai</strong><br />
+No: 780 (old no:429), Anna Salai, Nandanam, Opp. YMCA, Chennai-600035.</p></div></div><div class="col-md-4"><div class="contact-info-item"><p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_8" class="icon-left icon-tel-black"><span style="font-size: 20px; font-style: normal; font-weight: 400; font-family: 'Open Sans';">044-48586309 / 044-48586308</span></p></div></div><div class="col-md-4"><div class="contact-info-item"><p id="pagecontents_0_lstContactUs_FaxNumberTextArea_8" class="icon-left icon-fax" hidden="hidden"></p><p id="pagecontents_0_lstContactUs_EmailTextArea_8" class="icon-left icon-email" hidden="hidden"></p></div></div></div><div class="row"><div class="col-md-12"></div></div></div><div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_8" class="col-md-1" hidden="hidden"><div class="contact-info-item"><p class="visible-xs-block visible-sm-block"><a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_8" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl8$btnShowSubmitMobile','')"></a><a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_8" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl8$btnNewShowSubmitMobile','')"></a><a id="pagecontents_0_lstContactUs_OpenModalMobile_8" class="aspNetDisabled OpenModal" data-toggle="modal"></a></p></div></div></div></div></div> -->
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3>Service Centres</h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_9" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_9" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl9$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_9" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl9$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_9" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_9" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>
+                    <strong>Bangalore</strong>
+                    <br /> No. 121, Ground Floor, Lalbagh Main Road, SGN Narayan Layout, Bangalore 560027.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_10" class="icon-left icon-tel-black"> 080-40933323 </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_10" class="icon-left icon-fax" hidden="hidden" />
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_10" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_10" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_10" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl10$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_10" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl10$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_10" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3></h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_11" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_11" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl11$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_11" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl11$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_11" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_11" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>
+                    <strong>Pune</strong>
+                    <br /> Shop No 2 &amp; 3, Pinnacle Pride, Opp. Cosmos Bank, Sadashiv Peth, Taluka Haveli, Pune - 411030.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_11" class="icon-left icon-tel-black"> 020-33821901/02/03 </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_11" class="icon-left icon-fax" hidden="hidden" />
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_11" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_11" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_11" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl11$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_11" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl11$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_11" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3></h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_13" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_13" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl13$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_13" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl13$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_13" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_13" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>
+                    <strong>Lucknow</strong>
+                    <br /> G-6, Ground floor Shalimar Square, BN Verma Road, Lalbagh, Lucknow UP - 226001
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_13" class="icon-left icon-tel-black"> 0522-4242132 </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_13" class="icon-left icon-fax" hidden="hidden" />
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_13" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_13" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_13" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl13$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_13" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl13$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_13" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="contact-item">
+      <div class="contact-title">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h3>Service Center Location</h3>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_EnquiryButtonArea_4" class="col-md-4" hidden="hidden">
+            <div>
+              <p class="text-right hidden-xs hidden-sm">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmit_4" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl4$btnShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmit_4" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl4$btnNewShowSubmit','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModal_4" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="row">
+              <div id="pagecontents_0_lstContactUs_StreetAddressArea_4" class="col-md-4">
+                <div class="contact-info-item">
+                  <p>If you are looking for a service center in India, please click on the button below. <br />
+                    <br />
+                    <a class="btn btn-default btn-submit btn-md" href="https://www.brother.in/en/support/contact" title="View on map">View on map</a>
+                  </p>
+                  <p>
+                    <strong>
+                      <span style="font-size: 16px;">&nbsp;</span>
+                    </strong>
+                  </p>
+                  <p>
+                    <strong>
+                      <span style="font-size: 16px;">Change Country</span>
+                    </strong>
+                    <span style="font-size: 16px;"> - <a rel="noopener noreferrer" href="https://global.brother/en/gateway" target="_blank" title="Change Country">Click Here</a>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_PhoneNumberTextArea_4" class="icon-left icon-tel-black" hidden="hidden" />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-info-item">
+                  <p id="pagecontents_0_lstContactUs_FaxNumberTextArea_4" class="icon-left icon-fax" hidden="hidden" />
+                  <p id="pagecontents_0_lstContactUs_EmailTextArea_4" class="icon-left icon-email" hidden="hidden" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div id="pagecontents_0_lstContactUs_MobileEnquiryButtonArea_4" class="col-md-1" hidden="hidden">
+            <div class="contact-info-item">
+              <p class="visible-xs-block visible-sm-block">
+                <a onclick="SetDisabledControl(jQuery('#btnSubmit'), false);" id="pagecontents_0_lstContactUs_btnShowSubmitMobile_4" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl4$btnShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_btnNewShowSubmitMobile_4" class="btn btn-default btn-submit btn-md" href="javascript:__doPostBack('pagecontents_0$lstContactUs$ctrl4$btnNewShowSubmitMobile','')"></a>
+                <a id="pagecontents_0_lstContactUs_OpenModalMobile_4" class="aspNetDisabled OpenModal" data-toggle="modal"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>        </div>
+    </div>
+
+
+
+
+</div>
+        </main>
+        <!-- /#content -->
+        <!-- #footer -->
+        <div class="row">
+
+    <div class="component sxa-custom-customer-consent-component col-12">
+        <div class="component-content">
+
+
+
+
+
+
+
+
+<input type="hidden" id="TimeExpiredCustomerConsent" name="TimeExpiredCustomerConsent" value="30" />
+<div id="CookieAcceptionArea" class="cookie-acception" style="background-color: #fff;">
+    <div class="wrap">
+        <div class="wrap-cnt" style="background-color: #fff;">
+            <div class="privacy-warning-contents">We use cookies to personalise and improve your experience on the Brother International website. By continuing through the site we will assume you are accepting our use of cookies. To find out more, <a href="https://www.brother.in/en/contents/privacy-policy">click here</a>.&nbsp;&nbsp;</div>
+            <div class="privacy-warning-buttons">
+                
+                                    <a href="https://www.brother.in/en/contents/privacy-policy" target="_blank" style="background-color: #666;color: #fff"
+                                    class="privacy-warning-buttons-btn-2">
+                                        Find out more
+                                    </a>
+                                
+
+                
+                                    <a id="lnkAcceptCookieLawHyperLink" class="privacy-warning-buttons-btn-1 js-accept-cookie-btn" 
+                                            style="background-color: #0d2ea0;color: #fff ">
+                                        Accept
+                                    </a>
+                                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+
+
+<input name="__RequestVerificationToken" type="hidden" value="GR3sfT22mS7Neg82XGXimGP60PEy1unRG_MjPToTIvZAcvOmrwO1DMex0gVZ07hCRFYi77JqpdxarT_GBk5yHJWaJ2weP-tLxd8VfpZu0u41" /><input name="__RequestVerificationToken" type="hidden" value="wB_JpAOQLdKwp2HIrfIS8vC_mww8kFHfH7v_H3oIkrQy8S14QG-J_zNQ4aTh1R2LxWrGwp22Qt2K_IgmOcqKWciiwmW8tGoHjahXlC6om2g1" />
+
+    <div class="component sxa-brother-employee-speak footer">
+        <div class="component-content">
+
+
+<div class="footer">
+    <section class="footer-bottom-container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="footer-menu-container">
+                    <div class="footer-title"> About </div>
+                    <nav class="footer-menu-nav">
+                        <ul class="list-non-decoration nav footer-menu">
+                            
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/about-brother" target="">
+                                                                Company profile
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/news" target="">
+                                                                News &amp; Media
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/domestic-history" target="">
+                                                                History &amp; legacy
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/support/contact" target="">
+                                                                Contact Us
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/awards" target="">
+                                                                Awards &amp; Recognition
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/contents/career" target="">
+                                                                Job Openings
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/about/csr" target="">
+                                                                Corporate Social Responsibility
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="" target="">
+                                                                Sustainability
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <div class="footer-menu-container">
+                    <div class="footer-title"> Support</div>
+                    <nav class="footer-menu-nav">
+                        <ul class="list-non-decoration nav footer-menu">
+                            
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/support" target="">
+                                                                Support &amp; Download
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="https://brother.co.in/smartserve/CoreModule/WarrantyCheck.aspx" target="">
+                                                                Product Warranty
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/support/contact" target="">
+                                                                Service Centre Location
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/support/retailer-locations" target="">
+                                                                Retailer Locations
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li class="external-link">
+                                                            
+                                                            <a href="https://www.creativecenter.brother/en-us?utm_source=brother.in&utm_medium=referral" target="_blank">
+                                                                Creative Center
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li class="external-link">
+                                                            
+                                                            <a href="https://support.brother.com/g/s/security/en/index.html" target="_blank">
+                                                                Security Support Information
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                        
+                                                        <li>
+                                                            
+                                                            <a href="/en/contents/glossary" target="">
+                                                                Glossary
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12">
+                <div class="footer-title">Connect</div>
+                <ul class="list-non-decoration nav social-connect ">
+                    
+                                        <li>
+                                            
+                                            <a href="https://www.facebook.com/brotherindiaoffice/" target="">
+                                                <img loading="lazy" src="https://www.brother.in/-/media/themes/apweb/global/global-lite/images/facebook.svg?iar=0&amp;rev=68a9d369e4304f7884e97590bafba35f" alt="brother_facebook_icon" class="lazy" />
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            <a href="https://twitter.com/brotherindia" target="">
+                                                <img loading="lazy" src="https://www.brother.in/-/media/themes/apweb/global/global-lite/images/icons/twitter.svg?h=100&amp;iar=0&amp;w=100&amp;rev=0fb1879ab4e645a3aed43d0155543dd9" alt="twitter" width="100" height="100" class="lazy" />
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            <a href="https://www.instagram.com/brother_india/" target="">
+                                                <img loading="lazy" src="https://www.brother.in/-/media/themes/apweb/global/global-lite/images/icons/instagram.svg?iar=0&amp;rev=5b2648b2849c4f1a9a0999afad1ec743" alt="instagram" class="lazy" />
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            <a href="https://www.linkedin.com/company/brother-international-i-pvt--ltd-/" target="">
+                                                <img loading="lazy" src="https://www.brother.in/-/media/themes/apweb/global/global-lite/images/icons/linkedin.svg?iar=0&amp;rev=b43bc9549e6d44b0b40068415ef297e9" alt="linkedin" class="lazy" />
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            <a href="https://www.youtube.com/c/BrotherIndiaOffice" target="">
+                                                <img loading="lazy" src="https://www.brother.in/-/media/themes/apweb/global/global-lite/images/icons/youtube.svg?iar=0&amp;rev=87f2f2f637c14b80823f550b138ab231" alt="youtube" class="lazy" />
+                                            </a>
+                                        </li>
+                                        
+                </ul>
+            </div>
+
+        </div>
+
+        
+        
+        <div class="footer-bottom-section">
+            <hr class="footer-hr">
+            <div class="row align-items-start">
+                <div class="col-md-4 col-xs-12">
+                    <ul class="list-non-decoration nav global-net">
+                        <li class="global-net_item">
+                            <a style="text-decoration: none;" onMouseOver="this.style.cursor='auto'">
+                                <img loading="lazy" src="https://www.brother.in/-/media/themes/apweb/global/header-footer-theme/images/flags/bici.png?h=24&amp;iar=0&amp;w=24&amp;rev=2043b332ed734ac8ab5c84edf172dff3" alt="BICI" width="24" height="24" class="lazy" />
+                                India
+                            </a>
+
+                        </li>
+                        <li class="global-net_item external-link">
+                            
+                            <a href="https://global.brother/en/gateway" target="_blank">
+                                Global Network
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+                <div class="col-md-8 col-xs-12">
+                    <ul class="list-non-decoration nav footer-links">
+                        
+                                                
+                        
+                                                
+                                                <li class="footer-links_item ">
+                                                    
+                                                        <a href="/en/contents/privacy-policy" target="">
+                                                           <div class="footer-item-with-icon-direct">
+                            									Privacy Policy
+                            								</div>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                
+                                                
+                        
+                                                
+                                                <li class="footer-links_item ">
+                                                    
+                                                        <a href="/en/contents/e-waste" target="">
+                                                           <div class="footer-item-with-icon-direct">
+                            									E-Waste Policy
+                            								</div>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                
+                                                
+                        
+                                                
+                                                <li class="footer-links_item ">
+                                                    
+                                                        <a href="/en/about/tnc" target="">
+                                                           <div class="footer-item-with-icon-direct">
+                            									Terms &amp; Conditions
+                            								</div>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                
+                                                
+                        
+                                                
+                                                <li class="footer-links_item ">
+                                                    
+                                                        <a href="/en/sitemap" target="">
+                                                           <div class="footer-item-with-icon-direct">
+                            									Sitemap
+                            								</div>
+                                                        </a>
+                                                        
+                                                </li>
+                                                
+                                                
+                                                
+                        
+                                                
+                                                <li class="footer-links_item global-site external-link footer-ph ">
+                                                    
+                            								<a href="https://global.brother/en" target="_blank">
+                            									<div class="footer-item-with-icon-direct">
+                            										Go to Global Site
+                            									</div>
+                            								</a>
+                                                        
+                                                </li>
+                                                
+                                                
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+                <div class="row">
+                    
+                        <div class="col-md-12 col-sm-12 col-xs-12 copyright">©
+                            <span id="copyright">
+                                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))                       </script>
+                            </span> BROTHER INTERNATIONAL (INDIA) PRIVATE LTD. All Rights Reserved
+                        </div>
+                    </div>
+                    
+                
+    </section>
+
+    <a class="back-to-top js-cd-top" href="#0">
+        <span></span>
+        <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+        </svg>
+    </a>
+</div>        </div>
+    </div>
+</div>
+        <!-- /#footer -->
+    </div>
+    <!-- /#footer -->
+    
+
+
+
+
+<script src="https://www.brother.in/-/media/base-themes/core-libraries/scripts/optimized-min.js?rev=486c7aca37484943b0e061dce75b6aea&t=20241001T112724Z&hash=1A6B215DC0C020C8299BB94EE88C62F4"></script><script src="https://www.brother.in/-/media/base-themes/xa-api/scripts/optimized-min.js?rev=82abf36af37b43adb942d97feed8fe21&t=20250605T034247Z&hash=84F2D35DB02C946723DAE5CAE1DFD460"></script><script src="https://www.brother.in/-/media/base-themes/main-theme/scripts/optimized-min.js?rev=79a4c8e764eb4846b09b83e8f3a40f15&t=20250605T052945Z&hash=644F66192FBB66250FB650182407DB82"></script><script src="https://www.brother.in/-/media/base-themes/searchtheme/scripts/optimized-min.js?rev=9c6ba5ac7ad74d3994d6b075f8a57f5c&t=20251209T100511Z&hash=B15868FC28AEE92ABD092704B98C7B87"></script><script src="https://www.brother.in/-/media/base-themes/components-theme/scripts/optimized-min.js?rev=eac291fa4f1d44fb912b29a4e1f88efd&t=20250605T014233Z&hash=62200EE7C1C7FF9695B7662A16C4EF30"></script><script src="https://www.brother.in/-/media/base-themes/resolve-conflicts/scripts/optimized-min.js?rev=7d6f4404113f4d049e538797db54fbfc&t=20250822T115552Z&hash=41011B0C413ED814849ABBD2640873DA"></script>    <script defer src="/-/media/Themes/APWEB/Global/Header-Footer-Theme/scripts/optimized-min.js"></script>
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0043/7607.js" async="async"></script>
+    <script src="/-/media/ap2/SystemFiles/Scripts/brother-components.js"></script>
+    <script src="/-/media/ap2/SystemFiles/Scripts/jquerymobilecustom.js"></script>
+    <script src="/-/media/ap2/SystemFiles/Scripts/brother-app.js"></script>
+    <script src="/AP2/Scripts/Common/jQueryUI/jquery-ui-autocomplete.min.js"></script>
+    <script src="/-/media/ap2/SystemFiles/Scripts/Common/APCommon.js"></script>
+    <script src="/AP2/v2/Resources/js/APCommon-transplant.js"></script>
+    <script src="/AP2/Resources/assets/js/moment.js"></script>
+    <script src="/AP2/Resources/assets/js/custom-site-information-component.js"></script>
+    <script src="/-/media/Base-Themes/Brother-Core-Libraries/Scripts/webp-herobundle.js"></script>
+    <script src="/-/media/Base-Themes/Brother-Core-Libraries/Scripts/polyfills.js"></script>
+    <script src="/AP2/Resources/assets/js/custom-site-information-component.js"></script>
+    <script src="/AP2/Scripts/Common/jQueryCookie/jquery.cookie.js"></script>
+
+    <div class="row"></div>
+    <!-- /#wrapper -->
+</body>
+</html>

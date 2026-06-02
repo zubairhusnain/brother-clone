@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Download-Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Support" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PSP" transform="translate(-150.000000, -435.000000)" stroke="#0D2EA0">
+            <g id="Card-1" transform="translate(130.000000, 380.000000)">
+                <g id="Icons/Download-Icon" transform="translate(20.000000, 56.000000)">
+                    <path d="M7.96537872,0.174706383 L18.1316766,0.174706383" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M18.1316766,0.119387234 C18.8690383,0.119387234 19.4732255,0.726025532 19.4732255,1.45848511" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19.5285447,1.45848511 L19.5285447,20.1068936" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19.4732255,20.1068936 C19.4732255,20.8405787 18.8665872,21.4458894 18.1316766,21.4458894" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M18.1316766,21.5012085 L3.50546383,21.5012085" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3.50546383,21.4458894 C2.77422979,21.4458894 2.16636596,20.8417021 2.16636596,20.1068936" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="2.16636596 20.1068936 2.16636596 5.48425532 7.96537872 0.119387234"></polyline>
+                    <path d="M8.2944,0.119387234 L8.2944,4.94675745" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8.23908085,4.94675745 C8.23908085,5.34015319 7.91227234,5.66563404 7.52020426,5.66563404" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.52020426,5.72095319 L2.16636596,5.72095319" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11.0526638,18.1921152 L10.9973447,18.2474553 L11.0526638,18.1921152 L11.0526638,6.31904681 L11.0526638,18.1921152 Z M11.0526638,18.1921152 L11.0526638,18.2474553 L11.0526638,18.1921152 L14.7728,14.4705702 L11.0526638,18.1921152 Z M10.9973447,18.2474553 L6.86668936,14.1143489 L10.9973447,18.2474553 Z" id="Combined-Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0.5" y="19.2234043" width="21" height="2.74468085" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

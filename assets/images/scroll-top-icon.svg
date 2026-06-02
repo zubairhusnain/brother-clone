@@ -1,0 +1,9 @@
+<svg id="Icons_Scroll-To-Top-Icon" data-name="Icons/Scroll-To-Top-Icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Scroll-To-Top-Icon">
+    <g id="Rectangle" transform="translate(0 0)" fill="#fff" stroke="#41bd87" stroke-miterlimit="10" stroke-width="1">
+      <rect width="48" height="48" rx="24" stroke="none"/>
+      <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="none"/>
+    </g>
+    <path id="Combined_Shape" data-name="Combined Shape" d="M.025,20V1.968a2,2,0,0,1,.052-.454A2,2,0,0,1,.018.963,1.061,1.061,0,0,1,.986.024h.57a2.012,2.012,0,0,1,.289-.048.875.875,0,0,1,.361.048H19a2,2,0,0,1,2,2,1.1,1.1,0,0,1-1,1H3.025V19a2,2,0,0,1-2,2A1.1,1.1,0,0,1,.025,20Z" transform="translate(23.534 13.083) rotate(45)" fill="#41bd87"/>
+  </g>
+</svg>

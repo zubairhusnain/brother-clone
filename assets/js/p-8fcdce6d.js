@@ -1,0 +1,2 @@
+import{h as t}from"./p-5925f187.js";import{d as s}from"./p-04f800cd.js";import{B as i}from"./p-d83eaf95.js";const r=({bindings:r,onClick:e,...o})=>t("div",{part:"submit-button-wrapper",class:"mr-2 flex items-start items-center justify-center py-2"},t(i,{style:"text-primary",class:"flex h-8 w-8 shrink-0 items-center justify-center rounded-full",part:"submit-button",ariaLabel:r.i18n.t("search"),onClick:()=>{e===null||e===void 0?void 0:e()},...o},t("atomic-icon",{part:"submit-icon",icon:s,class:"h-4 w-4"})));export{r as T};
+//# sourceMappingURL=p-8fcdce6d.js.map

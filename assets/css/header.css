@@ -1,0 +1,124 @@
+.x-blog-main-header {
+    position: relative;
+    z-index: 50;
+    min-height: 78px;
+}
+
+.x-blog-container{
+    background: #0D2EA0;
+}
+
+.x-blog-logo {
+    margin-top: 20px;
+    padding-right: 18px;
+    margin-bottom: 12px;
+    width: 125px;
+    border-right: 1px solid #ffffff;
+}
+.x-blog-stearling{
+    width: 200px;
+    padding-left: 18px;
+}
+
+.x-blog-nav .navbar-nav li {
+    position: relative;
+}     
+
+.x-blog-nav .navbar .navbar-nav li > a {
+    position: relative;
+    display: block;
+    color: #020920;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 15px 13px;
+    transition: all .3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent ;
+}
+/* .x-blog-nav .navbar .navbar-nav li:first-child  a{
+    padding-left: 0px;
+} */
+
+.x-blog-nav .navbar .navbar-nav li > a:hover{
+    border-bottom: 3px solid #1864e0 ;
+}
+.x-blog-nav  {
+    background: #fff;
+    position: relative;
+    box-shadow: 0 4px 2px -2px grey;
+}
+.x-blog-nav .navbar {
+    padding: 0rem 1rem;
+    padding-left: 0px;
+    
+}
+
+.x-blog-nav .navbar-toggler{
+    outline: none;
+}
+.x-blog-nav .navbar-toggler img {
+    width: 25px;
+}
+
+.sub-menu {
+    position: absolute;
+    background: #ffffff;
+    min-width: 300px;
+   
+}
+.navbar-nav .nav-dropdown{
+    padding-right: 20px;
+}
+.x-blog-nav .has-dropdown{
+    padding-right: 20px;
+}
+.x-blog-nav .has-dropdown > a{
+    position: relative;
+}
+.x-blog-nav .has-dropdown > a:after{
+    content: '';
+    position: absolute;
+    right: -10px;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    margin-top: -4px;
+    border-bottom: 2px solid #1965e1;
+    border-right: 2px solid #1965e1;
+    transform: rotate(45deg);
+    transition: all .3s ease-in-out;
+}
+
+
+
+
+
+@media(max-width:991px){
+    .x-blog-nav .navbar{
+        flex-direction: row-reverse;
+    width: 100%;
+    }
+    .x-blog-nav .navbar .navbar-nav li:first-child a {
+        padding-left: 15px;
+    }
+    .x-blog-nav .navbar .navbar-nav li a{
+        border-bottom: 1px solid #6197e7;
+        color: #ffffff;
+    }
+    .x-blog-left-col {
+        padding-left: 15px;
+    }
+    .x-blog-nav .container{
+        max-width: 100%;
+    }
+    .x-blog-nav  .navbar-collapse{
+        background: rgb(25, 101, 225);
+        margin: 0px -15px;
+    }
+
+    .navbar-nav{
+        padding: 0px 15px;
+    }
+ 
+}
+

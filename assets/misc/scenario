@@ -1,0 +1,743 @@
+window.DigitalFeedback['https://digitalfeedback.us.confirmit.com/api/digitalfeedback/loader/prod/scenario?programKey=9SRSlf&scenarioId=14700&programVersion=92'] = function (api) {
+console.log("2025 02 10 v7");
+var pid = "p297960839845";
+var oneDayCookie = ConfirmitHelper.oneDayCookieName;
+var logString = "ForstaDF : "
+var showLog = true;
+var doCookieChecks = true;
+var doOneDayCheck = true;
+var cookieExpireDays = 14;
+var cancelButtonID = "btnAnotherStep4";
+var completeRegButtonID = "btnNextStep4"
+var submitButtonID = "sapOrderId";
+var url = ConfirmitHelper.getLocation();
+var turl = document.location.href;
+var surveyTrack = "FI";
+var TimeDelayOnSite = 120 // 120;
+var TimeDelayOnPage = 30 // 30;
+var triggered = false;
+
+var cookieConsent = false;
+
+/*
+var ccA = utag.gdpr.getConsentState();
+
+if ( ccA == '1' )
+{
+  cookieConsent = true;
+}
+else
+{
+  for( var i=0; i<ccA.length; ++i)
+  {
+    var ccO = ccA[i];
+    if( ccO.name == "search" )
+    {
+      if(ccO.ct == "1")
+    {
+      cookieConsent = true;
+    }
+    }
+  }
+}
+*/
+
+var cfonetrust = ""+window.OnetrustActiveGroups
+
+if( cfonetrust.indexOf('C0001') != -1 && cfonetrust.indexOf('C0004') != -1)
+{
+	console.log('cf ot: true');
+  cookieConsent = true;
+}
+else{
+	console.log('cf ot: false');
+	cookieConsent = false;
+}
+
+var dObj = {};
+dObj.purl = ConfirmitHelper.getLocation();
+
+ConfirmitHelper.doLater = function(st) {
+
+console.log( st )
+
+		if( st == "REI" )
+		{
+			dObj.reirem = "1";
+		}
+		
+  console.log('running doLater() for track:' + st);
+  dObj.st = st;
+  var ctx = api();
+  ctx.data(dObj);
+  ctx.invite('Remind');
+  ctx.container('default');
+  ctx.survey(pid);
+  ctx.show();
+
+console.log( dObj )
+
+  ctx.events.showContainer.on(
+    function() {
+      console.log('survey shown');
+      sessionStorage.removeItem('CONFDL');
+	
+      ctx.events.completeSurvey.on(
+        function() {
+          console.log('survey completed');
+        });
+
+      ctx.events.closeContainer.on(
+        function() {
+          console.log('survey closed');
+        });
+		
+  var myHeight = 0;
+  var myWidth = 0;
+
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myWidth = document.documentElement.clientWidth;
+    myHeight = document.documentElement.clientHeight;
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+    //IE 4 compatible
+    myWidth = document.body.clientWidth;
+    myHeight = document.body.clientHeight;
+  }
+
+	if( myHeight < 641 || myWidth < 641 )
+	{
+		console.log('custom height listener set'); 
+		window.addEventListener('message', ConfirmitHelper.ConfirmitReceiveMessage);
+	}
+	
+    });
+}
+
+
+ConfirmitHelper.remindMeLater = function(st) {
+  console.log('remind me later clicked.  Run doLater() for track: ' + st);
+  sessionStorage.setItem('CONFDL', st);
+  document.getElementById('cf-mw1').remove();
+  ConfirmitHelper.doLater(st);
+}
+
+ConfirmitHelper.reiRemindMeLater = function(st) {
+  console.log('remind me later clicked.  Run doLater() for track: ' + st);
+  sessionStorage.setItem('CONFDL', st);
+  //document.getElementById('cf-mw1').remove();
+  ConfirmitHelper.doLater(st);
+}
+
+ConfirmitHelper.listenForReminder = function() {
+    console.log( 'listener start' );
+
+	// listener for messaging from the survey
+	function ConfirmitReceiveRemindMessage(e) {
+		var showLog = true;
+		var consoleid = 'remind listener: ';
+		if( e.origin === "https://survey.confirmit.com" || e.origin === "https://survey.us.confirmit.com" )
+		{
+			console.log(e.origin)
+			ConfirmitHelper.ConfirmitLog(showLog,consoleid + "message received:");
+			ConfirmitHelper.ConfirmitLog(showLog,e);
+			var myObj = e.data;
+			ConfirmitHelper.ConfirmitLog(showLog,consoleid + " message data:");
+			ConfirmitHelper.ConfirmitLog(showLog,consoleid + JSON.stringify(myObj));
+
+			if(myObj.doremind)
+			{
+				ConfirmitHelper.ConfirmitLog(showLog,consoleid + "reminder triggered");
+              	window.removeEventListener('message', ConfirmitReceiveRemindMessage);
+				ConfirmitHelper.reiRemindMeLater("REI")
+			}
+		}
+	}
+	
+	window.addEventListener('message', ConfirmitReceiveRemindMessage);
+}
+
+if( cookieConsent )
+{
+	var cdlst = sessionStorage.getItem('CONFDL');
+
+	if (cdlst) {
+	  console.log('CONFDL present.');
+	  ConfirmitHelper.doLater(cdlst);
+	}
+}
+else
+{
+	console.log('CC: false.  Not checking.');
+}
+
+var dObjf = {};
+dObjf.purl = ConfirmitHelper.getLocation();
+dObjf.st = "FI";
+dObjf.fbktb = "1";
+var ctxf = api();
+ctxf.container('default');
+ctxf.invite('Feedback');
+ctxf.survey(pid);
+ctxf.data(dObjf);
+ctxf.show();
+
+
+ctxf.events.showContainer.on(
+  function() { 
+  var myHeight = 0;
+  var myWidth = 0;
+
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myWidth = document.documentElement.clientWidth;
+    myHeight = document.documentElement.clientHeight;
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+    //IE 4 compatible
+    myWidth = document.body.clientWidth;
+    myHeight = document.body.clientHeight;
+  }
+
+	if( myHeight < 641 || myWidth < 641 )
+	{
+		console.log('custom height listener set'); 
+		window.addEventListener('message', ConfirmitHelper.ConfirmitReceiveMessage);
+	}
+
+})
+
+ctxf.events.acceptInvite.on(
+  function() {
+  
+  if( cookieConsent )
+  {
+		var fbCookie = pid + "_FI_done"
+		triggered = true;
+		ConfirmitHelper.setCookie(fbCookie, '1', {
+		  path: '/',
+		  expiry: cookieExpireDays * 86400,
+		  secure: true,
+		  samesite: 'None'
+		});
+		ConfirmitHelper.setCookie(oneDayCookie, '1', {
+		  path: '/',
+		  expiry: 86400,
+		  secure: true,
+		  samesite: 'None'
+		});
+		
+	}
+	else
+	{
+		console.log('CC: false.  No FBC.');
+	}
+
+    console.log('invite accepted');
+  });
+
+
+if( cookieConsent )
+{
+  
+/* switch to survey specific cookies
+
+if (ConfirmitHelper.getCookie(surveyCookie)) {
+  ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " survey cookie present.");
+  if (doCookieChecks) {
+    ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " survey cookie present.  exiting.");
+    return;
+  }
+}
+*/
+
+if (cdlst) {
+  console.log('CONFDL present. not checking other rules.');
+} else {
+
+  console.log('CONFDL not present.  Check other rules.');
+
+
+  var fn2 = function(strigger) {
+	  
+	  if (strigger == 'FI' || strigger == 'EIR' || strigger == 'EIS' || strigger == 'EIEZ' || strigger == 'REI' || strigger == 'RC') {
+		console.log('on open survey page - continue.');
+	  }
+	  else
+	  {
+		console.log('not on open survey page.  exit.');
+		return;
+	  }
+	  
+	var fn2Cookie = pid + "_" + strigger + "_done"
+
+    var fn2ivt;
+    if (strigger == 'RC') {
+      fn2ivt = "modal_RC";
+    }
+    if (strigger == 'SC') {
+      fn2ivt = "modal_SC";
+      try {
+        var oide = document.getElementById('sapOrderId');
+        dObj.soid = oide.innerHTML;
+      }
+      catch (e) {
+        dObj.soid = "error: " + e;
+      }
+    }
+    if (strigger == 'FI') {
+      fn2ivt = "modal";
+    }
+    if (strigger == 'RP') {
+      fn2ivt = "modal_RP";
+    }
+
+    if (triggered) {
+      ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " survey already triggered.  exiting.");
+      return;
+    }
+
+    if (ConfirmitHelper.getCookie(oneDayCookie)) {
+      ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " one survey a day cookie present.");
+      if (doOneDayCheck) {
+        ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " one survey a day cookie present.  exiting.");
+        return;
+      }
+    }
+
+    if (ConfirmitHelper.getCookie(fn2Cookie)) {
+      ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " survey cookie present.");
+      if (doCookieChecks) {
+        ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " survey cookie present.  exiting.");
+        return;
+      }
+    }
+
+	var stk;
+  if (url.indexOf('brother-usa.com/supplies/refresh-smart-delivery') != -1) {
+    stk = 'EIR';
+  } else if (url.indexOf('brother-usa.com/supplies/subscription-info') != -1) {
+    stk = 'EIS';
+  } else if (url.indexOf('brother-usa.com/supplies/ez-auto-reordering') != -1) {
+    stk = 'EIEZ';
+  } else if (url.indexOf('brother-usa.com/checkout/delivery') != -1) {
+    stk = 'SEI';
+  } else if (url.indexOf('brother-usa.com/myaccount#register-product') != -1) {
+    stk = 'REI';
+  } else if (url.indexOf('brother-usa.com/myaccount/home#register-product') != -1) {
+    stk = 'REI'
+  }	else if (url.indexOf('brother-usa.com/myaccount/devices/registerproduct?page=registerproduct') != -1) {
+    stk = 'REI';
+  } else if (url.indexOf('brother-usa.com/checkout/orderconfirmation') != -1) {
+    stk = 'OCP';
+  } else if (url.indexOf('brother-usa.com/product-registration') != -1) {
+    stk = 'RP';
+  } 
+
+  if (turl.indexOf('Demo/Brother/refresh-smart-delivery.html') != -1) {
+    stk = 'EIR';
+  } else if (turl.indexOf('Demo/Brother/subscription-info.html') != -1) {
+    stk = 'EIS';
+  } else if (turl.indexOf('Demo/Brother/ez-auto-reordering.html') != -1) {
+    stk = 'EIEZ';
+  } else if (turl.indexOf('Demo/Brother/delivery.html') != -1) {
+    stk = 'SEI';
+  } else if (turl.indexOf('Demo/Brother/myaccount.html#register-product') != -1) {
+    stk = 'REI';
+  } else if (turl.indexOf('Demo/Brother/orderconfirmation') != -1) {
+    stk = 'OCP';
+  }else if (turl.indexOf('Demo/Brother/product-registration') != -1) {
+    stk = 'RP';
+  }
+ 
+	if( strigger == 'FI' && stk )
+	{
+		console.log( "site track:" + stk);
+		console.log('on specific site page.  not running Full intercept.  Exiting.');
+		return;
+	}
+	
+	var nogen = false;
+	var noGF = [	
+"brother-usa.com/login",
+"brother-usa.com/myaccount#register-product",
+"brother-usa.com/myaccount/home#register-product",
+"brother-usa.com/myaccount/devices/registerproduct?page=registerproduct",
+"brother-usa.com/product-registration",
+"brother-usa.com/MyAccount#account",
+"brother-usa.com/myaccount/profile?page=profile",
+"brother-usa.com/checkout/delivery",
+"brother-usa.com/shoppingcart",
+"brother-usa.com/app/ask/p/9214",
+"brother-usa.com/MyAccount#payment",
+"brother-usa.com/MyAccount#orders",
+"brother-usa.com/myaccount/payment?page=payment",
+"brother-usa.com/myaccount/orderhistory?page=orderhistory",
+"brother-usa.com/MyAccount#address",
+"brother-usa.com/supplies/ink-and-toner",
+"brother-usa.com/supplies/sewingembroidery",
+"brother-usa.com/supplies/label-tape/ptouch-tape",
+"brother-usa.com/supplies/shop-ink-and-toner",
+"brother-usa.com/404",
+		]
+		
+	for(var i=0;i<noGF.length;++i)
+	{
+		var pg = noGF[i];
+		var pglc = pg.toLowerCase();
+		if( url.indexOf(pglc) != -1 )
+		{
+			nogen = true;
+			break;
+		}
+		
+		if( turl.indexOf(pglc) != -1 )
+		{
+			nogen = true;
+			break;
+		}
+	}
+
+	if( strigger == 'FI' && nogen )
+	{
+		console.log('not running Full intercept on page: ' + pglc + '.  Exiting.');
+		return;
+	}
+	
+
+    dObj.st = strigger;
+
+    var ctx = api();
+    ctx.data(dObj);
+    ctx.container('default');
+    ctx.survey(pid);
+
+    if (fn2ivt) {
+      ctx.invite(fn2ivt);
+    }
+
+	if( surveyTrack == "REI" )
+	{
+		console.log( "adding rei listener" );
+		ctx.events.showContainer.on(function(e) {
+			ConfirmitHelper.listenForReminder()
+		})
+		
+	}
+	
+    ctx.show();
+
+ctx.events.showContainer.on(
+  function() { 
+  var myHeight = 0;
+  var myWidth = 0;
+
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myWidth = document.documentElement.clientWidth;
+    myHeight = document.documentElement.clientHeight;
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+    //IE 4 compatible
+    myWidth = document.body.clientWidth;
+    myHeight = document.body.clientHeight;
+  }
+
+	if( myHeight < 641 || myWidth < 641 )
+	{
+		console.log('custom height listener set'); 
+		window.addEventListener('message', ConfirmitHelper.ConfirmitReceiveMessage);
+	}
+
+})
+
+    if (fn2ivt) {
+      ctx.events.showInvite.on(function(e) {
+        ConfirmitHelper.ConfirmitLog(showLog, logString + "Showing Invite.");
+        returnFocus = document.activeElement;
+        var el = document.querySelector(".cf-invite-wrapper");
+        ConfirmitHelper.FixButtons(el);
+
+        if (true) {
+          document.getElementById("cfyb1").focus();
+          ConfirmitHelper.ConfirmitLog(showLog, logString + "Modal Invite, trap focus.");
+          ConfirmitHelper.trapFocus(el);
+        } else {
+          ConfirmitHelper.ConfirmitLog(showLog, logString + "Not Modal Invite.");
+        }
+
+        document.getElementById('cfnb1').addEventListener('click', function() {
+            ConfirmitHelper.remindMeLater(strigger);
+        });
+
+      });
+    }
+    ConfirmitHelper.setCookie(fn2Cookie, '1', {
+      path: '/',
+      expiry: cookieExpireDays * 86400,
+      secure: true,
+      samesite: 'None'
+    });
+    ConfirmitHelper.setCookie(oneDayCookie, '1', {
+      path: '/',
+      expiry: 86400,
+      secure: true,
+      samesite: 'None'
+    });
+    triggered = true;
+  };
+
+	// function for implementation by page developer
+	ConfirmitHelper.registrationCancelled = function()
+	{
+		fn2('REI');
+	}
+
+	// function for implementation by page developer
+	ConfirmitHelper.registrationSubmitted = function()
+	{
+		fn2('RC')
+	}
+
+
+  if (url.indexOf('brother-usa.com/supplies/refresh-smart-delivery') != -1) {
+    surveyTrack = 'EIR';
+  } else if (url.indexOf('brother-usa.com/supplies/subscription-info') != -1) {
+    surveyTrack = 'EIS';
+  } else if (url.indexOf('brother-usa.com/supplies/ez-auto-reordering') != -1) {
+    surveyTrack = 'EIEZ';
+  } else if (url.indexOf('brother-usa.com/checkout/delivery') != -1) {
+    surveyTrack = 'SEI';
+  } else if (url.indexOf('brother-usa.com/myaccount#register-product') != -1) {
+    surveyTrack = 'REI';
+  } else if (url.indexOf('brother-usa.com/myaccount/devices/registerproduct?page=registerproduct') != -1) {
+    surveyTrack = 'REI';
+  } else if (url.indexOf('brother-usa.com/myaccount/home#register-product') != -1) {
+    stk = 'REI'
+  }
+
+  if (turl.indexOf('Demo/Brother/refresh-smart-delivery.html') != -1) {
+    surveyTrack = 'EIR';
+  } else if (turl.indexOf('Demo/Brother/subscription-info.html') != -1) {
+    surveyTrack = 'EIS';
+  } else if (turl.indexOf('Demo/Brother/ez-auto-reordering.html') != -1) {
+    surveyTrack = 'EIEZ';
+  } else if (turl.indexOf('Demo/Brother/delivery.html') != -1) {
+    surveyTrack = 'SEI';
+  } else if (turl.indexOf('Demo/Brother/myaccount.html#register-product') != -1) {
+    surveyTrack = 'REI';
+  }
+
+  console.log('surveyTrack: ' + surveyTrack);
+
+  if (surveyTrack == 'FI' || surveyTrack == 'EIR' || surveyTrack == 'EIS' || surveyTrack == 'EIEZ' || surveyTrack == 'REI' ) {
+    console.log('on open survey page - continue.');
+			 
+  }
+  else
+  {
+    console.log('not on open survey page.  exit.');
+    return;
+  }
+  
+  if (surveyTrack == 'EIR' || surveyTrack == 'EIS' || surveyTrack == 'EIEZ' || surveyTrack == 'SEI' || surveyTrack == 'REI') {
+	ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " on survey track page: " + surveyTrack);
+    dObj.st = surveyTrack;
+
+    var ctx2 = api();
+    ctx2.data(dObj);
+    ctx2.container('default');
+    ctx2.survey(pid);
+
+ctx2.events.showContainer.on(
+  function() { 
+  var myHeight = 0;
+  var myWidth = 0;
+
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myWidth = document.documentElement.clientWidth;
+    myHeight = document.documentElement.clientHeight;
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+    //IE 4 compatible
+    myWidth = document.body.clientWidth;
+    myHeight = document.body.clientHeight;
+  }
+
+	if( myHeight < 641 || myWidth < 641 )
+	{
+		console.log('custom height listener set'); 
+		window.addEventListener('message', ConfirmitHelper.ConfirmitReceiveMessage);
+	}
+
+})
+
+	if( surveyTrack == "REI" )
+	{
+		console.log( "adding rei listener" );
+		ctx2.events.showContainer.on(function(e) {
+			ConfirmitHelper.listenForReminder()
+		})
+		
+	}
+	
+	var stCookie = pid + "_" + surveyTrack + "_done"; 
+	
+	if( surveyTrack == 'EIR' || surveyTrack == 'EIS' || surveyTrack == 'EIEZ' )
+	{
+		ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " on survey refresh track: " + surveyTrack);
+		stCookie = pid + '_' + surveyTrack + '_done';
+	}
+
+
+    var onMouseLeave = function(e) {
+      if (triggered) {
+        ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " survey already triggered.  exiting.");
+        return;
+      }
+
+      if (ConfirmitHelper.getCookie(oneDayCookie)) {
+        ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " one survey a day cookie present.");
+        if (doOneDayCheck) {
+          ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " one survey a day cookie present.  exiting.");
+          return;
+        }
+      }
+
+      if (ConfirmitHelper.getCookie(stCookie)) {
+        ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " survey cookie present.");
+        if (doCookieChecks) {
+          ConfirmitHelper.ConfirmitLog(showLog, logString + "" + pid + " survey cookie present.  exiting.");
+          return;
+        }
+      }
+
+      if (e.clientY <= 20) {
+        ctx2.show();
+        ConfirmitHelper.setCookie(stCookie, '1', {
+          path: '/',
+          expiry: cookieExpireDays * 86400,
+          secure: true,
+          samesite: 'None'
+        });
+        ConfirmitHelper.setCookie(oneDayCookie, '1', {
+          path: '/',
+          expiry: 86400,
+          secure: true,
+          samesite: 'None'
+        });
+        triggered = true;
+      }
+    };
+
+    document.body.addEventListener('mouseleave', onMouseLeave);
+
+  }
+
+
+  var showLog = true;
+  var logString = "";
+  var doTimeDelay = true;
+  var showSurveyAfterTimeDelay = true;
+
+
+  // site load time
+  var sltt = sessionStorage.getItem('CONFLSLT'); // set site load time
+  if (!sltt) {
+    var sltd = new Date(); // site load as date
+    var sltt = sltd.getTime(); // site load as time
+    sessionStorage.setItem('CONFLSLT', sltt); // store site load time
+  }
+
+  var pltd = new Date(); // page load as date
+  var pltt = pltd.getTime(); // page load as time
+  var slti = Math.floor((pltt - sltt) / 1000) // difference in seconds
+  ConfirmitHelper.ConfirmitLog(showLog, logString + "interval since site entry: " + slti + " seconds");
+
+  // If if show survey after delay not specified, default false.
+  if (typeof(showSurveyAfterTimeDelay) === "undefined") {
+    var doTimeDelay = false;
+  } else {
+    var doTimeDelay = showSurveyAfterTimeDelay === true ? true : false;
+  }
+
+  if (doTimeDelay) {
+
+    // If time delay on site not specified, default to 0.
+    if (typeof(TimeDelayOnSite) === "undefined") {
+      var timeDelay = 0;
+    } else {
+      var timeDelay = TimeDelayOnSite ? TimeDelayOnSite : 0;
+    }
+
+    // If time delay on site not specified, default to 0.
+    if (typeof(TimeDelayOnPage) === "undefined") {
+      var minDelay = 0;
+    } else {
+      var minDelay = TimeDelayOnPage ? TimeDelayOnPage : 0;
+    }
+
+    var remdelay = (timeDelay - slti); // delay till invite
+
+    if (remdelay < minDelay) {
+      remdelay = minDelay; // enable minimum delay
+    }
+
+    if (typeof(TimeDelayOnPage) === "undefined") {
+
+    } else {
+      if (TimeDelayOnPage) {
+        timeDelay = remdelay;
+        ConfirmitHelper.ConfirmitLog(showLog, logString + "Using minimum delay on page.  Time Delay: " + timeDelay);
+      }
+    }
+
+    ConfirmitHelper.ConfirmitLog(showLog, logString + "Time Delay before showing survey: " + timeDelay);
+
+  } else {
+    var timeDelay = 0;
+  }
+
+  var tst = "FI";
+
+/*
+  if (url.indexOf('uatcommerce.brother-usa.com/myaccount#register-product') != -1) {
+    tst = "RP";
+  }
+
+  if (url.indexOf('uatcommerce.brother-usa.com/generalshopping') != -1) {
+    tst = "SP";
+  }
+
+  if (turl.indexOf('Demo/Brother/generalshopping') != -1) {
+    tst = "SP";
+  }
+*/
+  setTimeout(function() {
+    console.log("trigger time reached.  running.");
+    fn2(tst);
+    console.log("run complete")
+  }, timeDelay * 1000);
+
+}
+
+}
+else
+{
+	console.log('CC: false.  No INT.');
+}
+};

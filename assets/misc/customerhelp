@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get answers to your questions regarding our products, find a service agent or give us a call for assistance.">
+    <meta name="keywords" content="Brother Fiji, services, printers" />
+    <meta property="og:url" content="http://www.brother.com.fj" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Brother Fiji" />
+    <meta property="og:title" content='Brother Fiji - At Your Side | Customer Help' />
+    <meta property="og:image" content="img/brother-at-your-side-fiji.jpg">
+    <meta name="twitter:title" content='Brother Fiji - At Your Side | Customer Help' />
+    <meta property="og:description" content='Get answers to your questions regarding our products, find a service agent or give us a call for assistance.' />
+    <meta name="twitter:description" content='Get answers to your questions regarding our products, find a service agent or give us a call for assistance.' />
+    <meta name="twitter:image" content='img/brother-at-your-side-fiji.jpg' />
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <title>Brother Customer Help for Fiji</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Extra Stylesheets -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div id="brabox" class="pull-right">
+
+             </div> 
+            <div class="bra_logo">
+                <a href="/">
+                <img class="img-responsive" src="img/head_brotherlogo.gif" alt="Brother" width="106" height="40" /></a>
+            </div>
+        </div> <!-- end .container -->
+    </header>
+
+    <!-- Static navbar -->
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown active">
+                        <a href="customerhelp.html" class="dropdown-toggle" id="customer-hover" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Customer Help<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faqs.html">Answers to your most asked questions</a></li>
+                            <li><a href="helpdesk.html">Contact our Helpdesk</a></li>
+                            <li><a href="http://support.brother.com/g/b/countrytop.aspx?c=nz&lang=en ">Download Software/Drivers</a></li>
+                            <li><a href="services.html">How our Services set us apart</a></li>
+                            <li><a href="tsps.html">Technical Service Providers</a></li>
+                            <li><a href="remotesupport.html">Remote Support</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="wheretobuy.html">Where to Buy</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </nav>
+    </div>
+    
+    <!-- Page Content -->
+    <div class="container content">
+        <h1>Customer Help</h1>
+        <div class="row">
+            <span class="col-lg-3 col-sm-6 col-xs-12 text-center"><a href="faqs.html"><img class="img-responsive cust-icon" src="img/question.png" alt="Question icon"/>Answers to your most asked questions</a></span>
+            <span class="col-lg-3 col-sm-6 col-xs-12 text-center"><a href="http://support.brother.com/g/b/countrytop.aspx?c=nz&lang=en"><img class="img-responsive cust-icon" src="img/info.png" alt="Note icon"/>Download software/drivers</a></span>
+            <span class="col-lg-3 col-sm-6 col-xs-12 text-center"><a href="services.html"><img class="img-responsive cust-icon" src="img/4yearwarranty.png"alt="Warranty icon"/>How our Services set us apart</a></span>
+            <span class="col-lg-3 col-sm-6 col-xs-12 text-center"><a href="tsps.html"><img class="img-responsive cust-icon" src="img/maps.png" alt="Map marker icon"/>Technical Service Provider Locator</a></span>
+        </div>
+        <div class="row">
+            <span class="col-lg-3 col-sm-6 col-xs-12 text-center"><a href="helpdesk.html"><img class="img-responsive cust-icon" src="img/kiwihelpdesk.png" alt="Kiwi helpdesk icon"/>Contact our Helpdesk</a></span>
+            <span class="col-lg-3 col-sm-6 col-xs-12 text-center"><a href="remotesupport.html"><img class="img-responsive cust-icon" src="img/remote.png" alt="Teamviewer icon"/>Remote Support</a></span>
+        </div>
+    </div> <!-- end .container -->
+    
+    <!-- Page Footer -->
+    <footer>
+        <div class="container">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <ul>
+                    <li class="list-head">Customer Help</li>
+                    <li><a href="faqs.html">Answers to your most asked questions</a></li>
+                    <li><a href="helpdesk.html">Contact our Helpdesk</a></li>
+                    <li><a href="http://support.brother.com/g/b/countrytop.aspx?c=nz&lang=en ">Download Software/Drivers</a></li>
+                    <li><a href="tsps.html">Technical Service Providers</a></li>
+                    <li><a href="remotesupport.html">Remote Support</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+                <ul>
+                    <li class="list-head">About</li>
+                    <li><a href="services.html">How our services set us apart</a></li>
+                </ul>
+                <ul>
+                    <li class="list-head">Products</li>
+                    <li><a href="wheretobuy.html">Where to Buy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 text-left footer-right">
+                <ul>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://www.brother.co.nz/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="helpdesk.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div> <!-- end .container -->
+        <div class="container">
+            <div class="footer-bar">
+                 <div class="footer-left">
+                Copyright © 1995-2025, Brother International NZ Ltd. All Rights Reserved
+                 </div>
+                <div class="footer-right">
+                 Fiji | <a href="http://www.brother.com/brgnet/" target="_blank" rel="lightbox_sa">Global Network</a>
+                 </div>
+            </div>
+            <div class="footer-space"></div>
+        </div>
+        </div> <!-- end .container -->
+    </footer>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Drop Down Menu on Hover script (for Bootstrap only) -->
+    <script src="js/jquery.bootstrap-dropdown-hover.js"></script>
+    <script>
+    
+     $.fn.bootstrapDropdownHover();
+     $('#customer-hover').bootstrapDropdownHover('setClickBehavior', 'disabled').on('click', function(){ if ($(this).attr('aria-expanded')=='true') 
+        {window.location = $(this).attr('href');} } );
+     $('#about-hover').bootstrapDropdownHover('setClickBehavior', 'disabled').on('click', function(){ if ($(this).attr('aria-expanded')=='true') 
+        {window.location = $(this).attr('href');} } );
+     
+    </script>
+
+</body>
+
+</html>
