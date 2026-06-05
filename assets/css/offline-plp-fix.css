@@ -1,0 +1,31 @@
+/* PLP / Coveo Atomic layout offline */
+atomic-search-interface#plp[search-hub]:not([search-hub=""]) {
+  display: block !important;
+  width: 100% !important;
+  min-height: 200px !important;
+}
+
+atomic-search-interface#plp[search-hub]:not([search-hub=""]) atomic-search-layout,
+atomic-search-interface#plp.atomic-search-interface-search-executed atomic-search-layout,
+atomic-search-layout#atomic-search-layout-sm65q,
+atomic-search-layout[data-atomic-loaded="true"] {
+  display: grid !important;
+  width: 100% !important;
+  min-height: 400px !important;
+}
+
+atomic-search-interface#plp atomic-layout-section[section="facets"] {
+  display: block !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  atomic-search-interface#plp.atomic-search-interface-search-executed
+    atomic-search-layout#atomic-search-layout-sm65q {
+    display: grid !important;
+    grid-template-areas:
+      '. .                     atomic-section-search .'
+      '. atomic-section-facets atomic-section-main   .'
+      '. atomic-section-facets .                     .' !important;
+    grid-template-columns: 1fr minmax(17rem, 22rem) minmax(50%, 70rem) 1fr !important;
+  }
+}

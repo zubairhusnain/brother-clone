@@ -1,0 +1,109 @@
+/* Prevent Coveo header search from expanding layout offline */
+atomic-search-interface#standalone,
+#standalone,
+header atomic-search-interface,
+header atomic-external,
+header atomic-search-box,
+header atomic-result-list,
+header atomic-product,
+header atomic-query-error,
+header atomic-no-results,
+.search-input atomic-search-interface,
+.search-input atomic-external,
+.search-input atomic-search-box,
+.omnibox atomic-search-interface,
+.omnibox atomic-external,
+.omnibox atomic-search-box {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+header .search-input,
+header .search-input-container,
+header .omnibox {
+  overflow: visible !important;
+  max-height: none !important;
+}
+
+header .brother-offline-search {
+  display: flex !important;
+  align-items: center;
+  max-width: 100%;
+}
+
+header .brother-offline-search input[type="search"] {
+  flex: 1;
+  min-width: 0;
+}
+
+.header-container.header-eq-height,
+.main-header-section {
+  overflow: visible !important;
+}
+
+/* Minicart dropdown must stay collapsed offline (prevents 2000px header blowout) */
+.header-container .janus-minicart2.hide-minicart .minicart.dropdown-menu,
+.header-container .janus-minicart2.hide-minicart .dropdown-menu,
+.header-container .janus-minicart2 .janus-shop-cart-panel,
+.header-container .dropdown.janus-shope-cart-dropdown.open .dropdown-menu,
+.header-container .dropdown.janus-shope-cart-dropdown .dropdown-menu.show,
+.header-container .dropdown.janus-shope-cart-dropdown .dropdown-menu {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  pointer-events: none !important;
+}
+
+.header-container #j-min-cart-close,
+.header-container .janus-shop-cart-panel img {
+  max-width: 24px !important;
+  max-height: 24px !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.header-container .utility-nav .row.md-flex {
+  align-items: center !important;
+}
+
+.header-container .user-login-ul {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  max-height: 80px !important;
+  overflow: visible !important;
+}
+
+/* Account dropdown panels must stay collapsed offline */
+/* Stray header fragments promoted into body by malformed scrape */
+body > ul.user-login-ul,
+body > .user-login-ul.mobile-user,
+body > .auth-sub-menu,
+body > .header-container:not(header .header-container) {
+  display: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+.header-container .auth-sub-menu {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none !important;
+}

@@ -1,0 +1,132 @@
+/* Layout parity with brother-usa.com for offline subpages */
+
+/* Promo strip above header (matches live global-alert-promo spacing) */
+.global-alert-promo {
+  display: block !important;
+  width: 100%;
+}
+
+.global-alert-promo .container a:hover {
+  text-decoration: underline !important;
+}
+
+main.global-main .site-body,
+main.global-main .main-content.site-body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Subscription / content heroes */
+.billboard-text-overlay-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.billboard-text-overlay-hero > img.img-responsive:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  display: block !important;
+}
+
+.billboard-text-overlay-hero > .container,
+.billboard-text-overlay-hero > .modal-content-window {
+  position: relative;
+  z-index: 1;
+}
+
+.billboard-text-overlay-hero .text-overlay-container,
+.billboard-text-overlay-hero .jan-price-table-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+/* Outlet hero */
+.main-content.site-body .billboard-minor-hero {
+  margin-bottom: 24px;
+  padding-top: 24px;
+}
+
+.billboard-minor-hero .container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* Injected PLP results inside Atomic shell */
+atomic-layout-section[section="results"] .offline-plp-results-host,
+.offline-plp-results-host {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  width: 100%;
+  min-height: 900px;
+}
+
+atomic-search-interface#plp {
+  min-height: 1100px !important;
+}
+
+@media (max-width: 1024px) {
+  .offline-plp-results-host {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+.offline-atomic-result {
+  border: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.offline-atomic-result .card-container {
+  display: grid;
+  grid-template-areas: "image" "headline" "body";
+  grid-template-rows: auto 1fr auto;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  min-height: 380px;
+}
+
+.offline-atomic-result .image {
+  grid-area: image;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+.offline-atomic-result .headline {
+  grid-area: headline;
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 21px;
+}
+
+.offline-atomic-result .headline a {
+  color: #004990 !important;
+  text-decoration: none !important;
+}
+
+.offline-atomic-result .body {
+  grid-area: body;
+  padding-top: 16px;
+  font-size: 14px;
+  color: #313a45;
+}
+
+.offline-atomic-result .price {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+

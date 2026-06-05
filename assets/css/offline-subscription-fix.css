@@ -1,0 +1,80 @@
+/* Brother Refresh subscription-info offline layout parity */
+
+.billboard-text-overlay-hero.content-left .jan-price-table-wrapper {
+  margin: 20px 0 !important;
+  max-width: 690px;
+}
+
+.billboard-text-overlay-hero .jan-price-left {
+  padding: 10px 40px;
+}
+
+.billboard-text-overlay-hero h1:empty,
+.billboard-text-overlay-hero h1:not([style]):empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+}
+
+.billboard-text-overlay-hero h1[style*="color"] {
+  font-size: 42px !important;
+  line-height: 1.1 !important;
+  margin: 20px 0 10px !important;
+  font-weight: 400;
+}
+
+.billboard-text-overlay-hero .text-overlay-container {
+  padding-top: 20px;
+}
+
+/* Sticky promo bar — below promo strip + header (45 + 130 = 175px) */
+.sticky-bar-hero {
+  top: 175px !important;
+  left: 0;
+  right: 0;
+  width: 100% !important;
+  z-index: 9998;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 767px) {
+  .sticky-bar {
+    bottom: 35px !important;
+  }
+  .sticky-bar-hero {
+    display: none !important;
+  }
+}
+
+main.global-main .site-body,
+main.global-main #siteBodySec {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img[src=""],
+img:not([src]) {
+  visibility: hidden;
+}
+
+/* Plans grid — hide spinner once cards render (matches live) */
+body:has(#plansContainer ._0100-pricing-card) .plans-loader-container {
+  display: none !important;
+}
+
+#plansContainer .home-plan-options._1100-layout-grid,
+#plansContainer .business-plan-options._1100-layout-grid {
+  display: flex !important;
+  flex-wrap: nowrap;
+  gap: 16px;
+  width: 100%;
+}
+
+#plansContainer ._000-allwrap-wrapper {
+  display: block !important;
+}
+
+#modelSelectionPlan .custom-tab-container {
+  display: block !important;
+}

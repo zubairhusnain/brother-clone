@@ -29,6 +29,18 @@ html body aside[class*="cf_invite_"],
 html body .es-announcement-bar-closed,
 html body [class*="es-announcement-bar"] {
   display: none !important;
+}
+
+/* Reliable product grid for offline PLP pages */
+.offline-coveo-fallback-grid {
+  display: grid !important;
+}
+html body #onetrust-consent-sdk,
+html body #ot-sdk-btn-floating {
+  display: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
   pointer-events: none !important;

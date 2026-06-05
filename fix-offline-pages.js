@@ -9,6 +9,12 @@ const http = require('http');
 
 const ROOT = path.join(__dirname);
 const ASSETS = path.join(ROOT, 'assets');
+const { sanitizeOfflinePageHtml } = require('./lib/sanitize-offline-header.js');
+const {
+    normalizeMalformedPageHtml,
+    injectBeforeHeadClose,
+    injectOutletHeroIfMissing,
+} = require('./lib/normalize-page-html.js');
 
 const COVEO_ATOMIC = [
     'https://static.cloud.coveo.com/atomic/v2/atomic.esm.js',
@@ -100,8 +106,35 @@ function prefixForPage(pageRel) {
     return depth > 0 ? '../'.repeat(depth) : './';
 }
 
+const PRESENTATION_STYLESHEETS = [
+    'Presentation__Includes___css__main.css',
+    'Presentation__Includes___css__NewComponents__main.css',
+];
+
+function ensurePresentationStylesheets(html, prefix) {
+    for (const name of PRESENTATION_STYLESHEETS) {
+        const href = `${prefix}assets/css/${name}`;
+        const esc = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        html = html.replace(
+            new RegExp(`<link[^>]+href=["'][^"']*${esc}["'][^>]*>`, 'gi'),
+            ''
+        );
+        if (!new RegExp(`<link[^>]+rel=["']stylesheet["'][^>]+href=["']${href.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}["']`, 'i').test(html)) {
+            html = injectBeforeHeadClose(html, `    <link rel="stylesheet" href="${href}">`);
+        }
+    }
+    return html;
+}
+
+function stripOrphanHeadClosingTags(html) {
+    return html.replace(/(\s*<\/div>\s*)+(?=\s*<\/head>)/gi, '\n');
+}
+
 function fixHtml(html, pageRel) {
     const prefix = prefixForPage(pageRel);
+
+    html = normalizeMalformedPageHtml(html);
+    html = injectOutletHeroIfMissing(html, pageRel);
 
     // Absolute Presentation paths → local images
     html = html.replace(
@@ -143,6 +176,30 @@ function fixHtml(html, pageRel) {
         /<script[^>]+type=["']module["'][^>]+src=["'][^"']*atomic\.esm\.js["'][^>]*><\/script>/gi,
         '<script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>'
     );
+    const plpHasSearchHub =
+        /<atomic-search-interface[^>]*\bid=["']plp["'][^>]*\bsearch-hub=["'][^"'\s][^"']*["']/i.test(html);
+    const plpHasRenderedResults =
+        /<atomic-search-interface[^>]*\bid=["']plp["'][^>]*>[\s\S]*?<atomic-result[\s>]/i.test(html);
+    if (plpHasSearchHub && !/atomic\.esm\.js/i.test(html)) {
+        html = injectBeforeHeadClose(
+            html,
+            '    <script type="module" src="https://static.cloud.coveo.com/atomic/v2/atomic.esm.js"></script>'
+        );
+    }
+    if (plpHasRenderedResults && !plpHasSearchHub) {
+        html = html.replace(
+            /\s*<script[^>]+src=["'][^"']*atomic\.esm\.js["'][^>]*><\/script>\s*/gi,
+            ''
+        );
+    }
+    html = html.replace(
+        /language-assets-path=["']\.\/lang["']/gi,
+        `language-assets-path="${prefix}assets/misc/lang"`
+    );
+    html = html.replace(
+        /icon-assets-path=["']\.\/assets["']/gi,
+        `icon-assets-path="${prefix}assets"`
+    );
 
     // Coveo atomic imports resolve locally
     html = html.replace(
@@ -162,20 +219,96 @@ function fixHtml(html, pageRel) {
 
     // Hide cookie/personalization overlays that break layout offline
     if (!html.includes('offline-layout-fix')) {
-        html = html.replace(
-            /<\/head>/i,
+        html = injectBeforeHeadClose(
+            html,
             `<style id="offline-layout-fix">
 #onetrust-banner-sdk,#onetrust-consent-sdk,.embedded-messaging{display:none!important}
 .global-header,.header-container,.mega-menu-container{visibility:visible!important}
-</style>\n</head>`
+</style>`
         );
     }
 
     if (!html.includes('offline-hide-banners.css')) {
-        html = html.replace(
-            /<\/head>/i,
-            `    <link rel="stylesheet" href="${prefix}assets/css/offline-hide-banners.css">\n</head>`
+        html = injectBeforeHeadClose(
+            html,
+            `    <link rel="stylesheet" href="${prefix}assets/css/offline-hide-banners.css">`
         );
+    }
+
+    if (!html.includes('offline-layout-parity.css')) {
+        html = injectBeforeHeadClose(
+            html,
+            `    <link rel="stylesheet" href="${prefix}assets/css/offline-layout-parity.css">`
+        );
+    }
+
+    if (/subscription-info/i.test(pageRel) && !html.includes('auth-drill-down.css')) {
+        html = injectBeforeHeadClose(
+            html,
+            `    <link rel="stylesheet" href="${prefix}assets/css/auth-drill-down.css">`
+        );
+    }
+
+    if (/subscription-info/i.test(pageRel)) {
+        html = html.replace(/^<!DOCTYPE html><html[^>]*>\s*/i, '');
+        html = html.replace(/<h1>\s*<\/h1>\s*/gi, '');
+        if (!/<title>Brother Refresh/i.test(html)) {
+            html = html.replace(
+                /<head([^>]*)>/i,
+                `<head$1>\n    <title>Brother Refresh EZ Print Subscription Service | Brother</title>`
+            );
+        }
+        if (!html.includes('offline-subscription-fix.css')) {
+            html = injectBeforeHeadClose(
+                html,
+                `    <link rel="stylesheet" href="${prefix}assets/css/offline-subscription-fix.css">`
+            );
+        }
+        if (!html.includes('global-alert-promo') && /<body[^>]*>/i.test(html)) {
+            html = html.replace(
+                /<body([^>]*)>/i,
+                `<body$1>\n<div class="global-alert-promo richTextTealiumTracker" role="region" aria-label="Global Alert Section" style="display:block"><div class="container" style="text-align:center;padding:10px 15px;background:#0d2ea0;color:#fff;font-size:14px;"><a href="${prefix}supplies/subscription-info/index.html" style="color:#fff;text-decoration:none;">Subscribe &amp; Save with Refresh EZ Print Subscription</a></div></div>`
+            );
+        }
+        html = html.replace(
+            /observerHero\.observe\(document\.querySelector\("\.main-header-section"\)\);/g,
+            'var heroObserve = document.querySelector(".billboard-text-overlay-hero") || document.querySelector(".main-header-section"); if (heroObserve) observerHero.observe(heroObserve);'
+        );
+        html = html.replace(
+            /\s*<link[^>]+href=["'][^"']*CoveoCustom__css__index\.css["'][^>]*>\s*/gi,
+            ''
+        );
+        if (!html.includes('CoveoCustom__css__index.css')) {
+            html = injectBeforeHeadClose(
+                html,
+                `    <link rel="stylesheet" href="${prefix}assets/css/CoveoCustom__css__index.css">`
+            );
+        }
+    }
+
+    if (!html.includes('offline-header-fix.css')) {
+        html = injectBeforeHeadClose(
+            html,
+            `    <link rel="stylesheet" href="${prefix}assets/css/offline-header-fix.css">`
+        );
+    }
+
+    if (/<atomic-search-interface[^>]*\bid=["']plp["']/i.test(html) && !html.includes('offline-plp-fix.css')) {
+        html = injectBeforeHeadClose(
+            html,
+            `    <link rel="stylesheet" href="${prefix}assets/css/offline-plp-fix.css">`
+        );
+    }
+
+    if (pageRel === 'outlet/index.html' && !html.includes('offline-outlet-plp.css')) {
+        html = injectBeforeHeadClose(
+            html,
+            `    <link rel="stylesheet" href="${prefix}assets/css/offline-outlet-plp.css">`
+        );
+    }
+
+    if (pageRel === 'outlet/index.html' && !/<title>Brother Outlet/i.test(html)) {
+        html = html.replace(/<head([^>]*)>/i, `<head$1>\n    <title>Brother Outlet | Deals on Printers, Sewing &amp; More</title>`);
     }
 
     // Remove Evergage/MCP "Exclusive Offers" widget markup entirely.
@@ -194,25 +327,36 @@ function fixHtml(html, pageRel) {
     html = html.replace(/<aside[^>]*class=["'][^"']*cf_invite_[^"']*["'][\s\S]*?<\/aside>/gi, '');
 
     if (!html.includes('offline-stubs.js')) {
+        html = injectBeforeHeadClose(
+            html,
+            `    <script src="${prefix}assets/js/offline-stubs.js"></script>`
+        );
+    }
+
+    html = html.replace(
+        /\s*<script[^>]+src=["'][^"']*jquery-3\.2\.1\.min\.js["'][^>]*><\/script>\s*/gi,
+        ''
+    );
+    if (!/<head[^>]*>[\s\S]{0,800}jquery-3\.2\.1/i.test(html)) {
         html = html.replace(
-            /<\/head>/i,
-            `    <script src="${prefix}assets/js/offline-stubs.js"></script>\n</head>`
+            /<head([^>]*)>/i,
+            `<head$1>\n    <script src="${prefix}assets/js/jquery-3.2.1.min.js"></script>`
         );
     }
 
     if (!html.includes('fonts.googleapis.com/css2')) {
-        html = html.replace(
-            /<\/head>/i,
-            `    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap">\n</head>`
+        html = injectBeforeHeadClose(
+            html,
+            `    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap">`
         );
     }
 
     // Ensure core CSS present once
     const hasMain = /href=["'][^"']*assets\/css\/main\.css["']/i.test(html);
     if (!hasMain) {
-        html = html.replace(
-            /<\/head>/i,
-            `    <link rel="stylesheet" href="${prefix}assets/css/bootstrap.min.css">\n    <link rel="stylesheet" href="${prefix}assets/css/main.css">\n    <link rel="stylesheet" href="${prefix}assets/css/optimized-min.css">\n</head>`
+        html = injectBeforeHeadClose(
+            html,
+            `    <link rel="stylesheet" href="${prefix}assets/css/bootstrap.min.css">\n    <link rel="stylesheet" href="${prefix}assets/css/main.css">\n    <link rel="stylesheet" href="${prefix}assets/css/optimized-min.css">`
         );
     }
 
@@ -239,6 +383,31 @@ function fixHtml(html, pageRel) {
     // Malformed attributes from scrape
     html = html.replace(/\s+t=""/g, '');
     html = html.replace(/\s+"=""/g, '');
+
+    html = stripOrphanHeadClosingTags(html);
+    html = ensurePresentationStylesheets(html, prefix);
+    html = html.replace(/\.main-header-sectiFGeton/g, '.main-header-section');
+
+    if (!html.includes('offline-sticky-bar-fix')) {
+        html = injectBeforeHeadClose(
+            html,
+            `<style id="offline-sticky-bar-fix">
+.sticky-bar-hero{top:130px!important}
+@media (max-width:767px){.sticky-bar{bottom:35px!important}}
+</style>`
+        );
+    }
+
+    html = sanitizeOfflinePageHtml(html);
+
+    if (pageRel === 'global-network/index.html') {
+        if (!html.includes('globallink.css')) {
+            html = injectBeforeHeadClose(
+                html,
+                `    <link rel="stylesheet" href="${prefix}assets/css/globallink.css">`
+            );
+        }
+    }
 
     return html;
 }
@@ -297,6 +466,9 @@ async function downloadMissingFromAudit() {
 
 async function main() {
     await downloadCoreAssets();
+
+    console.log('Fixing media MIME paths...');
+    require('child_process').execSync('node fix-media-mime.js', { cwd: ROOT, stdio: 'inherit' });
 
     const pages = getHomeLinkedPages();
     const all = [...new Set([...pages, ...walkHtml(ROOT).filter((p) => p !== 'index.html')])];

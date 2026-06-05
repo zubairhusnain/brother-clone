@@ -9,6 +9,8 @@ const path = require('path');
 const ROOT = __dirname;
 const HOME = path.join(ROOT, 'index.html');
 const OFFLINE_BASE = '/brother-clone/brother_offline/';
+const { sanitizeOfflineHeader, sanitizeOfflinePageHtml } = require('./lib/sanitize-offline-header.js');
+const { normalizeMalformedPageHtml } = require('./lib/normalize-page-html.js');
 
 function getHeaderFooterFromHome() {
   const html = fs.readFileSync(HOME, 'utf8');
@@ -17,7 +19,10 @@ function getHeaderFooterFromHome() {
   if (!headerMatch || !footerMatch) {
     throw new Error('Could not extract header/footer from brother_offline/index.html');
   }
-  return { header: headerMatch[0], footer: footerMatch[0] };
+  return {
+    header: sanitizeOfflineHeader(headerMatch[0]),
+    footer: footerMatch[0],
+  };
 }
 
 function linkedPages() {
@@ -60,17 +65,37 @@ function absolutizeHomeFragment(fragment) {
 
 function replaceHeaderFooter(pageHtml, header, footer) {
   let out = pageHtml;
+
   if (/<header>[\s\S]*?<\/header>/i.test(out)) {
     out = out.replace(/<header>[\s\S]*?<\/header>/i, header);
-  } else {
+  } else if (/<body[^>]*>/i.test(out)) {
     out = out.replace(/<body([^>]*)>/i, `<body$1>\n${header}`);
+  } else if (/<\/head>/i.test(out)) {
+    out = out.replace(/<\/head>/i, `</head>\n<body class="default-device bodyclass loaded" id="main">\n${header}`);
+  } else if (/<main[^>]*class=["'][^"']*global-main/i.test(out)) {
+    out = out.replace(/<main[^>]*class=["'][^"']*global-main[^>]*>/i, (m) => `${header}\n${m}`);
+  } else if (/<footer class="global-footer">/i.test(out)) {
+    out = out.replace(/<footer class="global-footer">/i, `${header}\n<footer class="global-footer">`);
+  } else {
+    out = `${header}\n${out}`;
   }
 
   if (/<footer class="global-footer">[\s\S]*?<\/footer>/i.test(out)) {
     out = out.replace(/<footer class="global-footer">[\s\S]*?<\/footer>/i, footer);
-  } else {
+  } else if (/<\/body>/i.test(out)) {
     out = out.replace(/<\/body>/i, `${footer}\n</body>`);
+  } else {
+    out = `${out}\n${footer}\n</body>\n</html>`;
   }
+
+  if (!/<\/body>/i.test(out)) {
+    if (/<\/html>/i.test(out)) {
+      out = out.replace(/<\/html>/i, `</body>\n</html>`);
+    } else {
+      out += '\n</body>\n</html>';
+    }
+  }
+
   return out;
 }
 
@@ -85,7 +110,10 @@ function run() {
     const before = fs.readFileSync(full, 'utf8');
     const header = absolutizeHomeFragment(homeHeader);
     const footer = absolutizeHomeFragment(homeFooter);
-    const after = replaceHeaderFooter(before, header, footer);
+    let after = normalizeMalformedPageHtml(before);
+    after = replaceHeaderFooter(after, header, footer);
+    after = normalizeMalformedPageHtml(after);
+    after = sanitizeOfflinePageHtml(after);
     if (after !== before) {
       fs.writeFileSync(full, after);
       updated++;

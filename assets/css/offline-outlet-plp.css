@@ -1,0 +1,256 @@
+/* Outlet PLP offline clone — matches Coveo Atomic product grid on brother-usa.com/outlet */
+
+.offline-plp-results-host {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media (max-width: 1024px) {
+  .offline-plp-results-host {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+.offline-result-root {
+  display: grid;
+  grid-template-areas:
+    "compare"
+    "badges"
+    "visual"
+    "title"
+    "title-metadata"
+    "emphasized"
+    "excerpt"
+    "bottom-metadata"
+    "actions";
+  grid-template-rows: auto;
+  height: 100%;
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  border-left: 0;
+  background: #fff;
+  padding: 0 0 16px;
+}
+
+.offline-result-root .result-image-wrap {
+  grid-area: visual;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px 0;
+  min-height: 220px;
+}
+
+.offline-result-root .result-image-wrap img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.offline-result-root .result-title {
+  grid-area: title;
+  padding: 12px 20px 0;
+  text-align: center;
+}
+
+.offline-result-root .result-title a {
+  color: #071956;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.offline-result-root .result-title a:hover {
+  text-decoration: underline;
+}
+
+.offline-result-root .result-meta {
+  grid-area: title-metadata;
+  padding: 8px 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #313a45;
+}
+
+.offline-result-root .product-features {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.offline-result-root .feature-list-wrapper {
+  list-style: disc;
+  padding-left: 18px;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 240px;
+}
+
+.offline-result-root .details-link-wrapper {
+  display: block;
+  margin-top: 10px;
+  color: #000 !important;
+  font-size: 14px;
+  text-decoration: underline !important;
+}
+
+.offline-result-root .result-price-block {
+  grid-area: bottom-metadata;
+  text-align: center;
+  padding: 12px 20px 0;
+}
+
+.offline-result-root .result-price {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.offline-result-root .result-actions {
+  grid-area: actions;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px 0;
+}
+
+.offline-result-root .result-rating {
+  font-size: 13px;
+  color: #666;
+}
+
+.offline-result-root .janus-btn-green {
+  display: inline-block;
+  background: #25865c !important;
+  border: 1px solid #01a65f !important;
+  border-radius: 2px !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: 16px !important;
+  line-height: 18px;
+  padding: 8px 15px !important;
+  text-decoration: none !important;
+}
+
+/* Facet sidebar */
+.offline-facet-panel {
+  padding: 0 8px 24px 0;
+}
+
+.offline-facet-panel h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 16px 0 10px;
+  color: #313a45;
+}
+
+.offline-facet-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offline-facet-panel li {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #313a45;
+}
+
+.offline-facet-panel label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: default;
+  font-weight: 400;
+}
+
+.offline-facet-panel .facet-count {
+  color: #666;
+  white-space: nowrap;
+}
+
+/* Results 1-12 of 17 — must span full PLP width (not facet column) */
+@media only screen and (min-width: 1024px) {
+  atomic-search-interface#plp.atomic-search-interface-search-executed
+    atomic-search-layout#atomic-search-layout-sm65q {
+    grid-template-areas:
+      ". .                     atomic-section-search ."
+      ". list-header-section   list-header-section   ."
+      ". atomic-section-facets atomic-section-main   ."
+      ". atomic-section-facets .                     ." !important;
+  }
+}
+
+atomic-search-interface#plp .list-header-section {
+  grid-area: list-header-section;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 10px 0 0 !important;
+  box-shadow: 0 -1px #bcc3ca inset;
+  margin-bottom: var(--atomic-layout-spacing-y, 16px) !important;
+  overflow: hidden;
+  min-height: 35px;
+}
+
+atomic-search-interface#plp .list-header-section atomic-query-summary {
+  display: none !important;
+}
+
+atomic-search-interface#plp .offline-query-summary-text {
+  flex: 1 1 auto;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #313a45;
+  white-space: nowrap;
+  line-height: 1.4;
+  padding-right: 16px;
+}
+
+atomic-search-interface#plp .list-header-section atomic-grid-list-toggle {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.offline-plp-pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 0;
+  width: 100%;
+}
+
+.offline-plp-pager button,
+.offline-plp-pager span {
+  min-width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #313a45;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.offline-plp-pager .active {
+  background: #1965e1;
+  border-color: #1965e1;
+  color: #fff;
+}
+
+.offline-plp-pager button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}

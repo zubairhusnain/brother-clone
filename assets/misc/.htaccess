@@ -1,0 +1,4 @@
+# Scraped Sitecore media files use .aspx but are binary images
+<IfModule mod_mime.c>
+  AddType image/jpeg .aspx
+</IfModule>
